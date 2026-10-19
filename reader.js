@@ -1,11 +1,5 @@
 'use strict';
-const scenes = [
-  {title:'Lara y el secreto de la melodía de las sombras',chapter:'Una aventura musical',text:'Una aventura de Lara, Anne, Anne de Alemania y Lokum.',image:'assets/portada-sonoria-v2-kpop.png',alt:'Lara, Anne, Anne de Alemania y Lokum ante la ciudad musical de Sonoria.'},
-  {title:'El nuevo paso',chapter:'Página 3 · Viñeta 1 de 3',text:'Lara: «¡Anne, mira! ¡Un paso nuevo!»',image:'assets/s03-p01-masters-v4.png',alt:'Lara baila frente al gran televisor del salón. Anne la mira desde el sofá y Lokum descansa a su lado.'},
-  {title:'¡Qué bien bailas!',chapter:'Página 3 · Viñeta 2 de 3',text:'Anne: «¡Qué bien bailas, Lara!»',image:'assets/s03-p02-anne-v1.png',alt:'Anne sonríe y anima a Lara mientras baila. Lokum está a su lado en el sofá.'},
-  {title:'Un pequeño bostezo',chapter:'Página 3 · Viñeta 3 de 3',text:'Lokum bosteza.',image:'assets/s03-p03-lokum-v1.png',alt:'Lokum bosteza tranquilamente en el sofá junto a Anne. Todavía no habla.'},
-  {title:'Continuará…',chapter:'Hasta la próxima aventura',text:'La historia completa está en preparación. ¡Nos esperan muchas aventuras!',image:'assets/portada-sonoria-v2-kpop.png',alt:'Lara y sus compañeras en Sonoria: ilustración de portada.'}
-];
+let scenes = [];
 const el=id=>document.getElementById(id);
 let current=0,reading=false,utterance=null,speechRun=0;
 const speechSupported='speechSynthesis' in window&&'SpeechSynthesisUtterance' in window;
@@ -18,4 +12,6 @@ el('size').addEventListener('click',()=>{const large=document.querySelector('.re
 el('speak').addEventListener('click',()=>{if(!speechSupported)return;if(reading){stopReading();el('audio-status').textContent='Lectura detenida.';return;}stopReading();const run=speechRun;const voices=window.speechSynthesis.getVoices();const voice=voices.find(v=>v.lang.toLowerCase().startsWith('es-es'))||voices.find(v=>v.lang.toLowerCase().startsWith('es'));if(voices.length&&!voice){el('audio-status').textContent='Activa una voz en español en tu dispositivo.';return;}utterance=new SpeechSynthesisUtterance(`${scenes[current].title}. ${scenes[current].text}`);utterance.lang='es-ES';utterance.rate=.85;if(voice)utterance.voice=voice;utterance.onend=()=>{if(run!==speechRun)return;stopReading();el('audio-status').textContent='Puedes volver a escucharlo.';};utterance.onerror=()=>{if(run!==speechRun)return;stopReading();el('audio-status').textContent='No se pudo iniciar la lectura. Inténtalo de nuevo.';};reading=true;el('speak-label').textContent='Detener';el('speak').setAttribute('aria-pressed','true');el('audio-status').textContent='Leyendo en voz alta…';window.speechSynthesis.speak(utterance);});
 window.addEventListener('pagehide',stopReading);document.addEventListener('visibilitychange',()=>{if(document.hidden){stopReading();el('audio-status').textContent='Lectura detenida. Pulsa Escuchar para continuar.';}});
 document.addEventListener('keydown',event=>{if(event.altKey||event.ctrlKey||event.metaKey||/INPUT|TEXTAREA|SELECT/.test(event.target.tagName))return;if(event.key==='ArrowRight'){event.preventDefault();move(1);}if(event.key==='ArrowLeft'){event.preventDefault();move(-1);}});
-if(!speechSupported)el('speak').disabled=true;render();
+if(!speechSupported)el('speak').disabled=true;fetch('book-content.json').then(response=>{if(!response.ok)throw new Error('No se pudo cargar el contenido.');return response.json();}).then(data=>{scenes=data.views;render();}).catch(()=>{el('audio-status').textContent='No se pudo cargar esta vista previa. Inténtalo de nuevo.';});
+
+
