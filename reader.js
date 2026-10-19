@@ -1,14 +1,14 @@
 'use strict';
 const scenes = [
-  {title:'Lara y el secreto de la melodía de las sombras',chapter:'Una aventura musical',text:'Una aventura de Lara, Anne, Anne de Alemania y Lokum.'},
-  {title:'La música nos une',chapter:'A tu ritmo',text:'Mira, escucha y avanza a tu ritmo. ¡Puedes volver atrás cuando quieras!'},
-  {title:'Continuará…',chapter:'Hasta la próxima aventura',text:'La historia completa está en preparación. ¡Nos esperan muchas aventuras!'}
+  {title:'Lara y el secreto de la melodía de las sombras',chapter:'Una aventura musical',text:'Una aventura de Lara, Anne, Anne de Alemania y Lokum.',image:'assets/portada-sonoria-v1.png',alt:'Lara, Anne, Anne de Alemania y Lokum ante la ciudad musical de Sonoria.'},
+  {title:'El nuevo paso',chapter:'Capítulo 1 · Viñeta de prueba',text:'Lara: «¡Anne, mira! ¡Un paso nuevo!»\nAnne: «¡Qué bien bailas, Lara!»',image:'assets/s03-p01-baile-v1.png',alt:'Lara baila frente al gran televisor del salón. Anne la mira desde el sofá y Lokum descansa a su lado.'},
+  {title:'Continuará…',chapter:'Hasta la próxima aventura',text:'La historia completa está en preparación. ¡Nos esperan muchas aventuras!',image:'assets/portada-sonoria-v1.png',alt:'Lara y sus compañeras en Sonoria: ilustración de portada.'}
 ];
 const el=id=>document.getElementById(id);
 let current=0,reading=false,utterance=null,speechRun=0;
 const speechSupported='speechSynthesis' in window&&'SpeechSynthesisUtterance' in window;
 function stopReading(){speechRun++;if(speechSupported)window.speechSynthesis.cancel();reading=false;utterance=null;el('speak-label').textContent='Escuchar';el('speak').setAttribute('aria-pressed','false');}
-function render(){stopReading();const scene=scenes[current];el('scene-title').textContent=scene.title;el('story-text').textContent=scene.text;el('chapter').textContent=scene.chapter;el('counter').textContent=`${current+1} / ${scenes.length}`;el('previous').disabled=current===0;el('next').disabled=current===scenes.length-1;document.querySelectorAll('.dots i').forEach((dot,i)=>dot.classList.toggle('active',i===current));el('audio-status').textContent=speechSupported?'Pulsa Escuchar para oír el texto.':'Este navegador no permite leer en voz alta.';}
+function render(){stopReading();const scene=scenes[current];el('cover').src=scene.image;el('cover').alt=scene.alt;el('scene-title').textContent=scene.title;el('story-text').textContent=scene.text;el('chapter').textContent=scene.chapter;el('counter').textContent=`${current+1} / ${scenes.length}`;el('previous').disabled=current===0;el('next').disabled=current===scenes.length-1;document.querySelectorAll('.dots i').forEach((dot,i)=>dot.classList.toggle('active',i===current));el('audio-status').textContent=speechSupported?'Pulsa Escuchar para oír el texto.':'Este navegador no permite leer en voz alta.';}
 function move(delta){const target=current+delta;if(target<0||target>=scenes.length)return;current=target;render();}
 el('previous').addEventListener('click',()=>move(-1));el('next').addEventListener('click',()=>move(1));
 el('home').addEventListener('click',event=>{event.preventDefault();current=0;render();});
