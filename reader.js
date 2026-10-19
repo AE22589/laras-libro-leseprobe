@@ -1,7 +1,9 @@
 'use strict';
 const scenes = [
   {title:'Lara y el secreto de la melodía de las sombras',chapter:'Una aventura musical',text:'Una aventura de Lara, Anne, Anne de Alemania y Lokum.',image:'assets/portada-sonoria-v2-kpop.png',alt:'Lara, Anne, Anne de Alemania y Lokum ante la ciudad musical de Sonoria.'},
-  {title:'El nuevo paso',chapter:'Capítulo 1 · Viñeta de prueba',text:'Lara: «¡Anne, mira! ¡Un paso nuevo!»\nAnne: «¡Qué bien bailas, Lara!»',image:'assets/s03-p01-masters-v4.png',alt:'Lara baila frente al gran televisor del salón. Anne la mira desde el sofá y Lokum descansa a su lado.'},
+  {title:'El nuevo paso',chapter:'Página 3 · Viñeta 1 de 3',text:'Lara: «¡Anne, mira! ¡Un paso nuevo!»',image:'assets/s03-p01-masters-v4.png',alt:'Lara baila frente al gran televisor del salón. Anne la mira desde el sofá y Lokum descansa a su lado.'},
+  {title:'¡Qué bien bailas!',chapter:'Página 3 · Viñeta 2 de 3',text:'Anne: «¡Qué bien bailas, Lara!»',image:'assets/s03-p02-anne-v1.png',alt:'Anne sonríe y anima a Lara mientras baila. Lokum está a su lado en el sofá.'},
+  {title:'Un pequeño bostezo',chapter:'Página 3 · Viñeta 3 de 3',text:'Lokum bosteza.',image:'assets/s03-p03-lokum-v1.png',alt:'Lokum bosteza tranquilamente en el sofá junto a Anne. Todavía no habla.'},
   {title:'Continuará…',chapter:'Hasta la próxima aventura',text:'La historia completa está en preparación. ¡Nos esperan muchas aventuras!',image:'assets/portada-sonoria-v2-kpop.png',alt:'Lara y sus compañeras en Sonoria: ilustración de portada.'}
 ];
 const el=id=>document.getElementById(id);
