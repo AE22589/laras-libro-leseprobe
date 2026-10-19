@@ -2,50 +2,47 @@
   "status": "boceto_de_prueba_no_aprobado",
   "views": [
     {
-      "title_es": "Lara y el secreto de la melodía de las sombras",
-      "chapter_es": "Una aventura musical",
-      "text_es": "Una aventura de Lara, Anne, Anne de Alemania y Lokum.",
+      "title": "Lara y el secreto de la melodía de las sombras",
+      "chapter": "Una aventura musical",
+      "text": "Una aventura de Lara, Anne, Anne de Alemania y Lokum.",
       "image": "assets/portada-sonoria-v2-kpop.png",
-      "alt_es": "Lara, Anne, Anne de Alemania y Lokum ante la ciudad musical de Sonoria.",
+      "alt": "Lara, Anne, Anne de Alemania y Lokum ante la ciudad musical de Sonoria.",
       "status": "portada_provisional"
     },
     {
       "id": "S03-P01",
-      "title_es": "El nuevo paso",
-      "chapter_es": "Página 3 · Viñeta 1 de 3",
-      "text_es": "Lara: «¡Anne, mira! ¡Un paso nuevo!»",
-      "narration_es": "Lara: «¡Anne, mira! ¡Un paso nuevo!»",
+      "title": "El nuevo paso",
+      "chapter": "Página 3 · Viñeta 1 de 3",
+      "text": "Lara: «¡Anne, mira! ¡Un paso nuevo!»",
       "image": "assets/s03-p01-masters-v4.png",
-      "alt_es": "Lara baila frente al gran televisor del salón. Anne la mira desde el sofá y Lokum descansa a su lado.",
+      "alt": "Lara baila frente al gran televisor del salón. Anne la mira desde el sofá y Lokum descansa a su lado.",
       "status": "boceto_de_prueba_no_aprobado"
     },
     {
       "id": "S03-P02",
-      "title_es": "¡Qué bien bailas!",
-      "chapter_es": "Página 3 · Viñeta 2 de 3",
-      "text_es": "Anne: «¡Qué bien bailas, Lara!»",
-      "narration_es": "Anne: «¡Qué bien bailas, Lara!»",
+      "title": "¡Qué bien bailas!",
+      "chapter": "Página 3 · Viñeta 2 de 3",
+      "text": "Anne: «¡Qué bien bailas, Lara!»",
       "image": "assets/s03-p02-anne-v1.png",
-      "alt_es": "Anne sonríe y anima a Lara mientras baila. Lokum está a su lado en el sofá.",
+      "alt": "Anne sonríe y anima a Lara mientras baila. Lokum está a su lado en el sofá.",
       "status": "boceto_de_prueba_no_aprobado"
     },
     {
       "id": "S03-P03",
-      "title_es": "Un pequeño bostezo",
-      "chapter_es": "Página 3 · Viñeta 3 de 3",
-      "text_es": "Lokum bosteza.",
-      "narration_es": "Lokum bosteza.",
+      "title": "Un pequeño bostezo",
+      "chapter": "Página 3 · Viñeta 3 de 3",
+      "text": "Lokum bosteza.",
       "image": "assets/s03-p03-lokum-v1.png",
-      "alt_es": "Lokum bosteza tranquilamente en el sofá junto a Anne. Todavía no habla.",
+      "alt": "Lokum bosteza tranquilamente en el sofá junto a Anne. Todavía no habla.",
       "status": "boceto_de_prueba_no_aprobado"
     },
     {
-      "title_es": "Continuará…",
-      "chapter_es": "Hasta la próxima aventura",
-      "text_es": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
+      "title": "Continuará…",
+      "chapter": "Hasta la próxima aventura",
+      "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
       "image": "assets/portada-sonoria-v2-kpop.png",
-      "alt_es": "Lara y sus compañeras en Sonoria: ilustración de portada.",
+      "alt": "Lara y sus compañeras en Sonoria: ilustración de portada.",
       "status": "aviso_provisional"
     }
   ]
-}
+}\n
