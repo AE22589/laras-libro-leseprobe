@@ -68,6 +68,8 @@ function showSongs(show) {
   songPageOpen = show;
   songsPage.hidden = !show;
   readerPage.hidden = show;
+  readerPage.style.display = show ? 'none' : 'grid';
+  songsPage.style.display = show ? 'grid' : 'none';
   el('notice').hidden = show;
   el('open-songs').hidden = show;
   el('open-songs').setAttribute('aria-pressed', String(show));
