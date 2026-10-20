@@ -100,6 +100,33 @@
       "status": "imagen_aprobada_texto_y_pagina_en_revision"
     },
     {
+      "id": "S06-P01",
+      "alt": "Una estrella muestra la ciudad de Sonoria, cuyos colores empiezan a desaparecer. Lara, Anne y Lokum la miran sorprendidas.",
+      "image": "assets/s06-p01-star-sonoria-v2.png",
+      "text": "Estrella: «¡Sonoria está perdiendo su música! ¡Necesitamos ayuda!»",
+      "status": "imagen_aprobada_texto_y_pagina_en_revision",
+      "chapter": "",
+      "title": "El mensaje de Sonoria"
+    },
+    {
+      "id": "S06-P02",
+      "alt": "La estrella muestra una melodía incompleta. Lokum reconoce la llamada de auxilio; Lara y Anne escuchan.",
+      "image": "assets/s06-p02-incomplete-melody-v1.png",
+      "text": "Lokum: «¡Es una llamada de auxilio! ¡Pero faltan notas!»",
+      "status": "imagen_aprobada_texto_y_pagina_en_revision",
+      "chapter": "",
+      "title": "Una melodía incompleta"
+    },
+    {
+      "id": "S06-P03",
+      "alt": "Lara señala la estrella mientras la señal musical sale de la habitación. Anne y Lokum la escuchan.",
+      "image": "assets/s06-p03-signal-travels-v2.png",
+      "text": "Lara: «¡Anne de Alemania sabe mucho de música!»\nAnne: «¿Podemos contactar con ella?»",
+      "status": "imagen_aprobada_texto_y_pagina_en_revision",
+      "chapter": "",
+      "title": "Una señal hacia Alemania"
+    },
+    {
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
