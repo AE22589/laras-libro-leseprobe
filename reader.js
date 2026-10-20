@@ -30,7 +30,11 @@ function render() {
   el('counter').textContent = `${current + 1} / ${scenes.length}`;
   el('previous').disabled = current === 0;
   el('next').disabled = current === scenes.length - 1;
-  document.querySelectorAll('.dots i').forEach((dot, i) => dot.classList.toggle('active', i === current));
+  const dots = el('dots');
+  if (dots.childElementCount !== scenes.length) {
+    dots.replaceChildren(...scenes.map(() => document.createElement('i')));
+  }
+  dots.querySelectorAll('i').forEach((dot, i) => dot.classList.toggle('active', i === current));
   el('audio-status').textContent = speechSupported
     ? 'Pulsa Escuchar. Se prioriza una voz femenina en español si está instalada.'
     : 'Este navegador no permite leer en voz alta.';
@@ -162,7 +166,7 @@ document.addEventListener('keydown', event => {
 });
 
 if (!speechSupported) el('speak').disabled = true;
-fetch('book-content.json?v=20261019-5')
+fetch('book-content.json?v=20261020-1')
   .then(response => {
     if (!response.ok) throw new Error('No se pudo cargar el contenido.');
     return response.json();

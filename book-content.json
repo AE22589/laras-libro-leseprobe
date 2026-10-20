@@ -37,6 +37,33 @@
       "status": "boceto_de_prueba_no_aprobado"
     },
     {
+      "id": "S04-P01",
+      "title": "La música se detuvo",
+      "chapter": "Página 4 · Viñeta 1 de 3",
+      "text": "La música se detuvo de repente. Lara se quedó inmóvil.",
+      "image": "assets/s04-p01-v3.png",
+      "alt": "La música ha parado. Lara se detiene en medio del baile y Anne mira la pantalla apagada del televisor.",
+      "status": "boceto_de_pagina_pendiente_de_revision"
+    },
+    {
+      "id": "S04-P02",
+      "title": "El ritmo continúa",
+      "chapter": "Página 4 · Viñeta 2 de 3",
+      "text": "Lara siguió el ritmo dando palmas.\nLara: «¿Eh? ¿Qué ha pasado?»",
+      "image": "assets/s04-p02-v2.png",
+      "alt": "Lara da palmas para continuar el ritmo; Anne la observa y Lokum permanece cerca.",
+      "status": "boceto_de_pagina_pendiente_de_revision"
+    },
+    {
+      "id": "S04-P03",
+      "title": "Una señal incompleta",
+      "chapter": "Página 4 · Viñeta 3 de 3",
+      "text": "El televisor parpadeó y mostró un mensaje: «LA ÚLTIMA CANCIÓN».",
+      "image": "assets/s04-p03-v2.png",
+      "alt": "En el televisor aparece una señal musical violeta e incompleta. Lara, Anne y Lokum miran la pantalla; Lokum aún no habla.",
+      "status": "boceto_de_pagina_pendiente_de_revision"
+    },
+    {
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
