@@ -240,7 +240,7 @@ document.addEventListener('keydown', event => {
 });
 
 if (!speechSupported) el('speak').disabled = true;
-fetch('book-content.json?v=20261020-6')
+fetch('book-content.json?v=20261020-7')
   .then(response => {
     if (!response.ok) throw new Error('No se pudo cargar el contenido.');
     return response.json();
