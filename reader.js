@@ -26,6 +26,17 @@ function stopReading() {
   el('speak').setAttribute('aria-pressed', 'false');
 }
 
+function updateHeaderSelection() {
+  const bookActive = !songPageOpen && !gamePageOpen;
+  el('home').classList.toggle('is-active', bookActive);
+  if (bookActive) el('home').setAttribute('aria-current', 'page');
+  else el('home').removeAttribute('aria-current');
+  el('open-games').classList.toggle('is-active', gamePageOpen);
+  el('open-games').setAttribute('aria-pressed', String(gamePageOpen));
+  el('open-songs').classList.toggle('is-active', songPageOpen);
+  el('open-songs').setAttribute('aria-pressed', String(songPageOpen));
+}
+
 function render() {
   stopReading();
   const scene = scenes[current];
@@ -47,6 +58,7 @@ function render() {
   el('audio-status').textContent = speechSupported
     ? 'Pulsa Escuchar. Se prioriza una voz femenina en español si está instalada.'
     : 'Este navegador no permite leer en voz alta.';
+  updateHeaderSelection();
 }
 
 function preloadImage(index) {
@@ -87,10 +99,7 @@ function showSongs(show) {
   songsPage.style.display = show ? 'grid' : 'none';
   gamesPage.style.display = 'none';
   el('notice').hidden = show;
-  el('open-songs').hidden = show;
-  el('open-games').hidden = show;
-  el('open-songs').setAttribute('aria-pressed', String(show));
-  el('open-games').setAttribute('aria-pressed', 'false');
+  updateHeaderSelection();
   if (show) stopReading();
   else {
     songCards.forEach(card => { card.querySelector('audio').pause(); updateSongCard(card); });
@@ -108,10 +117,7 @@ function showGames(show) {
   songsPage.style.display = 'none';
   gamesPage.style.display = show ? 'grid' : 'none';
   el('notice').hidden = show;
-  el('open-songs').hidden = show;
-  el('open-games').hidden = show;
-  el('open-games').setAttribute('aria-pressed', String(show));
-  el('open-songs').setAttribute('aria-pressed', 'false');
+  updateHeaderSelection();
   if (show) {
     stopReading();
     activeGame = '';
