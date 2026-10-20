@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#251a42">
   <title>Lara · El secreto de la melodía de las sombras</title>
-  <link rel="stylesheet" href="style.css?v=20261020-16">
-  <script src="reader.js?v=20261020-15" defer></script>
+  <link rel="stylesheet" href="style.css?v=20261020-18">
+  <script src="reader.js?v=20261020-18" defer></script>
 </head>
 <body>
-  <header class="masthead"><a href="#" id="home" aria-label="Volver al principio">✦ <span>El libro de Lara</span></a><div class="masthead-actions"><button id="open-songs" class="songs-link" type="button">♫ <span>Canciones</span></button><span class="badge">Vista previa</span></div></header>
+  <header class="masthead"><a href="#" id="home" aria-label="Volver al principio">✦ <span>El libro de Lara</span></a><div class="masthead-actions"><button id="open-games" class="songs-link" type="button">✧ <span>Juegos</span></button><button id="open-songs" class="songs-link" type="button">♫ <span>Canciones</span></button><span class="badge">Vista previa</span></div></header>
   <main>
     <section class="reader" aria-label="Lector de cómic">
       <div class="reader-top"><span id="chapter">Una aventura musical</span><span id="counter" aria-live="polite">1 / 5</span></div>
@@ -31,6 +31,36 @@
         <article class="song-card song-upcoming"><div class="song-icon" aria-hidden="true">✦</div><div class="song-info"><h2>La próxima canción</h2><p>Próximamente</p></div><span class="coming-soon">PRÓXIMAMENTE</span></article>
       </div>
       <p class="songs-footnote">Toca ▶ para escuchar · Puedes pausar y continuar cuando quieras</p>
+    </section>
+    <section id="games-page" class="reader songs-page games-page" aria-label="Juegos para aprender a leer" hidden>
+      <div class="songs-heading"><button id="close-games" class="back-link" type="button" aria-label="Volver al libro">←</button><div><p class="eyebrow">JUEGOS DE LECTURA</p><h1>Juegos de Sonoria</h1><p class="songs-intro">Pequeños retos para leer jugando</p></div></div>
+      <div class="games-content">
+        <div id="game-menu" class="game-menu">
+          <button id="start-syllable-game" class="game-choice" type="button"><span class="game-mark" aria-hidden="true">♫</span><span><strong>La sílaba perdida</strong><small>Completa palabras de la historia</small></span><span class="game-arrow" aria-hidden="true">→</span></button>
+          <button id="start-word-game" class="game-choice" type="button"><span class="game-mark" aria-hidden="true">♫</span><span><strong>Completa la melodía</strong><small>Adivina una palabra con cinco notas</small></span><span class="game-arrow" aria-hidden="true">→</span></button>
+        </div>
+        <div class="lokum-coach"><img src="assets/lokum-juegos.webp" alt="Lokum, la gata mágica de Lara" loading="lazy" decoding="async"><div id="lokum-comment" class="speech-bubble" role="status" aria-live="polite">¡Vamos a leer juntas!</div></div>
+        <div id="game-intro" class="game-intro" hidden><h2 id="game-intro-title"></h2><p id="game-intro-text"></p><button id="start-game-activity" class="next-challenge" type="button">¡Vamos a jugar! →</button></div>
+        <div id="syllable-game" class="syllable-game" hidden>
+          <div class="game-progress"><span id="game-round-label">Reto 1 de 3</span><button id="back-to-games" class="game-back" type="button">← Juegos</button></div>
+          <p class="game-instruction">Elige la sílaba que falta</p>
+          <div id="word-puzzle" class="word-puzzle" aria-live="polite"></div>
+          <div id="syllable-options" class="syllable-options" role="group" aria-label="Elige una sílaba"></div>
+          <p id="game-feedback" class="game-feedback" role="status" aria-live="polite">Toca una sílaba para completar la palabra.</p>
+          <div class="game-actions"><button id="say-word" class="say-word" type="button">♪ Escuchar palabra</button><button id="next-challenge" class="next-challenge" type="button" hidden>Siguiente →</button></div>
+        </div>
+        <div id="word-game" class="word-game" hidden>
+          <div class="game-progress"><span>Completa la melodía</span><button id="back-to-games-word" class="game-back" type="button">← Juegos</button></div>
+          <p class="game-instruction">¿Qué palabra es?</p>
+          <p id="word-hint" class="word-hint"></p>
+          <div id="word-letters" class="word-letters" aria-label="Letras de la palabra"></div>
+          <div id="note-attempts" class="note-attempts" aria-live="polite" aria-label="Cinco intentos disponibles"></div>
+          <div id="letter-keyboard" class="letter-keyboard" role="group" aria-label="Elige una letra"></div>
+          <p id="word-feedback" class="game-feedback" role="status" aria-live="polite">Tienes cinco notas para adivinar.</p>
+          <div class="game-actions"><button id="say-hidden-word" class="say-word" type="button" hidden>♪ Escuchar palabra</button><button id="retry-word-game" class="next-challenge" type="button" hidden>Jugar otra vez ↻</button></div>
+        </div>
+      </div>
+      <p class="songs-footnote">Sin prisa: puedes intentarlo tantas veces como quieras</p>
     </section>
     <p class="notice" id="notice">Vista previa · Cómic en preparación.</p>
   </main>

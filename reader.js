@@ -9,7 +9,10 @@ let speechRun = 0;
 const speechSupported = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
 const readerPage = document.querySelector('.reader[aria-label="Lector de cómic"]');
 const songsPage = el('songs-page');
+const gamesPage = el('games-page');
 let songPageOpen = false;
+let gamePageOpen = false;
+let activeGame = '';
 
 const feminineSpanishVoiceName = /(female|femenina|woman|mujer|helena|elvira|dalia|sabrina|sabina|paulina|m[oó]nica|luc[ií]a|camila|sof[ií]a|isabela|ximena|paloma|carmen|laura|mar[ií]a)/i;
 
@@ -76,13 +79,18 @@ function move(delta) {
 
 function showSongs(show) {
   songPageOpen = show;
+  gamePageOpen = false;
   songsPage.hidden = !show;
+  gamesPage.hidden = true;
   readerPage.hidden = show;
   readerPage.style.display = show ? 'none' : 'grid';
   songsPage.style.display = show ? 'grid' : 'none';
+  gamesPage.style.display = 'none';
   el('notice').hidden = show;
   el('open-songs').hidden = show;
+  el('open-games').hidden = show;
   el('open-songs').setAttribute('aria-pressed', String(show));
+  el('open-games').setAttribute('aria-pressed', 'false');
   if (show) stopReading();
   else {
     songCards.forEach(card => { card.querySelector('audio').pause(); updateSongCard(card); });
@@ -90,10 +98,270 @@ function showSongs(show) {
   }
 }
 
+function showGames(show) {
+  gamePageOpen = show;
+  songPageOpen = false;
+  gamesPage.hidden = !show;
+  songsPage.hidden = true;
+  readerPage.hidden = show;
+  readerPage.style.display = show ? 'none' : 'grid';
+  songsPage.style.display = 'none';
+  gamesPage.style.display = show ? 'grid' : 'none';
+  el('notice').hidden = show;
+  el('open-songs').hidden = show;
+  el('open-games').hidden = show;
+  el('open-games').setAttribute('aria-pressed', String(show));
+  el('open-songs').setAttribute('aria-pressed', 'false');
+  if (show) {
+    stopReading();
+    activeGame = '';
+    el('game-menu').hidden = false;
+    el('game-intro').hidden = true;
+    el('syllable-game').hidden = true;
+    el('word-game').hidden = true;
+    el('lokum-comment').textContent = '¡Elige un juego y jugamos juntas!';
+  }
+}
+
 el('open-songs').addEventListener('click', () => showSongs(true));
+el('open-games').addEventListener('click', () => showGames(true));
 el('cover-open-songs').addEventListener('click', () => showSongs(true));
 el('close-songs').addEventListener('click', () => showSongs(false));
+el('close-games').addEventListener('click', () => showGames(false));
 el('begin-reading').addEventListener('click', () => move(1));
+
+const syllableChallenges = [
+  { before: 'SO', after: 'RIA', answer: 'NO', options: ['NO', 'LO', 'ME'], word: 'SONORIA' },
+  { before: 'MÚ', after: 'CA', answer: 'SI', options: ['LA', 'SI', 'NO'], word: 'MÚSICA' },
+  { before: 'LO', after: '', answer: 'KUM', options: ['LUM', 'KUM', 'MÚS'], word: 'LOKUM' }
+];
+let challengeIndex = 0;
+let challengeSolved = false;
+
+function showGameIntro(type) {
+  activeGame = type;
+  el('game-menu').hidden = true;
+  el('syllable-game').hidden = true;
+  el('word-game').hidden = true;
+  el('game-intro').hidden = false;
+  if (type === 'syllable') {
+    el('game-intro-title').textContent = 'La sílaba perdida';
+    el('game-intro-text').textContent = 'Elige la sílaba que falta para completar cada palabra. Si te equivocas, puedes probar otra vez.';
+    el('lokum-comment').textContent = '¡Busca la sílaba que falta y completa la palabra!';
+  } else {
+    el('game-intro-title').textContent = 'Completa la melodía';
+    el('game-intro-text').textContent = 'Elige letras para descubrir una palabra secreta. Tienes cinco notas: cada error apaga una. ¡Puedes volver a jugar cuando quieras!';
+    el('lokum-comment').textContent = '¡Adivina la palabra letra por letra! Tienes cinco notas.';
+  }
+}
+
+function renderChallenge() {
+  const challenge = syllableChallenges[challengeIndex];
+  challengeSolved = false;
+  el('game-round-label').textContent = `Reto ${challengeIndex + 1} de ${syllableChallenges.length}`;
+  el('word-puzzle').replaceChildren();
+  for (const part of [challenge.before, '___', challenge.after]) {
+    if (!part) continue;
+    const tile = document.createElement('span');
+    tile.textContent = part;
+    el('word-puzzle').append(tile);
+  }
+  el('syllable-options').replaceChildren();
+  for (const option of challenge.options) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'syllable-option';
+    button.textContent = option;
+    button.addEventListener('click', () => {
+      if (challengeSolved) return;
+      if (option === challenge.answer) {
+        challengeSolved = true;
+        el('game-feedback').textContent = `¡Muy bien! ${challenge.word}.`;
+        el('lokum-comment').textContent = '¡Muy bien! ¡Encontraste la sílaba!';
+        el('word-puzzle').children[1].textContent = option;
+        el('word-puzzle').classList.add('word-correct');
+        el('syllable-options').querySelectorAll('button').forEach(item => { item.disabled = true; });
+        el('next-challenge').hidden = false;
+        el('say-word').hidden = false;
+      } else {
+        el('game-feedback').textContent = 'Casi. ¡Prueba otra vez!';
+        el('lokum-comment').textContent = '¡Casi! ¡Tú puedes!';
+      }
+    });
+    el('syllable-options').append(button);
+  }
+  el('word-puzzle').classList.remove('word-correct');
+  el('game-feedback').textContent = 'Toca una sílaba para completar la palabra.';
+  el('next-challenge').hidden = true;
+  el('next-challenge').textContent = challengeIndex === syllableChallenges.length - 1 ? 'Jugar otra vez ↻' : 'Siguiente →';
+}
+
+el('start-syllable-game').addEventListener('click', () => {
+  showGameIntro('syllable');
+});
+el('back-to-games').addEventListener('click', () => {
+  el('syllable-game').hidden = true;
+  el('word-game').hidden = true;
+  el('game-intro').hidden = true;
+  el('game-menu').hidden = false;
+  el('lokum-comment').textContent = '¡Elige un juego!';
+});
+el('next-challenge').addEventListener('click', () => {
+  challengeIndex = challengeIndex === syllableChallenges.length - 1 ? 0 : challengeIndex + 1;
+  renderChallenge();
+});
+el('say-word').addEventListener('click', () => {
+  if (!speechSupported) {
+    el('game-feedback').textContent = 'La voz no está disponible en este dispositivo.';
+    return;
+  }
+  window.speechSynthesis.cancel();
+  const { voice } = chooseSpanishVoice();
+  const spoken = new SpeechSynthesisUtterance(syllableChallenges[challengeIndex].word);
+  spoken.lang = 'es-ES';
+  spoken.rate = 0.8;
+  if (voice) spoken.voice = voice;
+  window.speechSynthesis.speak(spoken);
+});
+
+const wordCategories = [
+  { hint: 'La naturaleza', words: 'SOL LUNA NUBE MAR RÍO OLA ISLA FLOR ÁRBOL HOJA RAMA ROCA NIEVE LLUVIA VIENTO FUEGO AGUA TIERRA SOMBRA NOCHE DÍA CAMPO BOSQUE CIELO ESTRELLA' },
+  { hint: 'Un animal', words: 'GATO GATA PERRO PATO PEZ RANA SAPO OSO LOBO VACA MONO LEÓN TIGRE CEBRA MULA BURRO RATÓN CONEJO POLLO GALLO OVEJA CABRA CERDO FOCA LORO' },
+  { hint: 'La casa y la escuela', words: 'CASA MESA SILLA CAMA PUERTA TECHO PISO SALA SOFÁ VASO TAZA PLATO SOPA PAN LECHE LIBRO LÁPIZ GOMA REGLA MAPA RELOJ LLAVE CAJA ROPA MANTA' },
+  { hint: 'La música y Sonoria', words: 'NOTA RITMO BAILE MÚSICA CANTO VOZ CORO PIANO DISCO RADIO LUZ MAGIA BRILLO PORTAL REINA VIAJE MUNDO SUEÑO PASO AMIGA EQUIPO JUEGO SONORIA SONIDO CUENTO' },
+  { hint: 'Una acción', words: 'BAILAR CANTAR LEER JUGAR SALTAR MIRAR HABLAR SOÑAR AYUDAR REÍR CORRER COMER DORMIR ABRIR CERRAR SUBIR BAJAR SABER HACER TOCAR OÍR AMAR CUIDAR BRINCAR REPOSAR' },
+  { hint: 'Una palabra que describe algo', words: 'ROJO AZUL VERDE NEGRO BLANCO ALTO BAJO GRANDE CHICO FELIZ TRISTE LINDO SUAVE FUERTE RÁPIDO DULCE NUEVO VIEJO LIMPIO BUENO MALO CÁLIDO PEQUEÑO CORTO LARGO' }
+];
+const wordPool = wordCategories.flatMap(category => category.words.split(/\s+/).map(word => ({ word, hint: category.hint })));
+let wordDeck = [];
+let mysteryWord = '';
+let mysteryHint = '';
+const maximumMisses = 5;
+let guessedLetters = new Set();
+let wrongGuesses = 0;
+let wordGameFinished = false;
+
+function renderWordGame() {
+  const solved = wordGameFinished && [...mysteryWord].every(letter => guessedLetters.has(normalizeLetter(letter)));
+  el('word-hint').textContent = `Pista: ${mysteryHint}`;
+  el('word-letters').replaceChildren();
+  for (const letter of mysteryWord) {
+    const tile = document.createElement('span');
+    tile.textContent = guessedLetters.has(normalizeLetter(letter)) || wordGameFinished ? letter : '＿';
+    el('word-letters').append(tile);
+  }
+  el('note-attempts').replaceChildren();
+  for (let i = 0; i < maximumMisses; i++) {
+    const note = document.createElement('span');
+    note.className = i < maximumMisses - wrongGuesses ? 'note-lit' : 'note-dim';
+    note.textContent = '♫';
+    note.setAttribute('aria-hidden', 'true');
+    el('note-attempts').append(note);
+  }
+  el('note-attempts').setAttribute('aria-label', `${maximumMisses - wrongGuesses} de ${maximumMisses} notas disponibles`);
+  el('say-hidden-word').hidden = !wordGameFinished;
+  el('letter-keyboard').replaceChildren();
+  for (const letter of 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ') {
+    const key = document.createElement('button');
+    key.type = 'button';
+    key.className = 'letter-key';
+    key.textContent = letter;
+    key.setAttribute('aria-label', `Letra ${letter}`);
+    key.disabled = guessedLetters.has(letter) || wordGameFinished;
+    key.addEventListener('click', () => {
+      if (wordGameFinished || guessedLetters.has(letter)) return;
+      guessedLetters.add(letter);
+      if (![...mysteryWord].some(item => normalizeLetter(item) === letter)) {
+        wrongGuesses++;
+        el('lokum-comment').textContent = wrongGuesses >= maximumMisses
+          ? `La palabra era ${mysteryWord}. ¡Intentémoslo otra vez!`
+          : `¡Casi! Te quedan ${maximumMisses - wrongGuesses} notas.`;
+      } else {
+        el('lokum-comment').textContent = [...mysteryWord].every(item => guessedLetters.has(normalizeLetter(item)))
+          ? `¡Lo lograste! ¡${mysteryWord}!`
+          : '¡Muy bien! Esa letra sí está.';
+      }
+      const won = [...mysteryWord].every(item => guessedLetters.has(normalizeLetter(item)));
+      if (won) {
+        wordGameFinished = true;
+        el('word-feedback').textContent = `¡Muy bien! La palabra es ${mysteryWord}.`;
+      } else if (wrongGuesses >= maximumMisses) {
+        wordGameFinished = true;
+        el('word-feedback').textContent = `La palabra era ${mysteryWord}. ¡Juguemos otra vez!`;
+      } else {
+        el('word-feedback').textContent = wrongGuesses
+          ? `Te quedan ${maximumMisses - wrongGuesses} notas. ¡Prueba otra letra!`
+          : '¡Bien! Elige otra letra.';
+      }
+      el('retry-word-game').hidden = !wordGameFinished;
+      renderWordGame();
+    });
+    el('letter-keyboard').append(key);
+  }
+  el('retry-word-game').hidden = !wordGameFinished;
+  if (wordGameFinished && solved) el('word-feedback').textContent = `¡Muy bien! La palabra es ${mysteryWord}.`;
+}
+
+function startWordGame() {
+  guessedLetters = new Set();
+  wrongGuesses = 0;
+  wordGameFinished = false;
+  el('game-menu').hidden = true;
+  el('game-intro').hidden = true;
+  el('syllable-game').hidden = true;
+  el('word-game').hidden = false;
+  el('word-feedback').textContent = 'Tienes cinco notas para adivinar.';
+  if (wordDeck.length === 0) {
+    wordDeck = [...wordPool];
+    for (let i = wordDeck.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [wordDeck[i], wordDeck[j]] = [wordDeck[j], wordDeck[i]];
+    }
+  }
+  const selected = wordDeck.pop();
+  mysteryWord = selected.word;
+  mysteryHint = selected.hint;
+  el('lokum-comment').textContent = '¡Cada nota te da una oportunidad!';
+  renderWordGame();
+}
+
+function normalizeLetter(letter) {
+  const upper = letter.toLocaleUpperCase('es');
+  return ({ Á: 'A', É: 'E', Í: 'I', Ó: 'O', Ú: 'U', Ü: 'U' })[upper] || upper;
+}
+
+el('start-word-game').addEventListener('click', () => showGameIntro('word'));
+el('start-game-activity').addEventListener('click', () => {
+  el('game-intro').hidden = true;
+  if (activeGame === 'syllable') {
+    challengeIndex = 0;
+    el('syllable-game').hidden = false;
+    el('word-game').hidden = true;
+    el('lokum-comment').textContent = '¡Vamos! Yo te acompaño.';
+    renderChallenge();
+  } else if (activeGame === 'word') startWordGame();
+});
+el('back-to-games-word').addEventListener('click', () => {
+  el('word-game').hidden = true;
+  el('syllable-game').hidden = true;
+  el('game-intro').hidden = true;
+  el('game-menu').hidden = false;
+  el('lokum-comment').textContent = '¡Elige un juego!';
+});
+el('retry-word-game').addEventListener('click', startWordGame);
+el('say-hidden-word').addEventListener('click', () => {
+  if (!speechSupported) {
+    el('word-feedback').textContent = 'La voz no está disponible en este dispositivo.';
+    return;
+  }
+  window.speechSynthesis.cancel();
+  const { voice } = chooseSpanishVoice();
+  const spoken = new SpeechSynthesisUtterance(mysteryWord);
+  spoken.lang = 'es-ES';
+  spoken.rate = 0.8;
+  if (voice) spoken.voice = voice;
+  window.speechSynthesis.speak(spoken);
+});
 
 function formatTime(seconds) {
   if (!Number.isFinite(seconds)) return '0:00';
@@ -162,6 +430,7 @@ swipeArea.addEventListener('touchcancel', () => { touchStart = null; }, { passiv
 el('home').addEventListener('click', event => {
   event.preventDefault();
   if (songPageOpen) showSongs(false);
+  if (gamePageOpen) showGames(false);
   current = 0;
   render();
 });
