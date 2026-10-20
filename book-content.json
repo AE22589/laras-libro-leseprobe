@@ -64,6 +64,42 @@
       "status": "boceto_de_pagina_pendiente_de_revision"
     },
     {
+      "id": "S05-P01",
+      "title": "El pelaje de Lokum brilla",
+      "chapter": "Página 5 · Viñeta 1 de 4",
+      "text": "El pelaje de Lokum empezó a brillar. Saltó a la mesa.",
+      "image": "assets/s05-p01-lokum-awakens-v1.png",
+      "alt": "Lokum, la gata oscura y muy peluda, salta sobre la mesa mientras su pelaje empieza a brillar. Lara y Anne la miran sorprendidas.",
+      "status": "imagen_aprobada_texto_y_pagina_en_revision"
+    },
+    {
+      "id": "S05-P02",
+      "title": "Lokum habla",
+      "chapter": "Página 5 · Viñeta 2 de 4",
+      "text": "Lokum: «¡Oh, no! ¡Esto no es bueno!»",
+      "image": "assets/s05-p02-lokum-speaks-v1.png",
+      "alt": "Lokum está sobre la mesa y habla por primera vez. Lara y Anne la miran asombradas.",
+      "status": "imagen_aprobada_texto_y_pagina_en_revision"
+    },
+    {
+      "id": "S05-P03",
+      "title": "Lara se sorprende",
+      "chapter": "Página 5 · Viñeta 3 de 4",
+      "text": "Lara: «¡¿Lokum?! ¿Puedes hablar?»",
+      "image": "assets/s05-p03-lara-reacts-v1.png",
+      "alt": "Lara mira sorprendida a Lokum, que está sentada junto a ella. Anne observa a ambas.",
+      "status": "imagen_aprobada_texto_y_pagina_en_revision"
+    },
+    {
+      "id": "S05-P04",
+      "title": "Tenemos un problema",
+      "chapter": "Página 5 · Viñeta 4 de 4",
+      "text": "Lokum: «Sí. ¿Y qué? ¡Tenemos un problema enorme!»",
+      "image": "assets/s05-p04-problem-v1.png",
+      "alt": "Lokum levanta una pata y habla con Lara y Anne, que la escuchan con preocupación.",
+      "status": "imagen_aprobada_texto_y_pagina_en_revision"
+    },
+    {
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
