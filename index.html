@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#251a42">
   <title>Lara · El secreto de la melodía de las sombras</title>
-  <link rel="stylesheet" href="style.css?v=20261020-5">
-  <script src="reader.js?v=20261020-6" defer></script>
+  <link rel="stylesheet" href="style.css?v=20261020-7">
+  <script src="reader.js?v=20261020-7" defer></script>
 </head>
 <body>
-  <header class="masthead"><a href="#" id="home" aria-label="Volver al principio">✦ <span>El libro de Lara</span></a><span class="badge">Vista previa</span></header>
+  <header class="masthead"><a href="#" id="home" aria-label="Volver al principio">✦ <span>El libro de Lara</span></a><div class="masthead-actions"><button id="open-songs" class="songs-link" type="button">♫ <span>Canciones</span></button><span class="badge">Vista previa</span></div></header>
   <main>
     <section class="reader" aria-label="Lector de cómic">
       <div class="reader-top"><span id="chapter">Una aventura musical</span><span id="counter" aria-live="polite">1 / 5</span></div>
       <div class="art"><img id="cover" src="assets/portada-sonoria-v2-kpop.png" alt="Lara, Anne, Anne de Alemania y Lokum ante la ciudad musical de Sonoria."></div>
-      <div class="reading-text"><h1 id="scene-title">Lara y el secreto de la melodía de las sombras</h1><p id="story-text">Una aventura de Lara, Anne, Anne de Alemania y Lokum.</p></div>
+      <div class="reading-text"><h1 id="scene-title">Lara y el secreto de la melodía de las sombras</h1><p id="story-text">Una aventura de Lara, Anne, Anne de Alemania y Lokum.</p><div id="cover-actions" class="cover-actions"><button id="begin-reading" type="button">Leer el libro <span aria-hidden="true">→</span></button><button id="cover-open-songs" type="button">♫ <span>Escuchar canciones</span></button></div></div>
       <p id="audio-status" class="audio-status visually-hidden" role="status" aria-live="polite">Pulsa Escuchar para oír el texto.</p>
       <nav class="navigation" aria-label="Controles de lectura">
         <button id="previous" type="button" aria-label="Página anterior" disabled><span aria-hidden="true">←</span></button>
@@ -23,7 +23,17 @@
         <button id="next" type="button" aria-label="Página siguiente"><span aria-hidden="true">→</span></button>
       </nav>
     </section>
-    <p class="notice">Vista previa · Cómic en preparación.</p>
+    <section id="songs-page" class="reader songs-page" aria-label="Canciones de Lara" hidden>
+      <div class="songs-heading"><button id="close-songs" class="back-link" type="button" aria-label="Volver al libro">←</button><div><p class="eyebrow">MÚSICA DE LARA</p><h1>Canciones de Lara</h1><p class="songs-intro">Sus canciones para escuchar cuando quiera</p></div></div>
+      <div class="song-list">
+        <article class="song-card" data-track="0"><div class="song-icon" aria-hidden="true">♫</div><div class="song-info"><h2>Lara lo lograste</h2><p>Una canción de Lara</p><input class="song-progress" type="range" min="0" max="1000" value="0" aria-label="Progreso de Lara lo lograste"><span class="song-time">0:00</span></div><button class="song-play" type="button" aria-label="Reproducir Lara lo lograste">▶</button><audio preload="none" src="assets/songs/lara-lo-lograste.mp3"></audio></article>
+        <article class="song-card" data-track="1"><div class="song-icon" aria-hidden="true">♫</div><div class="song-info"><h2>Lara tu luz brillará</h2><p>Una canción de Lara</p><input class="song-progress" type="range" min="0" max="1000" value="0" aria-label="Progreso de Lara tu luz brillará"><span class="song-time">0:00</span></div><button class="song-play" type="button" aria-label="Reproducir Lara tu luz brillará">▶</button><audio preload="none" src="assets/songs/lara-tu-luz-brillara.mp3"></audio></article>
+        <article class="song-card song-upcoming"><div class="song-icon" aria-hidden="true">✦</div><div class="song-info"><h2>La próxima canción</h2><p>Próximamente</p></div><span class="coming-soon">PRÓXIMAMENTE</span></article>
+      </div>
+      <p class="songs-footnote">Toca ▶ para escuchar · Puedes pausar y continuar cuando quieras</p>
+    </section>
+    <p class="notice" id="notice">Vista previa · Cómic en preparación.</p>
   </main>
 </body>
 </html>
+

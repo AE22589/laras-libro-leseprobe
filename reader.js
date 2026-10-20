@@ -7,6 +7,9 @@ let reading = false;
 let utterance = null;
 let speechRun = 0;
 const speechSupported = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+const readerPage = document.querySelector('.reader[aria-label="Lector de cómic"]');
+const songsPage = el('songs-page');
+let songPageOpen = false;
 
 const feminineSpanishVoiceName = /(female|femenina|woman|mujer|helena|elvira|dalia|sabrina|sabina|paulina|m[oó]nica|luc[ií]a|camila|sof[ií]a|isabela|ximena|paloma|carmen|laura|mar[ií]a)/i;
 
@@ -28,6 +31,7 @@ function render() {
   el('scene-title').textContent = scene.title;
   el('scene-title').hidden = Boolean(scene.id);
   el('story-text').textContent = scene.text;
+  el('cover-actions').hidden = Boolean(scene.id);
   el('chapter').textContent = scene.chapter;
   el('scene-title').hidden = Boolean(scene.id);
   el('chapter').hidden = Boolean(scene.id);
@@ -60,6 +64,66 @@ function move(delta) {
   render();
 }
 
+function showSongs(show) {
+  songPageOpen = show;
+  songsPage.hidden = !show;
+  readerPage.hidden = show;
+  el('notice').hidden = show;
+  el('open-songs').hidden = show;
+  el('open-songs').setAttribute('aria-pressed', String(show));
+  if (show) stopReading();
+  else {
+    songCards.forEach(card => { card.querySelector('audio').pause(); updateSongCard(card); });
+    render();
+  }
+}
+
+el('open-songs').addEventListener('click', () => showSongs(true));
+el('cover-open-songs').addEventListener('click', () => showSongs(true));
+el('close-songs').addEventListener('click', () => showSongs(false));
+el('begin-reading').addEventListener('click', () => move(1));
+
+function formatTime(seconds) {
+  if (!Number.isFinite(seconds)) return '0:00';
+  const minutes = Math.floor(seconds / 60);
+  return `${minutes}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
+}
+
+const songCards = [...document.querySelectorAll('.song-card[data-track]')];
+function updateSongCard(card) {
+  const audio = card.querySelector('audio');
+  const button = card.querySelector('.song-play');
+  const range = card.querySelector('.song-progress');
+  const time = card.querySelector('.song-time');
+  const active = !audio.paused && !audio.ended;
+  button.textContent = active ? 'Ⅱ' : '▶';
+  button.setAttribute('aria-label', `${active ? 'Pausar' : 'Reproducir'} ${card.querySelector('h2').textContent}`);
+  range.value = audio.duration ? String(Math.round(audio.currentTime / audio.duration * 1000)) : '0';
+  time.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+}
+
+songCards.forEach(card => {
+  const audio = card.querySelector('audio');
+  const button = card.querySelector('.song-play');
+  const range = card.querySelector('.song-progress');
+  button.addEventListener('click', async () => {
+    for (const other of songCards) {
+      const otherAudio = other.querySelector('audio');
+      if (otherAudio !== audio) { otherAudio.pause(); updateSongCard(other); }
+    }
+    if (audio.paused) {
+      try { await audio.play(); }
+      catch { el('audio-status').textContent = 'No se pudo reproducir esta canción. Inténtalo de nuevo.'; }
+    } else audio.pause();
+    updateSongCard(card);
+  });
+  range.addEventListener('input', () => {
+    if (audio.duration) audio.currentTime = Number(range.value) / 1000 * audio.duration;
+  });
+  ['timeupdate', 'loadedmetadata', 'play', 'pause', 'ended'].forEach(eventName => audio.addEventListener(eventName, () => updateSongCard(card)));
+  updateSongCard(card);
+});
+
 el('previous').addEventListener('click', () => move(-1));
 el('next').addEventListener('click', () => move(1));
 
@@ -85,6 +149,7 @@ swipeArea.addEventListener('touchcancel', () => { touchStart = null; }, { passiv
 
 el('home').addEventListener('click', event => {
   event.preventDefault();
+  if (songPageOpen) showSongs(false);
   current = 0;
   render();
 });
