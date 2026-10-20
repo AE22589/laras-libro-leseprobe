@@ -16,6 +16,7 @@ function stopReading() {
   reading = false;
   utterance = null;
   el('speak-label').textContent = 'Escuchar';
+  el('speak').setAttribute('aria-label', 'Leer en voz alta');
   el('speak').setAttribute('aria-pressed', 'false');
 }
 
@@ -117,6 +118,7 @@ el('speak').addEventListener('click', () => {
     reading = false;
     utterance = null;
     el('speak-label').textContent = 'Escuchar';
+    el('speak').setAttribute('aria-label', 'Leer en voz alta');
     el('speak').setAttribute('aria-pressed', 'false');
     el('audio-status').textContent = 'Puedes volver a escucharlo.';
   };
@@ -125,12 +127,14 @@ el('speak').addEventListener('click', () => {
     reading = false;
     utterance = null;
     el('speak-label').textContent = 'Escuchar';
+    el('speak').setAttribute('aria-label', 'Leer en voz alta');
     el('speak').setAttribute('aria-pressed', 'false');
     el('audio-status').textContent = `No se pudo iniciar la lectura (${event.error || 'error de voz'}). Inténtalo de nuevo.`;
   };
 
   reading = true;
   el('speak-label').textContent = 'Detener';
+  el('speak').setAttribute('aria-label', 'Detener lectura');
   el('speak').setAttribute('aria-pressed', 'true');
   el('audio-status').textContent = femaleVoice
     ? `Leyendo con voz femenina: ${femaleVoice.name}`
@@ -147,6 +151,7 @@ el('speak').addEventListener('click', () => {
     reading = false;
     utterance = null;
     el('speak-label').textContent = 'Escuchar';
+    el('speak').setAttribute('aria-label', 'Leer en voz alta');
     el('speak').setAttribute('aria-pressed', 'false');
     el('audio-status').textContent = 'No se pudo iniciar la lectura. Inténtalo de nuevo.';
   }

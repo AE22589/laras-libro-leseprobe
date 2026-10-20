@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#251a42">
   <title>Lara · El secreto de la melodía de las sombras</title>
-  <link rel="stylesheet" href="style.css?v=20261020-1">
-  <script src="reader.js?v=20261020-1" defer></script>
+  <link rel="stylesheet" href="style.css?v=20261020-2">
+  <script src="reader.js?v=20261020-2" defer></script>
 </head>
 <body>
   <header class="masthead"><a href="#" id="home" aria-label="Volver al principio">✦ <span>El libro de Lara</span></a><span class="badge">Vista previa</span></header>
@@ -15,9 +15,14 @@
       <div class="reader-top"><span id="chapter">Una aventura musical</span><span id="counter" aria-live="polite">1 / 5</span></div>
       <div class="art"><img id="cover" src="assets/portada-sonoria-v2-kpop.png" alt="Lara, Anne, Anne de Alemania y Lokum ante la ciudad musical de Sonoria."></div>
       <div class="reading-text"><h1 id="scene-title">Lara y el secreto de la melodía de las sombras</h1><p id="story-text">Una aventura de Lara, Anne, Anne de Alemania y Lokum.</p></div>
-      <div class="tools"><button id="speak" class="speak" type="button" aria-pressed="false"><span aria-hidden="true">♫</span> <span id="speak-label">Escuchar</span></button><button id="size" class="size" aria-pressed="false" type="button" aria-label="Aumentar el tamaño del texto">A<span>A</span></button></div>
-      <p id="audio-status" class="audio-status" role="status">Pulsa Escuchar para oír el texto.</p>
-      <nav class="navigation" aria-label="Cambiar de página"><button id="previous" type="button" disabled><span aria-hidden="true">←</span> Atrás</button><span class="dots" id="dots" aria-hidden="true"></span><button id="next" type="button">Siguiente <span aria-hidden="true">→</span></button></nav>
+      <p id="audio-status" class="audio-status visually-hidden" role="status" aria-live="polite">Pulsa Escuchar para oír el texto.</p>
+      <nav class="navigation" aria-label="Controles de lectura">
+        <button id="previous" type="button" aria-label="Página anterior" disabled><span aria-hidden="true">←</span></button>
+        <button id="speak" class="speak" type="button" aria-label="Leer en voz alta" aria-pressed="false"><span aria-hidden="true">♪</span><span id="speak-label" class="visually-hidden">Escuchar</span></button>
+        <button id="size" class="size" aria-pressed="false" type="button" aria-label="Aumentar el tamaño del texto">A<span>A</span></button>
+        <span class="dots" id="dots" aria-hidden="true"></span>
+        <button id="next" type="button" aria-label="Página siguiente"><span aria-hidden="true">→</span></button>
+      </nav>
     </section>
     <p class="notice">Vista previa · Cómic en preparación.</p>
   </main>
