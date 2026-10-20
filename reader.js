@@ -195,7 +195,11 @@ function renderChallenge() {
   el('word-puzzle').replaceChildren();
   for (let i = 0; i < challenge.syllables.length; i++) {
     const tile = document.createElement('span');
-    tile.textContent = i === missingSyllableIndex ? '___' : challenge.syllables[i];
+    tile.textContent = i === missingSyllableIndex ? '' : challenge.syllables[i];
+    if (i === missingSyllableIndex) {
+      tile.setAttribute('role', 'img');
+      tile.setAttribute('aria-label', 'Sílaba que falta');
+    }
     el('word-puzzle').append(tile);
   }
   const shuffledOptions = [answer, ...shuffle(syllableBank.filter(part => part !== answer)).slice(0, 2)];
