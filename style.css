@@ -15,3 +15,5 @@
 .games-page .game-menu{grid-template-rows:repeat(2,112px)!important;align-content:center!important;flex:1}
 .games-page .game-choice{min-height:0;padding:8px 12px}
 @media(max-width:360px){.games-page .game-menu{grid-template-rows:repeat(2,104px)!important}.games-page .game-choice{padding:7px 9px}}
+.reader.cover-home{grid-template-rows:minmax(0,1fr)}
+.reader.cover-home .reading-text{display:none}

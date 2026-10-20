@@ -31,6 +31,9 @@ function updateHeaderSelection() {
   el('home').classList.toggle('is-active', bookActive);
   if (bookActive) el('home').setAttribute('aria-current', 'page');
   else el('home').removeAttribute('aria-current');
+  el('home').setAttribute('aria-label', songPageOpen || gamePageOpen
+    ? 'Volver al libro'
+    : current === 0 ? 'Empezar a leer' : 'Volver a la portada');
   el('open-games').classList.toggle('is-active', gamePageOpen);
   el('open-games').setAttribute('aria-pressed', String(gamePageOpen));
   el('open-songs').classList.toggle('is-active', songPageOpen);
@@ -47,7 +50,6 @@ function render() {
   el('scene-title').textContent = scene.title;
   el('scene-title').hidden = Boolean(scene.id);
   el('story-text').textContent = scene.text;
-  el('cover-actions').hidden = current !== 0;
   el('chapter').textContent = scene.chapter;
   el('scene-title').hidden = Boolean(scene.id);
   el('chapter').hidden = Boolean(scene.id);
@@ -131,10 +133,8 @@ function showGames(show) {
 
 el('open-songs').addEventListener('click', () => showSongs(true));
 el('open-games').addEventListener('click', () => showGames(true));
-el('cover-open-songs').addEventListener('click', () => showSongs(true));
 el('close-songs').addEventListener('click', () => showSongs(false));
 el('close-games').addEventListener('click', () => showGames(false));
-el('begin-reading').addEventListener('click', () => move(1));
 
 const syllableWordSources = `
 CA-SA ME-SA SI-LLA CA-MA MA-NO PA-TO GA-TO PE-LO LU-NA NU-BE FO-CA LO-RO O-SO MO-NO RA-NA VA-CA PE-RRO PE-RRA CA-BRA LO-BO VI-NO MO-TO RO-PA PA-LA RA-MA RO-CA NI-ÑO CU-NA TA-PA TI-ZA ZA-PA-TO PE-LO-TA CA-MI-SA VEN-TA-NA CO-CI-NA MÚ-SI-CA BO-TE-LLA MAR-TES A-MI-GO A-MI-GA O-RE-JA CA-BE-ZA CO-RA-ZÓN ES-TRE-LLA NA-RAN-JA MAN-ZA-NA BA-NA-NA PLÁ-TA-NO FRE-SA PE-RA U-VA LI-MÓN ME-LÓN SO-PA QUE-SO LE-CHE HUE-VO A-RROZ TOR-TA GA-LLE-TA HE-LA-DO YO-GUR A-GUA FUE-GO TIE-RRA VIEN-TO LLU-VIA NIE-VE HO-JA ÁR-BOL CIE-LO RÍ-O DÍ-A NO-CHE TAR-DE VE-RA-NO O-TO-ÑO BAI-LAR CAN-TAR JU-GAR SAL-TAR CO-RRER CO-MER DOR-MIR LE-ER ES-CUE-LA LI-BRO LÁ-PIZ GO-MA RE-GLA PLU-MA PA-PEL MUN-DO A-MOR FE-LIZ BO-NI-TO BO-NI-TA A-LE-GRE DUL-CE FUER-TE RO-JO A-ZUL VER-DE NE-GRO BLAN-CO NA-RIZ BO-CA PIER-NA CA-RA O-JOS BRA-ZO DE-DOS CA-MI-NO A-MI-GOS MÚ-SI-CO CAN-CIÓN SO-NI-DO PA-LA-BRA LE-TRAS SÍ-LA-BA SON-RI-SA RE-GA-LO FIES-TA
@@ -472,9 +472,10 @@ swipeArea.addEventListener('touchcancel', () => { touchStart = null; }, { passiv
 
 el('home').addEventListener('click', event => {
   event.preventDefault();
+  const wasCover = current === 0 && !songPageOpen && !gamePageOpen;
   if (songPageOpen) showSongs(false);
   if (gamePageOpen) showGames(false);
-  current = 0;
+  current = wasCover ? Math.min(1, scenes.length - 1) : 0;
   render();
 });
 
