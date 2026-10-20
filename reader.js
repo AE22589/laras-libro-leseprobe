@@ -26,16 +26,15 @@ function render() {
   el('cover').src = scene.image;
   el('cover').alt = scene.alt;
   el('scene-title').textContent = scene.title;
+  el('scene-title').hidden = Boolean(scene.id);
   el('story-text').textContent = scene.text;
   el('chapter').textContent = scene.chapter;
+  el('scene-title').hidden = Boolean(scene.id);
+  el('chapter').hidden = Boolean(scene.id);
+  el('chapter').hidden = Boolean(scene.id);
   el('counter').textContent = `${current + 1} / ${scenes.length}`;
   el('previous').disabled = current === 0;
   el('next').disabled = current === scenes.length - 1;
-  const dots = el('dots');
-  if (dots.childElementCount !== scenes.length) {
-    dots.replaceChildren(...scenes.map(() => document.createElement('i')));
-  }
-  dots.querySelectorAll('i').forEach((dot, i) => dot.classList.toggle('active', i === current));
   el('audio-status').textContent = speechSupported
     ? 'Pulsa Escuchar. Se prioriza una voz femenina en español si está instalada.'
     : 'Este navegador no permite leer en voz alta.';
@@ -109,7 +108,10 @@ el('speak').addEventListener('click', () => {
   speechRun++;
   const run = speechRun;
   const { voice, femaleVoice, hasVoices } = chooseSpanishVoice();
-  utterance = new SpeechSynthesisUtterance(`${scenes[current].title}. ${scenes[current].text}`);
+  const spokenText = scenes[current].id
+    ? scenes[current].text
+    : `${scenes[current].title}. ${scenes[current].text}`;
+  utterance = new SpeechSynthesisUtterance(spokenText);
   utterance.lang = 'es-ES';
   utterance.rate = 0.85;
   if (voice) utterance.voice = voice;
