@@ -127,6 +127,33 @@
       "title": "Una señal hacia Alemania"
     },
     {
+      "id": "S07-P01",
+      "title": "Una melodía incompleta",
+      "chapter": "Página 7 · Viñeta 1 de 3",
+      "text": "Anne de Alemania escucha una melodía incompleta que llega desde Sonoria.\nAnne de Alemania: «¡Qué extraño! ¡A esta melodía le faltan notas!»",
+      "image": "assets/s07-p01-hamburg-incomplete-melody.png",
+      "alt": "Anne de Alemania escucha una melodía incompleta en su apartamento de Hamburgo. Sus dos periquitos están juntos en una jaula elevada junto a la ventana.",
+      "status": "ilustracion_aprobada_texto_borrador"
+    },
+    {
+      "id": "S07-P02",
+      "title": "El portal musical",
+      "chapter": "Página 7 · Viñeta 2 de 3",
+      "text": "Anne completa las notas cantando. Entonces se abre un portal hacia el salón de Lara.\nAnne de Alemania: «¡Ya está!»",
+      "image": "assets/s07-p02-hamburg-portal-music-video.png",
+      "alt": "Anne de Alemania completa la melodía y abre un portal hacia el salón de Lara. En el televisor de Lara aparece un concierto de K-Pop.",
+      "status": "ilustracion_aprobada_texto_borrador"
+    },
+    {
+      "id": "S07-P03",
+      "title": "Lara pide ayuda",
+      "chapter": "Página 7 · Viñeta 3 de 3",
+      "text": "Lara: «¡Anne! ¡Te necesitamos!»\nAnne de Alemania: «¡Voy enseguida!»",
+      "image": "assets/s07-p03-lara-portal-music-video.png",
+      "alt": "Lara saluda desde su lado del portal y pide ayuda. Lleva su chaqueta negra y rosa y el mismo concierto de K-Pop continúa en el televisor.",
+      "status": "ilustracion_aprobada_texto_borrador"
+    },
+    {
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
