@@ -147,6 +147,17 @@ const syllableBank = [...new Set(syllableChallenges.flatMap(challenge => challen
 let challengeIndex = 0;
 let challengeSolved = false;
 let missingSyllableIndex = 0;
+const syllablePraise = [
+  '¡Excelente! Has encontrado la sílaba.',
+  '¡Muy bien! Cada vez lees mejor.',
+  '¡Genial! Esa sílaba era la correcta.',
+  '¡Lo lograste! ¡Qué buen oído!',
+  '¡Fantástico! Has completado la palabra.',
+  '¡Bravo! Tu lectura suena genial.',
+  '¡Qué bien! Has unido las sílabas.',
+  '¡Estupendo! Sigue así, pequeña estrella.'
+];
+let lastSyllablePraise = -1;
 
 function shuffle(items) {
   const shuffled = [...items];
@@ -200,7 +211,12 @@ function renderChallenge() {
       if (option === answer) {
         challengeSolved = true;
         el('game-feedback').textContent = `¡Muy bien! ${challenge.word}.`;
-        el('lokum-comment').textContent = '¡Muy bien! ¡Encontraste la sílaba!';
+        let praiseIndex = Math.floor(Math.random() * syllablePraise.length);
+        if (syllablePraise.length > 1 && praiseIndex === lastSyllablePraise) {
+          praiseIndex = (praiseIndex + 1 + Math.floor(Math.random() * (syllablePraise.length - 1))) % syllablePraise.length;
+        }
+        lastSyllablePraise = praiseIndex;
+        el('lokum-comment').textContent = syllablePraise[praiseIndex];
         el('word-puzzle').children[missingSyllableIndex].textContent = option;
         el('word-puzzle').classList.add('word-correct');
         el('syllable-options').querySelectorAll('button').forEach(item => { item.disabled = true; });
