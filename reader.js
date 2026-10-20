@@ -26,12 +26,13 @@ function stopReading() {
 function render() {
   stopReading();
   const scene = scenes[current];
+  readerPage.classList.toggle('cover-home', current === 0);
   el('cover').src = scene.image;
   el('cover').alt = scene.alt;
   el('scene-title').textContent = scene.title;
   el('scene-title').hidden = Boolean(scene.id);
   el('story-text').textContent = scene.text;
-  el('cover-actions').hidden = Boolean(scene.id);
+  el('cover-actions').hidden = current !== 0;
   el('chapter').textContent = scene.chapter;
   el('scene-title').hidden = Boolean(scene.id);
   el('chapter').hidden = Boolean(scene.id);
@@ -240,7 +241,7 @@ document.addEventListener('keydown', event => {
 });
 
 if (!speechSupported) el('speak').disabled = true;
-fetch('book-content.json?v=20261020-7')
+fetch('book-content.json?v=20261020-8')
   .then(response => {
     if (!response.ok) throw new Error('No se pudo cargar el contenido.');
     return response.json();

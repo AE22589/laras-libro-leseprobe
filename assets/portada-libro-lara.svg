@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1680 1840" role="img" aria-labelledby="title description">
+  <title id="title">Lara y el secreto de la melodía de las sombras</title>
+  <desc id="description">Portada ilustrada de Lara, Anne, Anne de Alemania y Lokum en la ciudad musical de Sonoria. Una aventura de Lara, Anne, Anne de Alemania y Lokum.</desc>
+  <defs>
+    <linearGradient id="night" x2="0" y2="1">
+      <stop stop-color="#10175d"/>
+      <stop offset=".52" stop-color="#242b83"/>
+      <stop offset="1" stop-color="#303489"/>
+    </linearGradient>
+    <linearGradient id="stage" x2="0" y2="1">
+      <stop stop-color="#292b84"/>
+      <stop offset=".42" stop-color="#40317f"/>
+      <stop offset="1" stop-color="#261c63"/>
+    </linearGradient>
+    <linearGradient id="gold" x2="0" y2="1">
+      <stop stop-color="#fff1bd"/>
+      <stop offset=".45" stop-color="#f4d47e"/>
+      <stop offset="1" stop-color="#dfa94f"/>
+    </linearGradient>
+    <linearGradient id="topFade" x2="0" y2="1">
+      <stop stop-color="#17216b" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#252c84" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bottomFade" x2="0" y2="1">
+      <stop stop-color="#2a2d86" stop-opacity="0"/>
+      <stop offset="1" stop-color="#30205e" stop-opacity=".86"/>
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 .48  0 1 0 0 .34  0 0 1 0 .08  0 0 0 .65 0" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="atmosphere"><feGaussianBlur stdDeviation="24"/></filter>
+  </defs>
+
+  <rect width="1680" height="1840" fill="url(#night)"/>
+  <image x="0" y="0" width="1680" height="1840" preserveAspectRatio="none" opacity=".12" filter="url(#atmosphere)" xlink:href="portada-sonoria-v4-grafica.png"/>
+  <rect width="1680" height="430" fill="url(#night)" opacity=".9"/>
+
+  <!-- Soft, color-matched skyline extensions: the image world continues without a banner. -->
+  <g fill="#6174dc" opacity=".3">
+    <path d="M84 430V279l34-31 34 31v151h-68zm18-151 16-94 16 94z"/>
+    <path d="M1340 430V250l47-43 48 43v180h-95zm25-180 22-142 23 142z"/>
+    <path d="M1450 430V318l27-24 28 24v112zM1275 430V345l20-18 21 18v85z"/>
+  </g>
+  <g fill="#f1d080" opacity=".42">
+    <path d="M115 315h8v18h-8zm0 38h8v18h-8zm1257-116h9v21h-9zm0 43h9v21h-9zm85 57h8v18h-8z"/>
+  </g>
+  <g fill="none" stroke-linecap="round" opacity=".43">
+    <path d="M196 351c165-134 328-161 489-80" stroke="#8e78ff" stroke-width="5"/>
+    <path d="M1000 343c169-104 333-116 490-43" stroke="#f180df" stroke-width="4"/>
+  </g>
+  <g fill="#fff0b8" opacity=".85">
+    <path d="M277 161l5 16 16 5-16 5-5 16-5-16-16-5 16-5zm1094 53l4 13 13 4-13 4-4 13-4-13-13-4 13-4zm-909 110l4 11 11 4-11 4-4 11-4-11-11-4 11-4z"/>
+  </g>
+  <g fill="#e9d68f" opacity=".65">
+    <circle cx="437" cy="119" r="3"/><circle cx="1227" cy="121" r="4"/><circle cx="1510" cy="159" r="3"/><circle cx="177" cy="231" r="3"/><circle cx="957" cy="108" r="3"/>
+  </g>
+
+  <g text-anchor="middle" filter="url(#softGlow)">
+    <text x="840" y="174" fill="url(#gold)" stroke="#42315e" stroke-opacity=".68" stroke-width="3" paint-order="stroke" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="82" letter-spacing=".4">Lara y el secreto de la</text>
+    <text x="840" y="273" fill="url(#gold)" stroke="#42315e" stroke-opacity=".68" stroke-width="3" paint-order="stroke" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="82" letter-spacing=".4">melodía de las sombras</text>
+  </g>
+  <path d="M535 324h610" stroke="#f0d27d" stroke-opacity=".55" stroke-width="2"/>
+  <path d="M840 313l8 11-8 11-8-11z" fill="#f2d990"/>
+
+  <image x="0" y="430" width="1680" height="945" preserveAspectRatio="none" xlink:href="portada-sonoria-v4-grafica.png"/>
+  <rect x="0" y="430" width="1680" height="60" fill="url(#topFade)"/>
+  <rect x="0" y="1325" width="1680" height="150" fill="url(#bottomFade)"/>
+  <rect y="1375" width="1680" height="465" fill="url(#stage)"/>
+  <g fill="none" stroke-linecap="round" opacity=".52">
+    <path d="M0 1437c244-30 410 17 608 0s418-26 607 0 314 25 465-1" stroke="#ac88ff" stroke-width="4"/>
+    <path d="M0 1502c252 17 391-14 618 2s415 17 620-1 304-20 442 0" stroke="#f180df" stroke-width="3"/>
+    <path d="M0 1775c310-22 466 27 724 2s540-24 956 9" stroke="#8378ee" stroke-width="3" opacity=".65"/>
+  </g>
+  <g fill="#f7d887" opacity=".8">
+    <path d="M266 1472l5 15 15 5-15 5-5 15-5-15-15-5 15-5zm1128 73l4 12 12 4-12 4-4 12-4-12-12-4 12-4z"/>
+  </g>
+  <g text-anchor="middle" filter="url(#softGlow)">
+    <text x="840" y="1605" fill="#fff3d5" stroke="#302053" stroke-opacity=".6" stroke-width="2" paint-order="stroke" font-family="Georgia, 'Times New Roman', serif" font-size="54" letter-spacing=".5">Una aventura de Lara, Anne,</text>
+    <text x="840" y="1670" fill="#fff3d5" stroke="#302053" stroke-opacity=".6" stroke-width="2" paint-order="stroke" font-family="Georgia, 'Times New Roman', serif" font-size="54" letter-spacing=".5">Anne de Alemania y Lokum</text>
+  </g>
+  <text x="840" y="1775" text-anchor="middle" fill="#f2d990" fill-opacity=".78" font-family="Georgia, serif" font-size="23" letter-spacing="7">SONORIA ✦</text>
+</svg>
