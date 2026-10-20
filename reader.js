@@ -136,13 +136,26 @@ el('close-songs').addEventListener('click', () => showSongs(false));
 el('close-games').addEventListener('click', () => showGames(false));
 el('begin-reading').addEventListener('click', () => move(1));
 
-const syllableChallenges = [
-  { before: 'SO', after: 'RIA', answer: 'NO', options: ['NO', 'LO', 'ME'], word: 'SONORIA' },
-  { before: 'MÚ', after: 'CA', answer: 'SI', options: ['LA', 'SI', 'NO'], word: 'MÚSICA' },
-  { before: 'LO', after: '', answer: 'KUM', options: ['LUM', 'KUM', 'MÚS'], word: 'LOKUM' }
-];
+const syllableWordSources = `
+CA-SA ME-SA SI-LLA CA-MA MA-NO PA-TO GA-TO PE-LO LU-NA NU-BE FO-CA LO-RO O-SO MO-NO RA-NA VA-CA PE-RRO PE-RRA CA-BRA LO-BO VI-NO MO-TO RO-PA PA-LA RA-MA RO-CA NI-ÑO CU-NA TA-PA TI-ZA ZA-PA-TO PE-LO-TA CA-MI-SA VEN-TA-NA CO-CI-NA MÚ-SI-CA BO-TE-LLA MAR-TES A-MI-GO A-MI-GA O-RE-JA CA-BE-ZA CO-RA-ZÓN ES-TRE-LLA NA-RAN-JA MAN-ZA-NA BA-NA-NA PLÁ-TA-NO FRE-SA PE-RA U-VA LI-MÓN ME-LÓN SO-PA QUE-SO LE-CHE HUE-VO A-RROZ TOR-TA GA-LLE-TA HE-LA-DO YO-GUR A-GUA FUE-GO TIE-RRA VIEN-TO LLU-VIA NIE-VE HO-JA ÁR-BOL CIE-LO RÍ-O DÍ-A NO-CHE TAR-DE VE-RA-NO O-TO-ÑO BAI-LAR CAN-TAR JU-GAR SAL-TAR CO-RRER CO-MER DOR-MIR LE-ER ES-CUE-LA LI-BRO LÁ-PIZ GO-MA RE-GLA PLU-MA PA-PEL MUN-DO A-MOR FE-LIZ BO-NI-TO BO-NI-TA A-LE-GRE DUL-CE FUER-TE RO-JO A-ZUL VER-DE NE-GRO BLAN-CO NA-RIZ BO-CA PIER-NA CA-RA O-JOS BRA-ZO DE-DOS CA-MI-NO A-MI-GOS MÚ-SI-CO CAN-CIÓN SO-NI-DO PA-LA-BRA LE-TRAS SÍ-LA-BA SON-RI-SA RE-GA-LO FIES-TA
+`.trim().split(/\s+/);
+const syllableChallenges = syllableWordSources.map(source => {
+  const syllables = source.split('-');
+  return { syllables, word: syllables.join('') };
+});
+const syllableBank = [...new Set(syllableChallenges.flatMap(challenge => challenge.syllables))];
 let challengeIndex = 0;
 let challengeSolved = false;
+let missingSyllableIndex = 0;
+
+function shuffle(items) {
+  const shuffled = [...items];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
 
 function showGameIntro(type) {
   activeGame = type;
@@ -152,39 +165,43 @@ function showGameIntro(type) {
   el('game-intro').hidden = false;
   if (type === 'syllable') {
     el('game-intro-title').textContent = 'La sílaba perdida';
-    el('game-intro-text').textContent = 'Elige la sílaba que falta para completar cada palabra. Si te equivocas, puedes probar otra vez.';
-    el('lokum-comment').textContent = '¡Busca la sílaba que falta y completa la palabra!';
+    el('game-intro-text').textContent = 'Elige la sílaba que falta para completar cada palabra. Hay más de 100 palabras para practicar y puedes volver a intentarlo.';
+    el('lokum-comment').textContent = '¡Vamos a practicar más de 100 palabras, una sílaba a la vez!';
   } else {
     el('game-intro-title').textContent = 'Completa la melodía';
-    el('game-intro-text').textContent = 'Elige letras para descubrir una palabra secreta. Tienes cinco notas: cada error apaga una. ¡Puedes volver a jugar cuando quieras!';
-    el('lokum-comment').textContent = '¡Adivina la palabra letra por letra! Tienes cinco notas.';
+    el('game-intro-text').textContent = 'Elige letras para descubrir una palabra secreta. Tienes diez notas: cada error apaga una. ¡Puedes volver a jugar cuando quieras!';
+    el('lokum-comment').textContent = '¡Adivina la palabra letra por letra! Tienes diez notas.';
   }
 }
 
 function renderChallenge() {
   const challenge = syllableChallenges[challengeIndex];
   challengeSolved = false;
+  el('say-word').hidden = true;
   el('game-round-label').textContent = `Reto ${challengeIndex + 1} de ${syllableChallenges.length}`;
+  missingSyllableIndex = Math.floor(Math.random() * challenge.syllables.length);
+  const answer = challenge.syllables[missingSyllableIndex];
   el('word-puzzle').replaceChildren();
-  for (const part of [challenge.before, '___', challenge.after]) {
-    if (!part) continue;
+  for (let i = 0; i < challenge.syllables.length; i++) {
     const tile = document.createElement('span');
-    tile.textContent = part;
+    tile.textContent = i === missingSyllableIndex ? '___' : challenge.syllables[i];
     el('word-puzzle').append(tile);
   }
+  const shuffledOptions = [answer, ...shuffle(syllableBank.filter(part => part !== answer)).slice(0, 2)];
+  const options = shuffle(shuffledOptions);
   el('syllable-options').replaceChildren();
-  for (const option of challenge.options) {
+  for (const option of options) {
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'syllable-option';
     button.textContent = option;
     button.addEventListener('click', () => {
       if (challengeSolved) return;
-      if (option === challenge.answer) {
+      if (option === answer) {
         challengeSolved = true;
         el('game-feedback').textContent = `¡Muy bien! ${challenge.word}.`;
         el('lokum-comment').textContent = '¡Muy bien! ¡Encontraste la sílaba!';
-        el('word-puzzle').children[1].textContent = option;
+        el('word-puzzle').children[missingSyllableIndex].textContent = option;
         el('word-puzzle').classList.add('word-correct');
         el('syllable-options').querySelectorAll('button').forEach(item => { item.disabled = true; });
         el('next-challenge').hidden = false;
@@ -242,7 +259,7 @@ const wordPool = wordCategories.flatMap(category => category.words.split(/\s+/).
 let wordDeck = [];
 let mysteryWord = '';
 let mysteryHint = '';
-const maximumMisses = 5;
+const maximumMisses = 10;
 let guessedLetters = new Set();
 let wrongGuesses = 0;
 let wordGameFinished = false;
@@ -320,7 +337,7 @@ function startWordGame() {
   el('game-intro').hidden = true;
   el('syllable-game').hidden = true;
   el('word-game').hidden = false;
-  el('word-feedback').textContent = 'Tienes cinco notas para adivinar.';
+  el('word-feedback').textContent = 'Tienes diez notas para adivinar.';
   if (wordDeck.length === 0) {
     wordDeck = [...wordPool];
     for (let i = wordDeck.length - 1; i > 0; i--) {
