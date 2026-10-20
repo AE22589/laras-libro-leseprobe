@@ -56,7 +56,7 @@
     <circle cx="437" cy="119" r="3"/><circle cx="1227" cy="121" r="4"/><circle cx="1510" cy="159" r="3"/><circle cx="177" cy="231" r="3"/><circle cx="957" cy="108" r="3"/>
   </g>
 
-  <g text-anchor="middle" filter="url(#softGlow)">
+  <g text-anchor="middle">
     <text x="840" y="174" fill="url(#gold)" stroke="#42315e" stroke-opacity=".68" stroke-width="3" paint-order="stroke" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="82" letter-spacing=".4">Lara y el secreto de la</text>
     <text x="840" y="273" fill="url(#gold)" stroke="#42315e" stroke-opacity=".68" stroke-width="3" paint-order="stroke" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="82" letter-spacing=".4">melodía de las sombras</text>
   </g>
@@ -75,7 +75,7 @@
   <g fill="#f7d887" opacity=".8">
     <path d="M266 1472l5 15 15 5-15 5-5 15-5-15-15-5 15-5zm1128 73l4 12 12 4-12 4-4 12-4-12-12-4 12-4z"/>
   </g>
-  <g text-anchor="middle" filter="url(#softGlow)">
+  <g text-anchor="middle">
     <text x="840" y="1605" fill="#fff3d5" stroke="#302053" stroke-opacity=".6" stroke-width="2" paint-order="stroke" font-family="Georgia, 'Times New Roman', serif" font-size="54" letter-spacing=".5">Una aventura de Lara, Anne,</text>
     <text x="840" y="1670" fill="#fff3d5" stroke="#302053" stroke-opacity=".6" stroke-width="2" paint-order="stroke" font-family="Georgia, 'Times New Roman', serif" font-size="54" letter-spacing=".5">Anne de Alemania y Lokum</text>
   </g>
