@@ -5,7 +5,7 @@
       "title": "Lara y el secreto de la melodía de las sombras",
       "chapter": "Una aventura musical",
       "text": "Una aventura de Lara, Anne, Anne de Alemania y Lokum.",
-      "image": "assets/portada-aprobada.png",
+      "image": "assets/portada-aprobada.webp",
       "alt": "Lara, Anne, Anne de Alemania y Lokum ante la ciudad musical de Sonoria, con el título Lara y el secreto de la melodía de las sombras.",
       "status": "portada_provisional"
     },
@@ -14,7 +14,7 @@
       "title": "El nuevo paso",
       "chapter": "Página 3 · Viñeta 1 de 3",
       "text": "Lara: «¡Anne, mira! ¡Un paso nuevo!»",
-      "image": "assets/s03-p01-masters-v4.png",
+      "image": "assets/s03-p01-masters-v4.webp",
       "alt": "Lara baila frente al gran televisor del salón. Anne la mira desde el sofá y Lokum descansa a su lado.",
       "status": "boceto_de_prueba_no_aprobado"
     },
@@ -23,7 +23,7 @@
       "title": "¡Qué bien bailas!",
       "chapter": "Página 3 · Viñeta 2 de 3",
       "text": "Anne: «¡Qué bien bailas, Lara!»",
-      "image": "assets/s03-p02-anne-v1.png",
+      "image": "assets/s03-p02-anne-v1.webp",
       "alt": "Anne sonríe y anima a Lara mientras baila. Lokum está a su lado en el sofá.",
       "status": "boceto_de_prueba_no_aprobado"
     },
@@ -32,7 +32,7 @@
       "title": "Un pequeño bostezo",
       "chapter": "Página 3 · Viñeta 3 de 3",
       "text": "Lokum bosteza.",
-      "image": "assets/s03-p03-lokum-v1.png",
+      "image": "assets/s03-p03-lokum-v1.webp",
       "alt": "Lokum bosteza tranquilamente en el sofá junto a Anne. Todavía no habla.",
       "status": "boceto_de_prueba_no_aprobado"
     },
@@ -41,7 +41,7 @@
       "title": "La música se detuvo",
       "chapter": "Página 4 · Viñeta 1 de 3",
       "text": "La música se detuvo de repente. Lara se quedó inmóvil.",
-      "image": "assets/s04-p01-v3.png",
+      "image": "assets/s04-p01-v3.webp",
       "alt": "La música ha parado. Lara se detiene en medio del baile y Anne mira la pantalla apagada del televisor.",
       "status": "boceto_de_pagina_pendiente_de_revision"
     },
@@ -50,7 +50,7 @@
       "title": "El ritmo continúa",
       "chapter": "Página 4 · Viñeta 2 de 3",
       "text": "Lara siguió el ritmo dando palmas.\nLara: «¿Eh? ¿Qué ha pasado?»",
-      "image": "assets/s04-p02-v2.png",
+      "image": "assets/s04-p02-v2.webp",
       "alt": "Lara da palmas para continuar el ritmo; Anne la observa y Lokum permanece cerca.",
       "status": "boceto_de_pagina_pendiente_de_revision"
     },
@@ -59,7 +59,7 @@
       "title": "Una señal incompleta",
       "chapter": "Página 4 · Viñeta 3 de 3",
       "text": "El televisor parpadeó y mostró un mensaje: «LA ÚLTIMA CANCIÓN».",
-      "image": "assets/s04-p03-v2.png",
+      "image": "assets/s04-p03-v2.webp",
       "alt": "En el televisor aparece una señal musical violeta e incompleta. Lara, Anne y Lokum miran la pantalla; Lokum aún no habla.",
       "status": "boceto_de_pagina_pendiente_de_revision"
     },
@@ -68,7 +68,7 @@
       "title": "El pelaje de Lokum brilla",
       "chapter": "Página 5 · Viñeta 1 de 4",
       "text": "El pelaje de Lokum empezó a brillar. Saltó a la mesa.",
-      "image": "assets/s05-p01-lokum-awakens-v1.png",
+      "image": "assets/s05-p01-lokum-awakens-v1.webp",
       "alt": "Lokum, la gata oscura y muy peluda, salta sobre la mesa mientras su pelaje empieza a brillar. Lara y Anne la miran sorprendidas.",
       "status": "imagen_aprobada_texto_y_pagina_en_revision"
     },
@@ -77,7 +77,7 @@
       "title": "Lokum habla",
       "chapter": "Página 5 · Viñeta 2 de 4",
       "text": "Lokum: «¡Oh, no! ¡Esto no es bueno!»",
-      "image": "assets/s05-p02-lokum-speaks-v1.png",
+      "image": "assets/s05-p02-lokum-speaks-v1.webp",
       "alt": "Lokum está sobre la mesa y habla por primera vez. Lara y Anne la miran asombradas.",
       "status": "imagen_aprobada_texto_y_pagina_en_revision"
     },
@@ -86,7 +86,7 @@
       "title": "Lara se sorprende",
       "chapter": "Página 5 · Viñeta 3 de 4",
       "text": "Lara: «¡¿Lokum?! ¿Puedes hablar?»",
-      "image": "assets/s05-p03-lara-reacts-v1.png",
+      "image": "assets/s05-p03-lara-reacts-v1.webp",
       "alt": "Lara mira sorprendida a Lokum, que está sentada junto a ella. Anne observa a ambas.",
       "status": "imagen_aprobada_texto_y_pagina_en_revision"
     },
@@ -95,14 +95,14 @@
       "title": "Tenemos un problema",
       "chapter": "Página 5 · Viñeta 4 de 4",
       "text": "Lokum: «Sí. ¿Y qué? ¡Tenemos un problema enorme!»",
-      "image": "assets/s05-p04-problem-v1.png",
+      "image": "assets/s05-p04-problem-v1.webp",
       "alt": "Lokum levanta una pata y habla con Lara y Anne, que la escuchan con preocupación.",
       "status": "imagen_aprobada_texto_y_pagina_en_revision"
     },
     {
       "id": "S06-P01",
       "alt": "Una estrella muestra la ciudad de Sonoria, cuyos colores empiezan a desaparecer. Lara, Anne y Lokum la miran sorprendidas.",
-      "image": "assets/s06-p01-star-sonoria-v2.png",
+      "image": "assets/s06-p01-star-sonoria-v2.webp",
       "text": "Estrella: «¡Sonoria está perdiendo su música! ¡Necesitamos ayuda!»",
       "status": "imagen_aprobada_texto_y_pagina_en_revision",
       "chapter": "",
@@ -111,7 +111,7 @@
     {
       "id": "S06-P02",
       "alt": "La estrella muestra una melodía incompleta. Lokum reconoce la llamada de auxilio; Lara y Anne escuchan.",
-      "image": "assets/s06-p02-incomplete-melody-v1.png",
+      "image": "assets/s06-p02-incomplete-melody-v1.webp",
       "text": "Lokum: «¡Es una llamada de auxilio! ¡Pero faltan notas!»",
       "status": "imagen_aprobada_texto_y_pagina_en_revision",
       "chapter": "",
@@ -120,7 +120,7 @@
     {
       "id": "S06-P03",
       "alt": "Lara señala la estrella mientras la señal musical sale de la habitación. Anne y Lokum la escuchan.",
-      "image": "assets/s06-p03-signal-travels-v2.png",
+      "image": "assets/s06-p03-signal-travels-v2.webp",
       "text": "Lara: «¡Anne de Alemania sabe mucho de música!»\nAnne: «¿Podemos contactar con ella?»",
       "status": "imagen_aprobada_texto_y_pagina_en_revision",
       "chapter": "",
@@ -131,7 +131,7 @@
       "title": "Una melodía incompleta",
       "chapter": "Página 7 · Viñeta 1 de 3",
       "text": "Anne de Alemania escucha una melodía incompleta que llega desde Sonoria.\nAnne de Alemania: «¡Qué extraño! ¡A esta melodía le faltan notas!»",
-      "image": "assets/s07-p01-hamburg-incomplete-melody.png",
+      "image": "assets/s07-p01-hamburg-incomplete-melody.webp",
       "alt": "Anne de Alemania escucha una melodía incompleta en su apartamento de Hamburgo. Sus dos periquitos están juntos en una jaula elevada junto a la ventana.",
       "status": "ilustracion_aprobada_texto_borrador"
     },
@@ -140,7 +140,7 @@
       "title": "El portal musical",
       "chapter": "Página 7 · Viñeta 2 de 3",
       "text": "Anne completa las notas cantando. Entonces se abre un portal hacia el salón de Lara.\nAnne de Alemania: «¡Ya está!»",
-      "image": "assets/s07-p02-hamburg-portal-music-video.png",
+      "image": "assets/s07-p02-hamburg-portal-music-video.webp",
       "alt": "Anne de Alemania completa la melodía y abre un portal hacia el salón de Lara. En el televisor de Lara aparece un concierto de K-Pop.",
       "status": "ilustracion_aprobada_texto_borrador"
     },
@@ -149,7 +149,7 @@
       "title": "Lara pide ayuda",
       "chapter": "Página 7 · Viñeta 3 de 3",
       "text": "Lara: «¡Anne! ¡Te necesitamos!»\nAnne de Alemania: «¡Voy enseguida!»",
-      "image": "assets/s07-p03-lara-portal-music-video.png",
+      "image": "assets/s07-p03-lara-portal-music-video.webp",
       "alt": "Lara saluda desde su lado del portal y pide ayuda. Lleva su chaqueta negra y rosa y el mismo concierto de K-Pop continúa en el televisor.",
       "status": "ilustracion_aprobada_texto_borrador"
     },
@@ -157,7 +157,7 @@
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
-      "image": "assets/portada-sonoria-v4-grafica.png",
+      "image": "assets/portada-sonoria-v4-grafica.webp",
       "alt": "Lara y sus compañeras en Sonoria: ilustración de portada.",
       "status": "aviso_provisional"
     }

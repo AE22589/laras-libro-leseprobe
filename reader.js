@@ -28,6 +28,7 @@ function render() {
   const scene = scenes[current];
   readerPage.classList.toggle('cover-home', current === 0);
   el('cover').src = scene.image;
+  preloadImage(current + 1);
   el('cover').alt = scene.alt;
   el('scene-title').textContent = scene.title;
   el('scene-title').hidden = Boolean(scene.id);
@@ -43,6 +44,14 @@ function render() {
   el('audio-status').textContent = speechSupported
     ? 'Pulsa Escuchar. Se prioriza una voz femenina en español si está instalada.'
     : 'Este navegador no permite leer en voz alta.';
+}
+
+function preloadImage(index) {
+  if (index < 0 || index >= scenes.length) return;
+  const image = new Image();
+  image.decoding = 'async';
+  image.fetchPriority = 'low';
+  image.src = scenes[index].image;
 }
 
 function chooseSpanishVoice() {
@@ -241,7 +250,7 @@ document.addEventListener('keydown', event => {
 });
 
 if (!speechSupported) el('speak').disabled = true;
-fetch('book-content.json?v=20261020-10')
+fetch('book-content.json?v=20261020-11')
   .then(response => {
     if (!response.ok) throw new Error('No se pudo cargar el contenido.');
     return response.json();
