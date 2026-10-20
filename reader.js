@@ -241,6 +241,10 @@ let guessedLetters = new Set();
 let wrongGuesses = 0;
 let wordGameFinished = false;
 
+function remainingNotesText(remaining) {
+  return remaining === 1 ? 'Te queda una nota' : `Te quedan ${remaining} notas`;
+}
+
 function renderWordGame() {
   const solved = wordGameFinished && [...mysteryWord].every(letter => guessedLetters.has(normalizeLetter(letter)));
   el('word-hint').textContent = `Pista: ${mysteryHint}`;
@@ -275,7 +279,7 @@ function renderWordGame() {
         wrongGuesses++;
         el('lokum-comment').textContent = wrongGuesses >= maximumMisses
           ? `La palabra era ${mysteryWord}. ¡Intentémoslo otra vez!`
-          : `¡Casi! Te quedan ${maximumMisses - wrongGuesses} notas.`;
+          : `¡Casi! ${remainingNotesText(maximumMisses - wrongGuesses)}.`;
       } else {
         el('lokum-comment').textContent = [...mysteryWord].every(item => guessedLetters.has(normalizeLetter(item)))
           ? `¡Lo lograste! ¡${mysteryWord}!`
@@ -290,7 +294,7 @@ function renderWordGame() {
         el('word-feedback').textContent = `La palabra era ${mysteryWord}. ¡Juguemos otra vez!`;
       } else {
         el('word-feedback').textContent = wrongGuesses
-          ? `Te quedan ${maximumMisses - wrongGuesses} notas. ¡Prueba otra letra!`
+          ? `${remainingNotesText(maximumMisses - wrongGuesses)}. ¡Prueba otra letra!`
           : '¡Bien! Elige otra letra.';
       }
       el('retry-word-game').hidden = !wordGameFinished;
