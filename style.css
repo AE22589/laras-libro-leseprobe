@@ -10,6 +10,8 @@
 .masthead .masthead-link{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:40px;padding:7px 12px;border:1px solid #d9cee5;border-radius:24px;background:#fff;color:var(--purple);font-size:13px;font-weight:750;line-height:1;text-decoration:none;white-space:nowrap;transition:background .15s,color .15s,border-color .15s;flex:0 0 auto}.masthead .masthead-link.is-active{border-color:var(--purple);background:var(--purple);color:#fff;box-shadow:0 2px 8px #4b2a822b}.masthead .masthead-link:focus-visible{outline:3px solid #d34b8f;outline-offset:2px}.masthead-actions .masthead-link:hover{background:#f0e9f7}.masthead-actions .masthead-link.is-active:hover{background:#59369f}@media(max-width:480px){.masthead{gap:6px;padding:9px 10px}.masthead .masthead-link{gap:4px;min-height:38px;padding:6px 9px;font-size:12px}.masthead-actions{gap:5px}}@media(max-width:360px){.masthead{gap:4px;padding:8px}.masthead .masthead-link{gap:3px;min-height:36px;padding:5px 7px;font-size:11px}.masthead-actions{gap:4px}}
 .note-attempts{gap:clamp(3px,1.5vw,8px)}@media(max-width:360px){.note-attempts{font-size:17px;gap:3px}}
 .masthead{justify-content:center!important}
+.masthead{position:relative}
+.masthead-actions>.badge{position:absolute;right:18px}
 .games-page .game-menu{grid-template-rows:repeat(2,112px)!important;align-content:center!important;flex:1}
 .games-page .game-choice{min-height:0;padding:8px 12px}
 @media(max-width:360px){.games-page .game-menu{grid-template-rows:repeat(2,104px)!important}.games-page .game-choice{padding:7px 9px}}
