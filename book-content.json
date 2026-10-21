@@ -240,6 +240,33 @@
       "id": "S10-P03"
     },
     {
+      "id": "S11-P01",
+      "title": "S11-P01",
+      "chapter": "Página 11 · Imagen 1 de 3",
+      "text": "Bombo: «¡Estos cinco corazones dan música y color a Sonoria!»",
+      "image": "assets/s11-p01-v1.webp",
+      "alt": "Bombo proyecta exactamente cinco corazones musicales sobre Sonoria. Lara, Anne, Anne de Alemania y Lokum los contemplan.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S11-P02",
+      "title": "S11-P02",
+      "chapter": "Página 11 · Imagen 2 de 3",
+      "text": "Bombo: «¡El Maestro del Compás los robó!»",
+      "image": "assets/s11-p02-v1.webp",
+      "alt": "La proyección muestra al ladrón con una capa oscura llevándose los cinco corazones musicales.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S11-P03",
+      "title": "S11-P03",
+      "chapter": "Página 11 · Imagen 3 de 3",
+      "text": "Lara: «¡Por eso está desapareciendo la música!»\nBombo: «¡Exactamente!»",
+      "image": "assets/s11-p03-v1.webp",
+      "alt": "La proyección se desvanece mientras el grupo comprende el robo de los cinco corazones.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
