@@ -30,8 +30,8 @@ function updateBookmarkMenu() {
   el('remove-bookmark').hidden = !hasBookmark;
   el('save-bookmark').hidden = songPageOpen || gamePageOpen;
   el('bookmark-status').textContent = hasBookmark
-    ? `Página marcada: ${bookmark.title || 'tu lectura'}.`
-    : 'Guarda una página para volver a ella después.';
+    ? `Marcapáginas: ${bookmark.title || 'tu lectura'}.`
+    : 'Aún no hay marcador.';
 }
 
 function closeBookmarkMenu() {
