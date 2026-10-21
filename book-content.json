@@ -213,11 +213,38 @@
       "status": "ilustraciones_aprobadas_texto_y_pagina_en_revision"
     },
     {
+      "status": "ilustraciones_aprobadas_texto_borrador",
+      "text": "",
+      "image": "assets/s10-p01-v2.webp",
+      "chapter": "Página 10 · Imagen 1 de 3",
+      "alt": "Lara, Anne, Anne de Alemania y Lokum llegan a Sonoria. La ciudad luce llena de color, pero varios barrios están grises y apagados.",
+      "title": "S10-P01",
+      "id": "S10-P01"
+    },
+    {
+      "status": "ilustraciones_aprobadas_texto_borrador",
+      "text": "",
+      "image": "assets/s10-p02-v1.webp",
+      "chapter": "Página 10 · Imagen 2 de 3",
+      "alt": "Un pequeño ser redondo con cara de altavoz rueda hacia el grupo en la plaza de Sonoria.",
+      "title": "S10-P02",
+      "id": "S10-P02"
+    },
+    {
+      "status": "ilustraciones_aprobadas_texto_borrador",
+      "text": "Bombo: «¡Soy Bombo! ¡Bienvenidas a Sonoria!»",
+      "image": "assets/s10-p03-v1.webp",
+      "chapter": "Página 10 · Imagen 3 de 3",
+      "alt": "Bombo saluda a Lara, Anne, Anne de Alemania y Lokum. Al fondo, algunas zonas de Sonoria están grises y sin luz.",
+      "title": "S10-P03",
+      "id": "S10-P03"
+    },
+    {
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
-      "image": "assets/portada-sonoria-v4-grafica.webp",
-      "alt": "Lara y sus compañeras en Sonoria: ilustración de portada.",
+      "image": "assets/portada-aprobada.webp",
+      "alt": "Portada del libro: Lara, Anne, Anne de Alemania y Lokum frente a Sonoria.",
       "status": "aviso_provisional"
     }
   ]
