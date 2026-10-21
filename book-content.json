@@ -154,6 +154,38 @@
       "status": "ilustracion_aprobada_texto_borrador"
     },
     {
+      "id": "S08-P01",
+      "title": "S08-P01",
+      "chapter": "Página 8 · Imagen 1 de 4",
+      "text": "",
+      "image": "assets/s08-p01-v1.webp",
+      "alt": "Anne de Alemania cruza el portal hacia el salón de Lara. Lara permanece en el salón."
+    },
+    {
+      "id": "S08-P02",
+      "title": "S08-P02",
+      "chapter": "Página 8 · Imagen 2 de 4",
+      "text": "Lokum: «¡Cuidado con mi cola!»",
+      "image": "assets/s08-p02-v1.webp",
+      "alt": "Anne de Alemania acaba de llegar al salón de Lara; Lokum salta a un lado para apartar la cola."
+    },
+    {
+      "id": "S08-P03",
+      "title": "S08-P03",
+      "chapter": "Página 8 · Imagen 3 de 4",
+      "text": "Lara: «¡Has venido!»",
+      "image": "assets/s08-p03-v1.webp",
+      "alt": "Lara abraza alegremente a Anne de Alemania en el salón."
+    },
+    {
+      "id": "S08-P04",
+      "title": "S08-P04",
+      "chapter": "Página 8 · Imagen 4 de 4",
+      "text": "Anne de Alemania: «¡Claro que sí!»\nLara: «¡Ahora estamos juntas!»",
+      "image": "assets/s08-p04-v1.webp",
+      "alt": "Lara, Anne, Anne de Alemania y Lokum aparecen juntas en el salón."
+    },
+    {
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
