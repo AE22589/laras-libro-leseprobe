@@ -15,6 +15,38 @@ let gamePageOpen = false;
 let activeGame = '';
 
 const feminineSpanishVoiceName = /(female|femenina|woman|mujer|helena|elvira|dalia|sabrina|sabina|paulina|m[oó]nica|luc[ií]a|camila|sof[ií]a|isabela|ximena|paloma|carmen|laura|mar[ií]a)/i;
+const bookmarkStorageKey = 'laras-libro-bookmark-v1';
+const bookmarkMenu = el('bookmark-menu');
+
+function readBookmark() {
+  try { return JSON.parse(window.localStorage.getItem(bookmarkStorageKey) || 'null'); }
+  catch { return null; }
+}
+
+function updateBookmarkMenu() {
+  const bookmark = readBookmark();
+  const hasBookmark = Boolean(bookmark && bookmark.key);
+  el('go-bookmark').disabled = !hasBookmark;
+  el('remove-bookmark').hidden = !hasBookmark;
+  el('save-bookmark').hidden = songPageOpen || gamePageOpen;
+  el('bookmark-status').textContent = hasBookmark
+    ? `Página marcada: ${bookmark.title || 'tu lectura'}.`
+    : 'Guarda una página para volver a ella después.';
+}
+
+function closeBookmarkMenu() {
+  bookmarkMenu.hidden = true;
+  el('bookmark-toggle').setAttribute('aria-expanded', 'false');
+  el('bookmark-toggle').classList.remove('is-active');
+}
+
+function toggleBookmarkMenu() {
+  const open = bookmarkMenu.hidden;
+  bookmarkMenu.hidden = !open;
+  el('bookmark-toggle').setAttribute('aria-expanded', String(open));
+  el('bookmark-toggle').classList.toggle('is-active', open);
+  updateBookmarkMenu();
+}
 
 function stopReading() {
   speechRun++;
@@ -61,6 +93,7 @@ function render() {
     ? 'Pulsa Escuchar. Se prioriza una voz femenina en español si está instalada.'
     : 'Este navegador no permite leer en voz alta.';
   updateHeaderSelection();
+  updateBookmarkMenu();
 }
 
 function preloadImage(index) {
@@ -102,6 +135,7 @@ function showSongs(show) {
   gamesPage.style.display = 'none';
   el('notice').hidden = show;
   updateHeaderSelection();
+  updateBookmarkMenu();
   if (show) stopReading();
   else {
     songCards.forEach(card => { card.querySelector('audio').pause(); updateSongCard(card); });
@@ -120,6 +154,7 @@ function showGames(show) {
   gamesPage.style.display = show ? 'grid' : 'none';
   el('notice').hidden = show;
   updateHeaderSelection();
+  updateBookmarkMenu();
   if (show) {
     stopReading();
     activeGame = '';
@@ -135,6 +170,47 @@ el('open-songs').addEventListener('click', () => showSongs(true));
 el('open-games').addEventListener('click', () => showGames(true));
 el('close-songs').addEventListener('click', () => showSongs(false));
 el('close-games').addEventListener('click', () => showGames(false));
+
+el('bookmark-toggle').addEventListener('click', toggleBookmarkMenu);
+el('save-bookmark').addEventListener('click', () => {
+  if (songPageOpen || gamePageOpen || !scenes[current]) return;
+  const scene = scenes[current];
+  const key = scene.id || (current === 0 ? '__cover__' : `view:${current}`);
+  try {
+    window.localStorage.setItem(bookmarkStorageKey, JSON.stringify({ key, index: current, title: scene.title || scene.chapter || `Página ${current + 1}` }));
+    updateBookmarkMenu();
+  } catch {
+    el('bookmark-status').textContent = 'No se pudo guardar el marcador en este dispositivo.';
+  }
+});
+el('go-bookmark').addEventListener('click', () => {
+  const bookmark = readBookmark();
+  if (!bookmark) return;
+  let target = bookmark.key === '__cover__' ? 0 : scenes.findIndex(scene => scene.id === bookmark.key);
+  if (target < 0 && Number.isInteger(bookmark.index) && scenes[bookmark.index]) target = bookmark.index;
+  if (target < 0) {
+    el('bookmark-status').textContent = 'Esta página no está disponible en la vista previa actual.';
+    return;
+  }
+  if (songPageOpen) showSongs(false);
+  if (gamePageOpen) showGames(false);
+  current = target;
+  closeBookmarkMenu();
+  render();
+});
+el('remove-bookmark').addEventListener('click', () => {
+  try { window.localStorage.removeItem(bookmarkStorageKey); } catch { /* Storage may be disabled. */ }
+  updateBookmarkMenu();
+});
+document.addEventListener('click', event => {
+  if (!bookmarkMenu.hidden && !event.target.closest('.masthead-actions')) closeBookmarkMenu();
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && !bookmarkMenu.hidden) {
+    closeBookmarkMenu();
+    el('bookmark-toggle').focus();
+  }
+});
 
 const syllableWordSources = `
 CA-SA ME-SA SI-LLA CA-MA MA-NO PA-TO GA-TO PE-LO LU-NA NU-BE FO-CA LO-RO O-SO MO-NO RA-NA VA-CA PE-RRO PE-RRA CA-BRA LO-BO VI-NO MO-TO RO-PA PA-LA RA-MA RO-CA NI-ÑO CU-NA TA-PA TI-ZA ZA-PA-TO PE-LO-TA CA-MI-SA VEN-TA-NA CO-CI-NA MÚ-SI-CA BO-TE-LLA MAR-TES A-MI-GO A-MI-GA O-RE-JA CA-BE-ZA CO-RA-ZÓN ES-TRE-LLA NA-RAN-JA MAN-ZA-NA BA-NA-NA PLÁ-TA-NO FRE-SA PE-RA U-VA LI-MÓN ME-LÓN SO-PA QUE-SO LE-CHE HUE-VO A-RROZ TOR-TA GA-LLE-TA HE-LA-DO YO-GUR A-GUA FUE-GO TIE-RRA VIEN-TO LLU-VIA NIE-VE HO-JA ÁR-BOL CIE-LO RÍ-O DÍ-A NO-CHE TAR-DE VE-RA-NO O-TO-ÑO BAI-LAR CAN-TAR JU-GAR SAL-TAR CO-RRER CO-MER DOR-MIR LE-ER ES-CUE-LA LI-BRO LÁ-PIZ GO-MA RE-GLA PLU-MA PA-PEL MUN-DO A-MOR FE-LIZ BO-NI-TO BO-NI-TA A-LE-GRE DUL-CE FUER-TE RO-JO A-ZUL VER-DE NE-GRO BLAN-CO NA-RIZ BO-CA PIER-NA CA-RA O-JOS BRA-ZO DE-DOS CA-MI-NO A-MI-GOS MÚ-SI-CO CAN-CIÓN SO-NI-DO PA-LA-BRA LE-TRAS SÍ-LA-BA SON-RI-SA RE-GA-LO FIES-TA
