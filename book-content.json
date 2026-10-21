@@ -186,6 +186,33 @@
       "alt": "Lara, Anne, Anne de Alemania y Lokum aparecen juntas en el salón."
     },
     {
+      "title": "S09-P01",
+      "image": "assets/s09-p01-v1.webp",
+      "chapter": "Página 9 · Imagen 1 de 3",
+      "text": "Lara: «¡Guau! ¿Eso lleva a Sonoria?»\nLokum: «¡Sí!»",
+      "id": "S09-P01",
+      "alt": "El grupo contempla el portal abierto hacia Sonoria en el salón de Lara.",
+      "status": "ilustraciones_aprobadas_texto_y_pagina_en_revision"
+    },
+    {
+      "title": "S09-P02",
+      "image": "assets/s09-p02-v1.webp",
+      "chapter": "Página 9 · Imagen 2 de 3",
+      "text": "Anne: «¿Y si es peligroso?»\nLara: «Pero allí necesitan ayuda…»\nAnne de Alemania: «Entonces iremos juntas.»",
+      "id": "S09-P02",
+      "alt": "Anne expresa preocupación; Lara está decidida y Anne de Alemania la apoya. El portal sigue a la izquierda.",
+      "status": "ilustraciones_aprobadas_texto_y_pagina_en_revision"
+    },
+    {
+      "title": "S09-P03",
+      "image": "assets/s09-p03-v2.webp",
+      "chapter": "Página 9 · Imagen 3 de 3",
+      "text": "Lokum: «¡Pues vamos!»",
+      "id": "S09-P03",
+      "alt": "Lara, Anne, Anne de Alemania y Lokum cruzan juntos el portal hacia Sonoria, situado a la izquierda.",
+      "status": "ilustraciones_aprobadas_texto_y_pagina_en_revision"
+    },
+    {
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
