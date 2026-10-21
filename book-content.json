@@ -267,6 +267,33 @@
       "status": "ilustraciones_aprobadas_texto_borrador"
     },
     {
+      "id": "S12-P01",
+      "title": "S12-P01",
+      "chapter": "Página 12 · Imagen 1 de 3",
+      "text": "Bombo: «Escondió cuatro corazones. El quinto está en su palacio.»",
+      "image": "assets/s12-p01-v1.webp",
+      "alt": "El mapa de Bombo muestra cuatro corazones escondidos en distintas regiones y un quinto en el palacio.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S12-P02",
+      "title": "S12-P02",
+      "chapter": "Página 12 · Imagen 2 de 3",
+      "text": "Lara: «¡Vamos a recuperarlos!»",
+      "image": "assets/s12-p02-v1.webp",
+      "alt": "Lara pregunta por el ladrón mientras señala el mapa de los cinco corazones.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S12-P03",
+      "title": "S12-P03",
+      "chapter": "Página 12 · Imagen 3 de 3",
+      "text": "",
+      "image": "assets/s12-p03-v1.webp",
+      "alt": "La pandilla descubre un viejo cartel que muestra al joven ladrón tocando música felizmente con otros niños.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
