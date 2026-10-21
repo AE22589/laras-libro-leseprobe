@@ -294,6 +294,96 @@
       "status": "ilustraciones_aprobadas_texto_borrador"
     },
     {
+      "id": "S13-P01",
+      "title": "S13-P01",
+      "chapter": "Página 13 · Imagen 1 de 4",
+      "text": "En Sonoria, Bombo les contó cómo empezó todo.",
+      "image": "assets/s13-p01-v1.webp",
+      "alt": "Lara, Anne, Anne de Alemania y Lokum escuchan a Bombo junto al mapa de Sonoria.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S13-P02",
+      "title": "S13-P02",
+      "chapter": "Página 13 · Imagen 2 de 4",
+      "text": "Bombo: «¡Tu ritmo despertó la magia, Lara!»",
+      "image": "assets/s13-p02-v1.webp",
+      "alt": "Lara marca un ritmo con las manos mientras Bombo le explica la magia.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S13-P03",
+      "title": "S13-P03",
+      "chapter": "Página 13 · Imagen 3 de 4",
+      "text": "Ante Lara apareció un micrófono mágico.",
+      "image": "assets/s13-p03-v1.webp",
+      "alt": "Un micrófono mágico aparece ante Lara entre notas luminosas.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S13-P04",
+      "title": "S13-P04",
+      "chapter": "Página 13 · Imagen 4 de 4",
+      "text": "Lara lo tocó y las notas comenzaron a bailar a su alrededor.",
+      "image": "assets/s13-p04-v1.webp",
+      "alt": "Lara toca el micrófono mágico mientras las notas musicales danzan a su alrededor.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S14-P01",
+      "title": "S14-P01",
+      "chapter": "Página 14 · Imagen 1 de 4",
+      "text": "Su traje de heroína K-pop brilló mientras despertaba su poder musical.",
+      "image": "assets/s14-p01-v1.webp",
+      "alt": "Lara baila con el micrófono mágico mientras su traje K-pop resplandece.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S14-P02",
+      "title": "S14-P02",
+      "chapter": "Página 14 · Imagen 2 de 4",
+      "text": "Bombo: «Con tu música puedes abrir las cerraduras de los Corazones Musicales.»",
+      "image": "assets/s14-p02-v1.webp",
+      "alt": "Anne mira su brazalete protector mientras Lara y Bombo están a su lado.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S14-P03",
+      "title": "S14-P03",
+      "chapter": "Página 14 · Imagen 3 de 4",
+      "text": "Bombo: «Anne, este brazalete te protegerá.»\nLa brújula de Anne de Alemania señaló el camino.",
+      "image": "assets/s14-p03-v1.webp",
+      "alt": "Anne de Alemania consulta su brújula estelar mientras el camino se ilumina.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S14-P04",
+      "title": "S14-P04",
+      "chapter": "Página 14 · Imagen 4 de 4",
+      "text": "El camino hacia el primer Corazón Musical comenzó a brillar.",
+      "image": "assets/s14-p04-v1.webp",
+      "alt": "Lara, Anne, Anne de Alemania, Lokum y Bombo ven el camino hacia el primer Corazón Musical.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S15-P01",
+      "title": "S15-P01",
+      "chapter": "Página 15 · Imagen 1 de 2",
+      "text": "El primer Corazón Musical flotaba dentro de una jaula.\nLara: «¿Cómo llegaremos hasta allí?»",
+      "image": "assets/s15-p01-v1.webp",
+      "alt": "El grupo observa el primer Corazón Musical dentro de una jaula luminosa en el centro de la plaza.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S15-P02",
+      "title": "S15-P02",
+      "chapter": "Página 15 · Imagen 2 de 2",
+      "text": "Lara: «¡Las placas se mueven!»\nLokum: «¡Yo voto por volver a casa!»",
+      "image": "assets/s15-p02-v1.webp",
+      "alt": "Sombras con forma de notas aparecen sobre las placas móviles mientras el grupo se prepara para cruzar.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
