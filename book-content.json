@@ -474,6 +474,96 @@
       "status": "ilustraciones_aprobadas_texto_borrador"
     },
     {
+      "id": "S19-P01",
+      "title": "S19-P01",
+      "chapter": "Página 19 · Imagen 1 de 4",
+      "text": "Lara observó cómo se movían las plataformas.",
+      "image": "assets/s19-p01-v1.webp",
+      "alt": "Lara, Anne, Anne de Alemania y Lokum observan las plataformas flotantes.",
+      "status": "imagen_aprobada_texto_borrador"
+    },
+    {
+      "id": "S19-P02",
+      "title": "S19-P02",
+      "chapter": "Página 19 · Imagen 2 de 4",
+      "text": "Al cantar una nota, la plataforma siguiente se detuvo.",
+      "image": "assets/s19-p02-v1.webp",
+      "alt": "Lara canta una nota y la siguiente plataforma se detiene sobre las nubes.",
+      "status": "imagen_aprobada_texto_borrador"
+    },
+    {
+      "id": "S19-P03",
+      "title": "S19-P03",
+      "chapter": "Página 19 · Imagen 3 de 4",
+      "text": "Anne la protegió con su escudo de luz.",
+      "image": "assets/s19-p03-v1.webp",
+      "alt": "Anne protege a Lara con su escudo mientras cruza las plataformas.",
+      "status": "imagen_aprobada_texto_borrador"
+    },
+    {
+      "id": "S19-P04",
+      "title": "S19-P04",
+      "chapter": "Página 19 · Imagen 4 de 4",
+      "text": "Lara: «¿Y si no lo consigo?»\nAnne: «Estoy aquí. ¡Tú puedes!»",
+      "image": "assets/s19-p04-v1.webp",
+      "alt": "Lara duda antes del siguiente paso. Anne la anima.",
+      "status": "imagen_aprobada_texto_borrador"
+    },
+    {
+      "id": "S20-P01",
+      "title": "S20-P01",
+      "chapter": "Página 20 · Imagen 1 de 4",
+      "text": "Lara llegó hasta la jaula del segundo Corazón Musical.",
+      "image": "assets/s20-p01-v1.webp",
+      "alt": "Lara llega a la jaula del segundo Corazón Musical.",
+      "status": "imagen_aprobada_texto_borrador"
+    },
+    {
+      "id": "S20-P02",
+      "title": "S20-P02",
+      "chapter": "Página 20 · Imagen 2 de 4",
+      "text": "Con su música, Lara abrió la jaula y liberó el segundo Corazón Musical.",
+      "image": "assets/s20-p02-v1.webp",
+      "alt": "Lara abre la jaula y libera el segundo Corazón Musical.",
+      "status": "imagen_aprobada_texto_borrador"
+    },
+    {
+      "id": "S20-P03",
+      "title": "S20-P03",
+      "chapter": "Página 20 · Imagen 3 de 4",
+      "text": "Maestro del Compás: «¿Os atrevéis a robar mis corazones?»\nLara: «¡Tú los robaste primero!»",
+      "image": "assets/s20-p03-v1.webp",
+      "alt": "Una sombra sin rostro aparece ante Lara, Anne, Anne de Alemania y Lokum.",
+      "status": "imagen_aprobada_texto_borrador"
+    },
+    {
+      "id": "S20-P04",
+      "title": "S20-P04",
+      "chapter": "Página 20 · Imagen 4 de 4",
+      "text": "Furioso, el Maestro del Compás envió notas sombrías para proteger los demás corazones.",
+      "image": "assets/s20-p04-v1.webp",
+      "alt": "Lara y sus amigas se preparan mientras las notas sombrías surcan el cielo.",
+      "status": "imagen_aprobada_texto_borrador"
+    },
+    {
+      "id": "S21-P01",
+      "title": "S21-P01",
+      "chapter": "Página 21 · Imagen 1 de 2",
+      "text": "El grupo llegó al Palacio de los Espejos. De pronto, las puertas desaparecieron.",
+      "image": "assets/s21-p01-v1.webp",
+      "alt": "Lara, Anne, Anne de Alemania y Lokum entran en el Palacio de los Espejos.",
+      "status": "imagen_aprobada_texto_borrador"
+    },
+    {
+      "id": "S21-P02",
+      "title": "S21-P02",
+      "chapter": "Página 21 · Imagen 2 de 2",
+      "text": "Lara quedó separada entre cientos de reflejos.\nAnne: «¿Lara? ¿Dónde estás?»",
+      "image": "assets/s21-p02-v1.webp",
+      "alt": "Lara y Lokum quedan separadas de Anne y Anne de Alemania por los espejos.",
+      "status": "imagen_aprobada_texto_borrador"
+    },
+    {
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
