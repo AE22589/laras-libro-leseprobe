@@ -564,6 +564,96 @@
       "status": "imagen_aprobada_texto_borrador"
     },
     {
+      "id": "S22-P01",
+      "alt": "Anne de Alemania observa los reflejos silenciosos en el Palacio de los Espejos.",
+      "chapter": "Página 22 · Imagen 1 de 4",
+      "text": "Anne de Alemania: «Los reflejos se mueven, pero no hacen ruido.»",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "title": "S22-P01",
+      "image": "assets/s22-p01-v1.webp"
+    },
+    {
+      "id": "S22-P02",
+      "alt": "Anne llama a Lara en el corredor de espejos. Anne de Alemania y Lokum están con ella.",
+      "chapter": "Página 22 · Imagen 2 de 4",
+      "text": "Anne: «¡Lara! ¿Puedes oírme?»",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "title": "S22-P02",
+      "image": "assets/s22-p02-v1.webp"
+    },
+    {
+      "id": "S22-P03",
+      "alt": "Lara responde desde el Palacio de los Espejos.",
+      "chapter": "Página 22 · Imagen 3 de 4",
+      "text": "Lara: «¡Anne! ¡Estoy aquí!»",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "title": "S22-P03",
+      "image": "assets/s22-p03-v1.webp"
+    },
+    {
+      "id": "S22-P04",
+      "alt": "Anne vuelve a encontrar a Lara y la abraza con alivio.",
+      "chapter": "Página 22 · Imagen 4 de 4",
+      "text": "Lara tarareó su melodía. Anne siguió su voz hasta encontrarla.",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "title": "S22-P04",
+      "image": "assets/s22-p04-v1.webp"
+    },
+    {
+      "id": "S23-P01",
+      "alt": "Lokum olfatea un espejo en busca de magia.",
+      "chapter": "Página 23 · Imagen 1 de 4",
+      "text": "Lokum: «¡Aquí huele a magia!»",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "title": "S23-P01",
+      "image": "assets/s23-p01-v1.webp"
+    },
+    {
+      "id": "S23-P02",
+      "alt": "Detrás de un espejo abierto, el grupo encuentra una jaula con el tercer Corazón Musical.",
+      "chapter": "Página 23 · Imagen 2 de 4",
+      "text": "Detrás del espejo encontraron una jaula con el tercer Corazón Musical.",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "title": "S23-P02",
+      "image": "assets/s23-p02-v1.webp"
+    },
+    {
+      "id": "S23-P03",
+      "alt": "Lara canta y la jaula del tercer Corazón Musical se abre.",
+      "chapter": "Página 23 · Imagen 3 de 4",
+      "text": "Lara cantó, y la jaula se abrió.",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "title": "S23-P03",
+      "image": "assets/s23-p03-v1.webp"
+    },
+    {
+      "id": "S23-P04",
+      "alt": "Lokum admira su reflejo mientras Anne de Alemania le responde.",
+      "chapter": "Página 23 · Imagen 4 de 4",
+      "text": "Lokum: «¡Vaya, qué gata tan guapa!»\r\nAnne de Alemania: «Lokum, eres tú.»\r\nLokum: «¡Ya lo sé!»",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "title": "S23-P04",
+      "image": "assets/s23-p04-v1.webp"
+    },
+    {
+      "id": "S24-P01",
+      "alt": "El grupo contempla el cuarto Corazón Musical, encerrado en una jaula sobre una isla lejana.",
+      "chapter": "Página 24 · Imagen 1 de 2",
+      "text": "Llegaron a unas islas flotantes sobre las nubes. En la más lejana brillaba el cuarto Corazón Musical.",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "title": "S24-P01",
+      "image": "assets/s24-p01-v1.webp"
+    },
+    {
+      "id": "S24-P02",
+      "alt": "Anne de Alemania saca la brújula estelar mientras Lara señala la isla lejana. Anne y Lokum también están presentes.",
+      "chapter": "Página 24 · Imagen 2 de 2",
+      "text": "Lara: «¿Cómo llegamos hasta allí?»\r\nAnne de Alemania sacó su brújula estelar.",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "title": "S24-P02",
+      "image": "assets/s24-p02-v1.webp"
+    },
+    {
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
