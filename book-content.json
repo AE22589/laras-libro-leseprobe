@@ -157,7 +157,7 @@
       "id": "S08-P01",
       "title": "S08-P01",
       "chapter": "Página 8 · Imagen 1 de 4",
-      "text": "",
+      "text": "Anne de Alemania cruzó el portal y llegó al salón de Lara.",
       "image": "assets/s08-p01-v1.webp",
       "alt": "Anne de Alemania cruza el portal hacia el salón de Lara. Lara permanece en el salón."
     },
@@ -214,7 +214,7 @@
     },
     {
       "status": "ilustraciones_aprobadas_texto_borrador",
-      "text": "",
+      "text": "Habían llegado a Sonoria. Pero parte de la ciudad estaba gris y en silencio.",
       "image": "assets/s10-p01-v2.webp",
       "chapter": "Página 10 · Imagen 1 de 3",
       "alt": "Lara, Anne, Anne de Alemania y Lokum llegan a Sonoria. La ciudad luce llena de color, pero varios barrios están grises y apagados.",
@@ -223,7 +223,7 @@
     },
     {
       "status": "ilustraciones_aprobadas_texto_borrador",
-      "text": "",
+      "text": "Un pequeño ser redondo se acercó al grupo.",
       "image": "assets/s10-p02-v1.webp",
       "chapter": "Página 10 · Imagen 2 de 3",
       "alt": "Un pequeño ser redondo con cara de altavoz rueda hacia el grupo en la plaza de Sonoria.",
@@ -288,7 +288,7 @@
       "id": "S12-P03",
       "title": "S12-P03",
       "chapter": "Página 12 · Imagen 3 de 3",
-      "text": "",
+      "text": "Bombo: «Antes era diferente… Le encantaba tocar música con sus amigos.»",
       "image": "assets/s12-p03-v1.webp",
       "alt": "La pandilla descubre un viejo cartel que muestra al joven ladrón tocando música felizmente con otros niños.",
       "status": "ilustraciones_aprobadas_texto_borrador"
