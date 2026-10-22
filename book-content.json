@@ -924,6 +924,96 @@
       "status": "imagen_y_texto_aprobados_para_publicacion"
     },
     {
+      "id": "S32-P01",
+      "title": "S32-P01",
+      "chapter": "Página 32 · Imagen 1 de 5",
+      "text": "El Maestro aceleró el ritmo y Lara intentó seguirlo.",
+      "image": "assets/s32-p01-v1.webp",
+      "alt": "Lara intenta seguir el ritmo acelerado del Maestro del Compás.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S32-P02",
+      "title": "S32-P02",
+      "chapter": "Página 32 · Imagen 2 de 5",
+      "text": "Lara perdió el paso y tropezó. Anne se acercó para ayudarla.",
+      "image": "assets/s32-p02-v1.webp",
+      "alt": "Lara tropieza en la pista y Anne se acerca para ayudarla.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S32-P03",
+      "title": "S32-P03",
+      "chapter": "Página 32 · Imagen 3 de 5",
+      "text": "Las luces del lado de Lara se apagaron. Anne se quedó a su lado.",
+      "image": "assets/s32-p03-v1.webp",
+      "alt": "Anne permanece junto a Lara mientras las luces de su lado de la pista se apagan.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S32-P04",
+      "title": "S32-P04",
+      "chapter": "Página 32 · Imagen 4 de 5",
+      "text": "Maestro del Compás: «¡Te has equivocado!» Lara: «No puedo hacerlo…»",
+      "image": "assets/s32-p04-v1.webp",
+      "alt": "El Maestro del Compás reprende a Lara; Anne se queda cerca de ella.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S32-P05",
+      "title": "S32-P05",
+      "chapter": "Página 32 · Imagen 5 de 5",
+      "text": "Anne: «¡No pasa nada, Lara! ¡Sigue intentándolo!»",
+      "image": "assets/s32-p05-v1.webp",
+      "alt": "Anne ayuda a Lara a levantarse y la anima.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S33-P01",
+      "title": "S33-P01",
+      "chapter": "Página 33 · Imagen 1 de 5",
+      "text": "Al recordar la melodía incompleta de Sonoria, una luz suave volvió a encender el suelo.",
+      "image": "assets/s33-p01-v1.webp",
+      "alt": "Anne de Alemania recuerda la melodía incompleta de Sonoria mientras vuelve un suave resplandor a la pista.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S33-P02",
+      "title": "S33-P02",
+      "chapter": "Página 33 · Imagen 2 de 5",
+      "text": "Anne de Alemania: «¡Lara, escucha! ¡La melodía de la señal!»",
+      "image": "assets/s33-p02-v1.webp",
+      "alt": "Anne de Alemania señala a Lara mientras reconoce la melodía de la señal.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S33-P03",
+      "title": "S33-P03",
+      "chapter": "Página 33 · Imagen 3 de 5",
+      "text": "Lara: «¡Ya la recuerdo! Seguí su ritmo con palmas cuando se paró la música.»",
+      "image": "assets/s33-p03-v1.webp",
+      "alt": "Lara recuerda que siguió con palmas el ritmo cuando se detuvo la música.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S33-P04",
+      "title": "S33-P04",
+      "chapter": "Página 33 · Imagen 4 de 5",
+      "text": "Lara y Anne de Alemania cantaron juntas. Anne de Alemania puso la melodía y Lara añadió el ritmo que recordaba. Anne dio palmas.",
+      "image": "assets/s33-p04-v1.webp",
+      "alt": "Lara y Anne de Alemania cantan juntas mientras Anne las acompaña con palmas.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S33-P05",
+      "title": "S33-P05",
+      "chapter": "Página 33 · Imagen 5 de 5",
+      "text": "Con el ritmo de Lara, la melodía se convirtió en una canción nueva y alegre.",
+      "image": "assets/s33-p05-v1.webp",
+      "alt": "Lara baila al ritmo de la nueva canción alegre; sus amigas la acompañan.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
