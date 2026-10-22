@@ -744,6 +744,96 @@
       "chapter": "Página 27 · Imagen 2 de 2"
     },
     {
+      "id": "S28-P01",
+      "title": "S28-P01",
+      "chapter": "Página 28 · Imagen 1 de 5",
+      "text": "Lara cantó y abrió la jaula del cuarto Corazón Musical.",
+      "image": "assets/s28-p01-v1.webp",
+      "alt": "Lara canta y abre la jaula del cuarto Corazón Musical.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S28-P02",
+      "title": "S28-P02",
+      "chapter": "Página 28 · Imagen 2 de 5",
+      "text": "¡Habían recuperado el cuarto Corazón Musical!",
+      "image": "assets/s28-p02-v1.webp",
+      "alt": "Lara sostiene el cuarto Corazón Musical recuperado.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S28-P03",
+      "title": "S28-P03",
+      "chapter": "Página 28 · Imagen 3 de 5",
+      "text": "Lara guardó los cuatro Corazones Musicales en su mochila.",
+      "image": "assets/s28-p03-v2.webp",
+      "alt": "Lara guarda los cuatro Corazones Musicales en su mochila.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S28-P04",
+      "title": "S28-P04",
+      "chapter": "Página 28 · Imagen 4 de 5",
+      "text": "El grupo se acercó al palacio del Maestro del Compás.",
+      "image": "assets/s28-p04-v2.webp",
+      "alt": "El grupo se acerca al palacio del Maestro del Compás.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S28-P05",
+      "title": "S28-P05",
+      "chapter": "Página 28 · Imagen 5 de 5",
+      "text": "Anne de Alemania: «Parece una trampa.»\nLara: «Entonces iremos con cuidado.»",
+      "image": "assets/s28-p05-v1.webp",
+      "alt": "Anne de Alemania: «Parece una trampa.» Lara: «Entonces iremos con cuidado.»",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S29-P01",
+      "title": "S29-P01",
+      "chapter": "Página 29 · Imagen 1 de 5",
+      "text": "Lara, Anne, Anne de Alemania y Lokum entraron en el palacio.",
+      "image": "assets/s29-p01-v2.webp",
+      "alt": "Lara, Anne, Anne de Alemania y Lokum entran en el palacio.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S29-P02",
+      "title": "S29-P02",
+      "chapter": "Página 29 · Imagen 2 de 5",
+      "text": "De pronto, las puertas se cerraron detrás de ellas.",
+      "image": "assets/s29-p02-v1.webp",
+      "alt": "Las puertas se cierran detrás del grupo.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S29-P03",
+      "title": "S29-P03",
+      "chapter": "Página 29 · Imagen 3 de 5",
+      "text": "Las notas sombrías bloquearon la salida.\nLokum: «¡Sabía que era una mala idea!»",
+      "image": "assets/s29-p03-v1.webp",
+      "alt": "Las notas sombrías bloquean la salida. Lokum: «¡Sabía que era una mala idea!»",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S29-P04",
+      "title": "S29-P04",
+      "chapter": "Página 29 · Imagen 4 de 5",
+      "text": "Anne activó su brazalete y protegió al grupo con un escudo de luz.",
+      "image": "assets/s29-p04-v3.webp",
+      "alt": "Anne protege al grupo con un escudo de luz.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S29-P05",
+      "title": "S29-P05",
+      "chapter": "Página 29 · Imagen 5 de 5",
+      "text": "Lara: «Hemos llegado hasta aquí. ¡No nos rendiremos ahora!»",
+      "image": "assets/s29-p05-v1.webp",
+      "alt": "Lara: «Hemos llegado hasta aquí. ¡No nos rendiremos ahora!»",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
