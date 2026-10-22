@@ -834,6 +834,96 @@
       "status": "imagen_y_texto_aprobados_para_publicacion"
     },
     {
+      "id": "S30-P01",
+      "title": "S30-P01",
+      "chapter": "Página 30 · Imagen 1 de 5",
+      "text": "Lara, Anne, Anne de Alemania y Lokum entraron en la gran sala de conciertos. Al fondo, el Maestro del Compás estaba junto al quinto Corazón Musical.",
+      "image": "assets/s30-p01-v1.webp",
+      "alt": "Lara, Anne, Anne de Alemania y Lokum entran en la gran sala; el Maestro y el quinto corazón esperan en el escenario.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S30-P02",
+      "title": "S30-P02",
+      "chapter": "Página 30 · Imagen 2 de 5",
+      "text": "Maestro del Compás: «¡Devuélvanme mis cuatro corazones!»",
+      "image": "assets/s30-p02-v1.webp",
+      "alt": "El Maestro del Compás exige que le devuelvan los cuatro corazones.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S30-P03",
+      "title": "S30-P03",
+      "chapter": "Página 30 · Imagen 3 de 5",
+      "text": "Lara: «¡Son de Sonoria!»",
+      "image": "assets/s30-p03-v1.webp",
+      "alt": "Lara responde que los corazones pertenecen a Sonoria.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S30-P04",
+      "title": "S30-P04",
+      "chapter": "Página 30 · Imagen 4 de 5",
+      "text": "En la pared colgaba un retrato antiguo del Maestro del Compás con sus amigos.",
+      "image": "assets/s30-p04-v1.webp",
+      "alt": "La pared muestra un retrato antiguo del Maestro con sus amigos.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S30-P05",
+      "title": "S30-P05",
+      "chapter": "Página 30 · Imagen 5 de 5",
+      "text": "En la imagen, el joven músico reía mientras cantaba. Lara se fijó en él.",
+      "image": "assets/s30-p05-v1.webp",
+      "alt": "Lara observa con curiosidad el retrato del joven músico.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S31-P01",
+      "title": "S31-P01",
+      "chapter": "Página 31 · Imagen 1 de 5",
+      "text": "El Maestro se interpuso entre Lara y el quinto Corazón Musical.",
+      "image": "assets/s31-p01-v1.webp",
+      "alt": "El Maestro se coloca entre Lara y el quinto Corazón Musical.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S31-P02",
+      "title": "S31-P02",
+      "chapter": "Página 31 · Imagen 2 de 5",
+      "text": "Con un movimiento de su batuta, la tarima se transformó en una pista de baile con baldosas móviles.",
+      "image": "assets/s31-p02-v1.webp",
+      "alt": "La tarima se transforma en una pista de baile con baldosas luminosas.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S31-P03",
+      "title": "S31-P03",
+      "chapter": "Página 31 · Imagen 3 de 5",
+      "text": "Maestro del Compás: «¡A ver si puedes seguir mi ritmo!»",
+      "image": "assets/s31-p03-v1.webp",
+      "alt": "El Maestro levanta la batuta y reta a Lara a seguir su ritmo.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S31-P04",
+      "title": "S31-P04",
+      "chapter": "Página 31 · Imagen 4 de 5",
+      "text": "La melodía empezó a toda velocidad. Lara intentó seguir el ritmo.",
+      "image": "assets/s31-p04-v1.webp",
+      "alt": "Lara comienza un paso de baile sencillo e intenta seguir la melodía rápida.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S31-P05",
+      "title": "S31-P05",
+      "chapter": "Página 31 · Imagen 5 de 5",
+      "text": "Anne y Anne de Alemania animaron a Lara. Lokum también la acompañó.",
+      "image": "assets/s31-p05-v1.webp",
+      "alt": "Anne, Anne de Alemania y Lokum animan a Lara mientras ella continúa bailando.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
