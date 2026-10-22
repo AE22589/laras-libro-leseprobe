@@ -654,6 +654,96 @@
       "image": "assets/s24-p02-v1.webp"
     },
     {
+      "alt": "El compás estelar muestra una melodía luminosa hacia la isla lejana.",
+      "id": "S25-P01",
+      "text": "Anne de Alemania: «¡Creo que ya veo el camino!»",
+      "image": "assets/s25-p01-v1.webp",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "chapter": "Página 25 · Imagen 1 de 4",
+      "title": "S25-P01"
+    },
+    {
+      "alt": "Anne de Alemania señala la secuencia de tonos con el compás estelar.",
+      "id": "S25-P02",
+      "text": "Anne de Alemania: «¡Seguid la melodía!»",
+      "image": "assets/s25-p02-v1.webp",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "chapter": "Página 25 · Imagen 2 de 4",
+      "title": "S25-P02"
+    },
+    {
+      "alt": "Lara canta y aparecen las primeras placas luminosas sobre las nubes.",
+      "id": "S25-P03",
+      "text": "Lara cantó las notas. Las primeras placas de luz aparecieron.",
+      "image": "assets/s25-p03-v1.webp",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "chapter": "Página 25 · Imagen 3 de 4",
+      "title": "S25-P03"
+    },
+    {
+      "alt": "Lara, Anne, Anne de Alemania y Lokum cruzan con cuidado por las placas de luz.",
+      "id": "S25-P04",
+      "text": "Con la melodía de Lara, las placas se mantuvieron estables y el grupo cruzó con cuidado.",
+      "image": "assets/s25-p04-v1.webp",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "chapter": "Página 25 · Imagen 4 de 4",
+      "title": "S25-P04"
+    },
+    {
+      "alt": "Las notas sombrías aparecen junto al puente de luz y bloquean el camino.",
+      "id": "S26-P01",
+      "text": "A mitad del camino, aparecieron las notas sombrías e intentaron detener al grupo.",
+      "image": "assets/s26-p01-v1.webp",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "chapter": "Página 26 · Imagen 1 de 4",
+      "title": "S26-P01"
+    },
+    {
+      "alt": "Anne protege al grupo con un escudo luminoso creado por su brazalete.",
+      "id": "S26-P02",
+      "text": "Anne levantó su brazalete y creó un escudo de luz para proteger al grupo.",
+      "image": "assets/s26-p02-v1.webp",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "chapter": "Página 26 · Imagen 2 de 4",
+      "title": "S26-P02"
+    },
+    {
+      "alt": "Anne de Alemania usa el compás estelar para indicar la siguiente placa segura.",
+      "id": "S26-P03",
+      "text": "Anne de Alemania señaló el siguiente paso seguro con su brújula estelar.",
+      "image": "assets/s26-p03-v1.webp",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "chapter": "Página 26 · Imagen 3 de 4",
+      "title": "S26-P03"
+    },
+    {
+      "alt": "Lara canta mientras las placas se iluminan y las notas sombrías retroceden.",
+      "id": "S26-P04",
+      "text": "Lara siguió cantando. Las placas se mantuvieron firmes y las sombras retrocedieron.",
+      "image": "assets/s26-p04-v1.webp",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "chapter": "Página 26 · Imagen 4 de 4",
+      "title": "S26-P04"
+    },
+    {
+      "alt": "Lokum distrae jugando a las notas sombrías mientras sus amigas la observan.",
+      "id": "S27-P01",
+      "text": "Lokum: «¿Estos pesados no pueden descansar un ratito?»",
+      "image": "assets/s27-p01-v1.webp",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "chapter": "Página 27 · Imagen 1 de 2",
+      "title": "S27-P01"
+    },
+    {
+      "title": "S27-P02",
+      "image": "assets/s27-p02-v1.webp",
+      "id": "S27-P02",
+      "text": "Lokum: «¡Esa gata… soy yo!»\r\nLara: «¿Eras una heroína?»\r\nLokum: «¡Era la guardiana de los Corazones Musicales!»",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "alt": "Lokum reconoce su imagen en un antiguo mural con cinco corazones pintados.",
+      "chapter": "Página 27 · Imagen 2 de 2"
+    },
+    {
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
