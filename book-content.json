@@ -384,6 +384,96 @@
       "status": "ilustraciones_aprobadas_texto_borrador"
     },
     {
+      "id": "S16-P01",
+      "title": "S16-P01",
+      "chapter": "Página 16 · Imagen 1 de 4",
+      "text": "Anne de Alemania escuchó con atención el ritmo de las placas.",
+      "image": "assets/s16-p01-v1.webp",
+      "alt": "Lara, Anne, Anne de Alemania y Lokum escuchan el ritmo en la plaza de las placas de Sonoria.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S16-P02",
+      "title": "S16-P02",
+      "chapter": "Página 16 · Imagen 2 de 4",
+      "text": "Anne de Alemania: «¡Lara, escucha con atención!»",
+      "image": "assets/s16-p02-v1.webp",
+      "alt": "Anne de Alemania marca el ritmo con las palmas mientras Lara escucha. Anne y Lokum las acompañan en la plaza.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S16-P03",
+      "title": "S16-P03",
+      "chapter": "Página 16 · Imagen 3 de 4",
+      "text": "Lara siguió el ritmo y la primera placa se iluminó.",
+      "image": "assets/s16-p03-v1.webp",
+      "alt": "Lara pisa una placa redonda que brilla; Anne, Anne de Alemania y Lokum observan.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S16-P04",
+      "title": "S16-P04",
+      "chapter": "Página 16 · Imagen 4 de 4",
+      "text": "Anne usó su brazalete para proteger a Lara de las notas sombrías.",
+      "image": "assets/s16-p04-v1.webp",
+      "alt": "Anne activa su brazalete y un escudo de luz protege a Lara de dos notas sombrías. Anne de Alemania aplaude.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S17-P01",
+      "title": "S17-P01",
+      "chapter": "Página 17 · Imagen 1 de 4",
+      "text": "Lara cantó y la jaula comenzó a abrirse.",
+      "image": "assets/s17-p01-v1.webp",
+      "alt": "Lara canta al micrófono mágico frente a una jaula luminosa que empieza a abrirse. Dentro está un Corazón Musical.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S17-P02",
+      "title": "S17-P02",
+      "chapter": "Página 17 · Imagen 2 de 4",
+      "text": "Lara sostuvo con cuidado el primer Corazón Musical.",
+      "image": "assets/s17-p02-v1.webp",
+      "alt": "Lara sostiene con cuidado el primer Corazón Musical mientras Anne, Anne de Alemania y Lokum la acompañan.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S17-P03",
+      "title": "S17-P03",
+      "chapter": "Página 17 · Imagen 3 de 4",
+      "text": "Lokum persiguió una nota sombría y cayó en una montaña de confeti.",
+      "image": "assets/s17-p03-v1.webp",
+      "alt": "Lokum emerge ilesa de un montón de confeti después de perseguir una pequeña nota sombría. Las tres la miran sorprendidas.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S17-P04",
+      "title": "S17-P04",
+      "chapter": "Página 17 · Imagen 4 de 4",
+      "text": "Lokum: «¡Lo tenía todo controlado!»",
+      "image": "assets/s17-p04-v1.webp",
+      "alt": "Lokum posa orgullosa sobre el confeti mientras Lara, Anne y Anne de Alemania se ríen con ella.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S18-P01",
+      "title": "S18-P01",
+      "chapter": "Página 18 · Imagen 1 de 2",
+      "text": "En una plataforma flotante, vieron otro Corazón Musical.",
+      "image": "assets/s18-p01-v1.webp",
+      "alt": "El grupo descubre una plataforma de concierto suspendida sobre las nubes; el segundo Corazón Musical está en una jaula al otro lado.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
+      "id": "S18-P02",
+      "title": "S18-P02",
+      "chapter": "Página 18 · Imagen 2 de 2",
+      "text": "Lara: «¡Qué alto está!» Anne: «Primero observemos cómo se mueven las plataformas.»",
+      "image": "assets/s18-p02-v1.webp",
+      "alt": "Lara señala las plataformas flotantes mientras el grupo observa cómo se mueven.",
+      "status": "ilustraciones_aprobadas_texto_borrador"
+    },
+    {
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
