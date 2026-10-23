@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#251a42">
   <title>Lara · El secreto de la melodía de las sombras</title>
-  <link rel="stylesheet" href="style.css?v=20261022-37">
-  <script src="reader.js?v=20261022-42" defer></script>
+  <link rel="stylesheet" href="style.css?v=20261023-consistent">
+  <script src="reader.js?v=20261023-consistent" defer></script>
 </head>
 <body>
   <header class="masthead"><a href="#" id="home" class="masthead-link is-active" aria-current="page" aria-label="Volver al principio">✦ <span>Libro</span></a><div class="masthead-actions"><button id="open-games" class="masthead-link songs-link" type="button" aria-pressed="false">✧ <span>Juegos</span></button><button id="open-songs" class="masthead-link songs-link" type="button" aria-pressed="false">♫ <span>Canciones</span></button><button id="bookmark-toggle" class="masthead-link bookmark-toggle" type="button" aria-expanded="false" aria-controls="bookmark-menu" aria-label="Marcapáginas" title="Marcapáginas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.75h12a1 1 0 0 1 1 1v16l-7-4.5-7 4.5v-16a1 1 0 0 1 1-1Z"/></svg></button><span class="badge">Vista previa</span><div id="bookmark-menu" class="bookmark-menu" hidden role="region" aria-label="Marcapáginas"><p id="bookmark-status" role="status" aria-live="polite">Aún no hay marcador.</p><button id="save-bookmark" type="button" aria-label="Guardar esta página">Guardar</button><button id="go-bookmark" type="button" disabled aria-label="Ir al marcapáginas">Ir</button><button id="remove-bookmark" class="remove-bookmark" type="button" hidden>Quitar</button></div></div></header>
@@ -36,12 +36,13 @@
       <div class="songs-heading"><button id="close-games" class="back-link" type="button" aria-label="Volver al libro">←</button><div><p class="eyebrow">JUEGOS DE LECTURA</p><h1>Juegos de Sonoria</h1><p class="songs-intro">Pequeños retos para leer jugando</p></div></div>
       <div class="games-content">
         <div id="game-menu" class="game-menu">
-          <a href="palabras-secretas/" class="game-choice secret-game-link"><span class="game-mark" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><path d="M16 4a8 8 0 0 0-4 15l-2 9h12l-2-9a8 8 0 0 0-4-15Z" fill="currentColor"/></svg></span><span><strong>Palabras secretas</strong><small>100 palabras · Arrastra las letras</small></span><span class="game-arrow" aria-hidden="true">→</span></a>
+          <button id="start-secret-game" type="button" class="game-choice secret-game-link"><span class="game-mark" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><path d="M16 4a8 8 0 0 0-4 15l-2 9h12l-2-9a8 8 0 0 0-4-15Z" fill="currentColor"/></svg></span><span><strong>Palabras secretas</strong><small>100 palabras · Arrastra las letras</small></span><span class="game-arrow" aria-hidden="true">→</span></button>
           <button id="start-syllable-game" class="game-choice" type="button"><span class="game-mark" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><path d="M5 6h8a4 4 0 1 1 8 0h6v8a4 4 0 1 0 0 8v5h-8a4 4 0 1 0-8 0H5v-8a4 4 0 1 0 0-8Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg></span><span><strong>La sílaba perdida</strong><small>Practica más de 100 palabras</small></span><span class="game-arrow" aria-hidden="true">→</span></button>
           <button id="start-word-game" class="game-choice" type="button"><span class="game-mark" aria-hidden="true"><svg viewBox="0 0 32 32" focusable="false"><path d="M20 23V5l7 4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="14.5" cy="24" rx="5.5" ry="4" fill="currentColor" transform="rotate(-20 14.5 24)"/></svg></span><span><strong>Completa la melodía</strong><small>Adivina una palabra con diez notas</small></span><span class="game-arrow" aria-hidden="true">→</span></button>
         </div>
         <div class="lokum-coach"><img src="assets/lokum-juegos.webp" alt="Lokum, la gata mágica de Lara" loading="lazy" decoding="async"><div id="lokum-comment" class="speech-bubble" role="status" aria-live="polite">¡Vamos a leer juntas!</div></div>
         <div id="game-intro" class="game-intro" hidden><h2 id="game-intro-title"></h2><p id="game-intro-text"></p><button id="start-game-activity" class="next-challenge" type="button">¡Vamos a jugar! →</button></div>
+        <div id="secret-game" hidden><div class="game-progress"><span>Palabras secretas</span><button id="back-to-games-secret" class="game-back" type="button">← Juegos</button></div><iframe id="secret-game-frame" title="Palabras secretas" src="about:blank"></iframe></div>
         <div id="syllable-game" class="syllable-game" hidden>
           <div class="game-progress"><span id="game-round-label">Reto 1 de 123</span><button id="back-to-games" class="game-back" type="button">← Juegos</button></div>
           <p class="game-instruction">Elige la sílaba que falta</p>

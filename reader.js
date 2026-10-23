@@ -125,6 +125,7 @@ function move(delta) {
 }
 
 function showSongs(show) {
+  closeSecretGame();
   songPageOpen = show;
   gamePageOpen = false;
   songsPage.hidden = !show;
@@ -144,6 +145,8 @@ function showSongs(show) {
 }
 
 function showGames(show) {
+  closeSecretGame();
+  songCards.forEach(card => { card.querySelector('audio').pause(); updateSongCard(card); });
   gamePageOpen = show;
   songPageOpen = false;
   gamesPage.hidden = !show;
@@ -245,12 +248,18 @@ function shuffle(items) {
 }
 
 function showGameIntro(type) {
+  closeSecretGame();
+  stopReading();
   activeGame = type;
   el('game-menu').hidden = true;
   el('syllable-game').hidden = true;
   el('word-game').hidden = true;
   el('game-intro').hidden = false;
-  if (type === 'syllable') {
+  if (type === 'secret') {
+    el('game-intro-title').textContent = 'Palabras secretas';
+    el('game-intro-text').textContent = 'Lee o escucha mi pista y descubre la palabra. Arrastra cada letra hasta su casilla: si aciertas, brilla en verde; si no, brilla en rojo y vuelve a su sitio. También puedes tocar una letra y después su casilla. Usa «Una pista» si necesitas ayuda. Hay tres niveles y no hay reloj.';
+    el('lokum-comment').textContent = '¡Vamos a descubrir 100 palabras! Yo te doy una pista y tú ordenas las letras.';
+  } else if (type === 'syllable') {
     el('game-intro-title').textContent = 'La sílaba perdida';
     el('game-intro-text').textContent = 'Elige la sílaba que falta para completar cada palabra. Hay más de 100 palabras para practicar y puedes volver a intentarlo.';
     el('lokum-comment').textContent = '¡Vamos a practicar más de 100 palabras, una sílaba a la vez!';
@@ -463,6 +472,11 @@ el('start-game-activity').addEventListener('click', () => {
     el('lokum-comment').textContent = '¡Vamos! Yo te acompaño.';
     renderChallenge();
   } else if (activeGame === 'word') startWordGame();
+  else if (activeGame === 'secret') {
+    el('secret-game').hidden = false;
+    gamesPage.classList.add('secret-active');
+    el('secret-game-frame').src = 'palabras-secretas/?embedded=1';
+  }
 });
 el('back-to-games-word').addEventListener('click', () => {
   el('word-game').hidden = true;
@@ -657,3 +671,13 @@ fetch('book-content.json', { cache: 'no-cache' })
   });
 
 if(location.hash === '#juegos') showGames(true);
+
+function closeSecretGame() {
+  const frame = el('secret-game-frame');
+  if (frame.getAttribute('src') !== 'about:blank') frame.src = 'about:blank';
+  el('secret-game').hidden = true;
+  gamesPage.classList.remove('secret-active');
+}
+el('start-secret-game').addEventListener('click', () => showGameIntro('secret'));
+el('back-to-games-secret').addEventListener('click', () => showGames(true));
+if (location.hash === '#palabras-secretas') { showGames(true); showGameIntro('secret'); }
