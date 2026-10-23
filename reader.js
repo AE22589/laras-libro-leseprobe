@@ -327,13 +327,6 @@ function renderChallenge() {
 el('start-syllable-game').addEventListener('click', () => {
   showGameIntro('syllable');
 });
-el('back-to-games').addEventListener('click', () => {
-  el('syllable-game').hidden = true;
-  el('word-game').hidden = true;
-  el('game-intro').hidden = true;
-  el('game-menu').hidden = false;
-  el('lokum-comment').textContent = '¡Elige un juego!';
-});
 el('next-challenge').addEventListener('click', () => {
   challengeIndex = challengeIndex === syllableChallenges.length - 1 ? 0 : challengeIndex + 1;
   renderChallenge();
@@ -477,13 +470,6 @@ el('start-game-activity').addEventListener('click', () => {
     gamesPage.classList.add('secret-active');
     el('secret-game-frame').src = 'palabras-secretas/?embedded=1&v=20261023-3';
   }
-});
-el('back-to-games-word').addEventListener('click', () => {
-  el('word-game').hidden = true;
-  el('syllable-game').hidden = true;
-  el('game-intro').hidden = true;
-  el('game-menu').hidden = false;
-  el('lokum-comment').textContent = '¡Elige un juego!';
 });
 el('retry-word-game').addEventListener('click', startWordGame);
 el('say-hidden-word').addEventListener('click', () => {
