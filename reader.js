@@ -655,3 +655,5 @@ fetch('book-content.json', { cache: 'no-cache' })
   .catch(() => {
     el('audio-status').textContent = 'No se pudo cargar esta vista previa. Inténtalo de nuevo.';
   });
+
+if(location.hash === '#juegos') showGames(true);

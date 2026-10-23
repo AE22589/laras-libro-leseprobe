@@ -28,3 +28,5 @@
 
 @media (min-width:481px){.masthead{justify-content:center!important;gap:10px;flex-wrap:wrap}.masthead-actions{position:relative;gap:8px;flex-wrap:wrap;justify-content:center}.masthead-actions>.badge{position:static;right:auto;margin-left:2px}}
 
+
+.games-page .game-menu{grid-template-rows:repeat(3,minmax(64px,100px))!important;gap:8px}.secret-game-link{text-decoration:none;touch-action:manipulation}.secret-game-link:focus-visible{outline:3px solid #d34b8f;outline-offset:2px}
