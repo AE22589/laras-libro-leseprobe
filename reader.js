@@ -475,7 +475,7 @@ el('start-game-activity').addEventListener('click', () => {
   else if (activeGame === 'secret') {
     el('secret-game').hidden = false;
     gamesPage.classList.add('secret-active');
-    el('secret-game-frame').src = 'palabras-secretas/?embedded=1';
+    el('secret-game-frame').src = 'palabras-secretas/?embedded=1&v=20261023-3';
   }
 });
 el('back-to-games-word').addEventListener('click', () => {
