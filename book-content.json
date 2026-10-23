@@ -1104,6 +1104,96 @@
       "status": "imagen_y_texto_aprobados_para_publicacion"
     },
     {
+      "id": "S36-P01",
+      "title": "S36-P01",
+      "chapter": "Página 36 · Imagen 1 de 5",
+      "text": "Al escuchar la canción, el Maestro recordó su infancia: tocaba con sus amigos y se divertía, incluso cuando se equivocaba. Después, unas risas le hicieron temer los errores.",
+      "image": "assets/s36-p01-v1.webp",
+      "alt": "El Maestro recuerda su infancia, cuando tocaba con sus amigos y se divertía aunque se equivocara.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S36-P02",
+      "title": "S36-P02",
+      "chapter": "Página 36 · Imagen 2 de 5",
+      "text": "El Maestro bajó la batuta: «Antes… yo también tocaba por diversión.»",
+      "image": "assets/s36-p02-v1.webp",
+      "alt": "El Maestro del Compás baja la batuta y recuerda que antes tocaba por diversión.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S36-P03",
+      "title": "S36-P03",
+      "chapter": "Página 36 · Imagen 3 de 5",
+      "text": "Lara sacó los cuatro corazones de su mochila y los reunió con el quinto. ¡Los cinco Corazones Musicales estaban juntos!",
+      "image": "assets/s36-p03-v1.webp",
+      "alt": "Lara reúne los cuatro Corazones Musicales de su mochila con el quinto corazón.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S36-P04",
+      "title": "S36-P04",
+      "chapter": "Página 36 · Imagen 4 de 5",
+      "text": "Los cinco corazones brillaron al unirse. Un arcoíris de luz y música salió del palacio.",
+      "image": "assets/s36-p04-v1.webp",
+      "alt": "Los cinco Corazones Musicales brillan juntos y un arcoíris de luz y música sale del palacio.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S36-P05",
+      "title": "S36-P05",
+      "chapter": "Página 36 · Imagen 5 de 5",
+      "text": "¡Los colores volvieron a Sonoria! La ciudad entera recuperó su música.",
+      "image": "assets/s36-p05-v1.webp",
+      "alt": "La música y los colores vuelven a Sonoria.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S37-P01",
+      "title": "S37-P01",
+      "chapter": "Página 37 · Imagen 1 de 5",
+      "text": "Bombo: «¡Nuestras heroínas han devuelto la música!»",
+      "image": "assets/s37-p01-v1.webp",
+      "alt": "Bombo celebra con Lara, Anne, Anne de Alemania y Lokum el regreso de la música.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S37-P02",
+      "title": "S37-P02",
+      "chapter": "Página 37 · Imagen 2 de 5",
+      "text": "Lara bailó bajo los focos. ¡Todo Sonoria celebraba con ella!",
+      "image": "assets/s37-p02-v1.webp",
+      "alt": "Lara baila bajo los focos mientras Sonoria celebra.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S37-P03",
+      "title": "S37-P03",
+      "chapter": "Página 37 · Imagen 3 de 5",
+      "text": "Anne dio palmas y Anne de Alemania cantó. Lokum también quiso bailar, a su manera.",
+      "image": "assets/s37-p03-v1.webp",
+      "alt": "Anne da palmas, Anne de Alemania canta y Lokum se mueve a su manera.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S37-P04",
+      "title": "S37-P04",
+      "chapter": "Página 37 · Imagen 4 de 5",
+      "text": "Desde un lado del escenario, el Maestro miró el concierto y sonrió.",
+      "image": "assets/s37-p04-v1.webp",
+      "alt": "El Maestro del Compás mira el concierto desde un lado del escenario y sonríe.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S37-P05",
+      "title": "S37-P05",
+      "chapter": "Página 37 · Imagen 5 de 5",
+      "text": "No hacía falta hacerlo perfecto. ¡Lo más bonito era disfrutar juntas!",
+      "image": "assets/s37-p05-v1.webp",
+      "alt": "Lara, Anne, Anne de Alemania, Lokum y el Maestro disfrutan juntos de la música.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
