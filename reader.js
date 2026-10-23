@@ -679,5 +679,5 @@ function closeSecretGame() {
   gamesPage.classList.remove('secret-active');
 }
 el('start-secret-game').addEventListener('click', () => showGameIntro('secret'));
-el('back-to-games-secret').addEventListener('click', () => showGames(true));
+
 if (location.hash === '#palabras-secretas') { showGames(true); showGameIntro('secret'); }

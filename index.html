@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#251a42">
   <title>Lara · El secreto de la melodía de las sombras</title>
   <link rel="stylesheet" href="style.css?v=20261023-castle">
-  <script src="reader.js?v=20261023-3" defer></script>
+  <script src="reader.js?v=20261023-single-header" defer></script>
 </head>
 <body>
   <header class="masthead"><a href="#" id="home" class="masthead-link is-active" aria-current="page" aria-label="Volver al principio">✦ <span>Libro</span></a><div class="masthead-actions"><button id="open-games" class="masthead-link songs-link" type="button" aria-pressed="false">✧ <span>Juegos</span></button><button id="open-songs" class="masthead-link songs-link" type="button" aria-pressed="false">♫ <span>Canciones</span></button><button id="bookmark-toggle" class="masthead-link bookmark-toggle" type="button" aria-expanded="false" aria-controls="bookmark-menu" aria-label="Marcapáginas" title="Marcapáginas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.75h12a1 1 0 0 1 1 1v16l-7-4.5-7 4.5v-16a1 1 0 0 1 1-1Z"/></svg></button><span class="badge">Vista previa</span><div id="bookmark-menu" class="bookmark-menu" hidden role="region" aria-label="Marcapáginas"><p id="bookmark-status" role="status" aria-live="polite">Aún no hay marcador.</p><button id="save-bookmark" type="button" aria-label="Guardar esta página">Guardar</button><button id="go-bookmark" type="button" disabled aria-label="Ir al marcapáginas">Ir</button><button id="remove-bookmark" class="remove-bookmark" type="button" hidden>Quitar</button></div></div></header>
@@ -42,7 +42,7 @@
         </div>
         <div class="lokum-coach"><img src="assets/lokum-juegos.webp" alt="Lokum, la gata mágica de Lara" loading="lazy" decoding="async"><div id="lokum-comment" class="speech-bubble" role="status" aria-live="polite">¡Vamos a leer juntas!</div></div>
         <div id="game-intro" class="game-intro" hidden><h2 id="game-intro-title"></h2><p id="game-intro-text"></p><button id="start-game-activity" class="next-challenge" type="button">¡Vamos a jugar! →</button></div>
-        <div id="secret-game" hidden><div class="game-progress"><span>Palabras secretas</span><button id="back-to-games-secret" class="game-back" type="button">← Juegos</button></div><iframe id="secret-game-frame" title="Palabras secretas" src="about:blank"></iframe></div>
+        <div id="secret-game" hidden><iframe id="secret-game-frame" title="Palabras secretas" src="about:blank"></iframe></div>
         <div id="syllable-game" class="syllable-game" hidden>
           <div class="game-progress"><span id="game-round-label">Reto 1 de 123</span><button id="back-to-games" class="game-back" type="button">← Juegos</button></div>
           <p class="game-instruction">Elige la sílaba que falta</p>
