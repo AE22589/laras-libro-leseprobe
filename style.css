@@ -34,3 +34,5 @@
 .game-mark svg{display:block;width:30px;height:30px;overflow:visible}.game-mark{color:#6843b9;background:#f0e8f7}
 
 #secret-game[hidden]{display:none!important}#secret-game{flex:1;min-height:0;display:flex;flex-direction:column;gap:6px}#secret-game .game-progress{min-height:44px;padding:0 8px}#secret-game-frame{width:100%;flex:1;min-height:0;border:0;border-radius:16px;background:#fffdfd}.secret-active .lokum-coach{display:none}.game-intro{overflow:auto;flex-shrink:1}.game-intro p{flex-shrink:0}.game-intro .next-challenge{flex-shrink:0}.game-back{min-height:44px;min-width:44px}
+
+#secret-game>.game-progress{background:rgba(255,253,250,.94);border-radius:12px;padding:0 12px;color:var(--ink)}#secret-game>.game-progress .game-back{color:var(--purple)}
