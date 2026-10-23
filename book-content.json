@@ -1014,6 +1014,96 @@
       "status": "imagen_y_texto_aprobados_para_publicacion"
     },
     {
+      "id": "S34-P01",
+      "title": "S34-P01",
+      "chapter": "Página 34 · Imagen 1 de 5",
+      "text": "Al ver el gran tambor, Lokum quiso participar también.",
+      "image": "assets/s34-p01-v3.webp",
+      "alt": "Al ver el gran tambor, Lokum quiso participar también.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S34-P02",
+      "title": "S34-P02",
+      "chapter": "Página 34 · Imagen 2 de 5",
+      "text": "Al pasar, Lokum rozó el tambor con el costado. ¡PLOOOM!",
+      "image": "assets/s34-p02-v3.webp",
+      "alt": "Al pasar, Lokum rozó el tambor con el costado. ¡PLOOOM!",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S34-P03",
+      "title": "S34-P03",
+      "chapter": "Página 34 · Imagen 3 de 5",
+      "text": "Lara siguió el ritmo con palmas. ¡Una sonó a destiempo!",
+      "image": "assets/s34-p03-v3.webp",
+      "alt": "Lara siguió el ritmo con palmas. ¡Una sonó a destiempo!",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S34-P04",
+      "title": "S34-P04",
+      "chapter": "Página 34 · Imagen 4 de 5",
+      "text": "Lara y las dos Annes rieron con Lokum. El Maestro se quedó horrorizado.",
+      "image": "assets/s34-p04-v1.webp",
+      "alt": "Lara y las dos Annes rieron con Lokum. El Maestro se quedó horrorizado.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S34-P05",
+      "title": "S34-P05",
+      "chapter": "Página 34 · Imagen 5 de 5",
+      "text": "Maestro del Compás: «¡Parad! ¡Esa música es horrible!»",
+      "image": "assets/s34-p05-v1.webp",
+      "alt": "Maestro del Compás: «¡Parad! ¡Esa música es horrible!»",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S35-P01",
+      "title": "S35-P01",
+      "chapter": "Página 35 · Imagen 1 de 5",
+      "text": "Lara siguió cantando. Anne dio palmas, Anne de Alemania cantó la melodía y Lokum maulló a su manera.",
+      "image": "assets/s35-p01-v3.webp",
+      "alt": "Lara siguió cantando. Anne dio palmas, Anne de Alemania cantó la melodía y Lokum maulló a su manera.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S35-P02",
+      "title": "S35-P02",
+      "chapter": "Página 35 · Imagen 2 de 5",
+      "text": "La canción imperfecta hizo brillar el quinto Corazón Musical dentro de su jaula.",
+      "image": "assets/s35-p02-v3.webp",
+      "alt": "La canción imperfecta hizo brillar el quinto Corazón Musical dentro de su jaula.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S35-P03",
+      "title": "S35-P03",
+      "chapter": "Página 35 · Imagen 3 de 5",
+      "text": "Maestro del Compás: «¡No puede ser! ¡Esa canción está llena de errores!»",
+      "image": "assets/s35-p03-v1.webp",
+      "alt": "Maestro del Compás: «¡No puede ser! ¡Esa canción está llena de errores!»",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S35-P04",
+      "title": "S35-P04",
+      "chapter": "Página 35 · Imagen 4 de 5",
+      "text": "Lara: «¡Pero nos encanta!»",
+      "image": "assets/s35-p04-v1.webp",
+      "alt": "Lara: «¡Pero nos encanta!»",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "S35-P05",
+      "title": "S35-P05",
+      "chapter": "Página 35 · Imagen 5 de 5",
+      "text": "La música de Lara abrió la jaula. ¡El quinto Corazón Musical se unió a los otros cuatro!",
+      "image": "assets/s35-p05-v1.webp",
+      "alt": "La música de Lara abrió la jaula. ¡El quinto Corazón Musical se unió a los otros cuatro!",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
       "title": "Continuará…",
       "chapter": "Hasta la próxima aventura",
       "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
