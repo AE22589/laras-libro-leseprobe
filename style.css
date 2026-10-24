@@ -17,6 +17,8 @@
 @media(max-width:360px){.games-page .game-menu{grid-template-rows:repeat(2,104px)!important}.games-page .game-choice{padding:7px 9px}}
 .reader.cover-home{grid-template-rows:minmax(0,1fr)}
 .reader.cover-home .reading-text{display:none}
+.branch-choices{margin-top:10px}.choice-buttons{display:grid;grid-template-columns:1fr 1fr;gap:7px}.choice-buttons button{min-height:42px;padding:7px 10px;border:1px solid #d9cee5;border-radius:11px;background:#fff;color:var(--purple);font:700 13px/1.2 system-ui,-apple-system,'Segoe UI',sans-serif;text-align:left}.choice-buttons button:last-child{border-color:var(--purple);background:var(--purple);color:#fff}.choice-buttons button:hover{background:#f0e9f7}.choice-buttons button:last-child:hover{background:#59369f}#choice-status{margin:7px 0 0;color:var(--muted);font-size:12px;line-height:1.25}
+@media(max-width:380px){.branch-choices{margin-top:7px}.choice-buttons{gap:5px}.choice-buttons button{min-height:38px;padding:6px 8px;font-size:12px}}
 .song-list{grid-template-rows:repeat(3,112px);align-content:center}
 .song-card{background:rgba(255,253,250,.78)}
 .song-upcoming{background:rgba(255,253,250,.68)}

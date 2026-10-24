@@ -1212,12 +1212,59 @@
       "status": "imagen_y_texto_aprobados_para_publicacion"
     },
     {
-      "title": "Continuará…",
-      "chapter": "Hasta la próxima aventura",
-      "text": "La historia completa está en preparación. ¡Nos esperan muchas aventuras!",
-      "image": "assets/portada-aprobada.webp",
-      "alt": "Portada del libro: Lara, Anne, Anne de Alemania y Lokum frente a Sonoria.",
-      "status": "aviso_provisional"
+      "id": "WEB-ENTSCHEIDUNG-S37",
+      "title": "Una nueva aventura",
+      "chapter": "Después del concierto · Elige el camino de Lara",
+      "text": "Bombo: «Lara, ¡habéis ayudado muchísimo a Sonoria! Habéis devuelto nuestra música y nos habéis dado valor. ¡Muchas gracias!»\n\nBombo: «¿Os gustaría quedaros un poquito más en Sonoria y vivir otra aventura? ¿O preferís volver a casa?»",
+      "image": "assets/web-entscheidung-s37-v1.webp",
+      "alt": "Después del concierto, Bombo da las gracias a Lara y a sus compañeras. Cuatro escenas anuncian los caminos que Lara puede elegir.",
+      "status": "imagen_aprobada_texto_espanol_borrador",
+      "choices": [
+        {
+          "label": "Devolverle su sonido al arcoíris",
+          "path": "A"
+        },
+        {
+          "label": "Un concierto en el que todos puedan participar",
+          "path": "B"
+        },
+        {
+          "label": "Encontrar la canción extra desaparecida",
+          "path": "C"
+        },
+        {
+          "label": "Quiero volver a casa",
+          "path": "D",
+          "target": "WEB-WEG-D-01"
+        }
+      ]
+    },
+    {
+      "id": "WEB-WEG-D-01",
+      "title": "De vuelta en casa",
+      "chapter": "Camino D · La vuelta a casa · 1 de 3",
+      "text": "La estrella abrió un portal de regreso. Lara, Anne, Anne de Alemania y Lokum lo cruzaron y volvieron al salón. En el gran televisor de Anne volvió a sonar la música.\n\nLara: «¿De verdad pasó todo?»\nLokum: «¡Claro! ¿O crees que hablo por hablar?»\n\nLara se echó a reír.",
+      "image": "assets/web-weg-d-01-heimkehr-v1.webp",
+      "alt": "Lara, Anne, Anne de Alemania y Lokum regresan por el portal al salón de Lara. En el televisor vuelve a sonar música.",
+      "status": "imagen_aprobada_texto_espanol_borrador"
+    },
+    {
+      "id": "WEB-WEG-D-02",
+      "title": "Siempre cerca",
+      "chapter": "Camino D · La vuelta a casa · 2 de 3",
+      "text": "Más tarde, Lara se sentó entre Anne y Anne de Alemania. Lokum se acurrucó junto a ellas.\n\nAnne de Alemania: «Aunque estemos lejos, siempre estarás en mi corazón.»\nAnne: «Y las dos te queremos muchísimo.»",
+      "image": "assets/web-weg-d-02-liebesbotschaft-v1.webp",
+      "alt": "Lara está sentada entre Anne y Anne de Alemania. Lokum se acurruca junto a ellas en el salón.",
+      "status": "imagen_aprobada_texto_espanol_borrador"
+    },
+    {
+      "id": "WEB-WEG-D-03",
+      "title": "También queremos a Lokum",
+      "chapter": "Camino D · La vuelta a casa · 3 de 3",
+      "text": "Lokum: «¿Y a mí no me quiere nadie?»\n\nLara la abrazó con cariño. La música y el cariño nos mantienen cerca, estemos donde estemos.",
+      "image": "assets/web-weg-d-03-lokum-abschluss-v1.webp",
+      "alt": "Lara abraza a Lokum; Anne y Anne de Alemania sonríen a su lado.",
+      "status": "imagen_aprobada_texto_espanol_borrador"
     }
   ]
 }

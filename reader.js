@@ -82,18 +82,41 @@ function render() {
   el('scene-title').textContent = scene.title;
   el('scene-title').hidden = Boolean(scene.id);
   el('story-text').textContent = scene.text;
+  renderChoices(scene);
   el('chapter').textContent = scene.chapter;
   el('scene-title').hidden = Boolean(scene.id);
-  el('chapter').hidden = Boolean(scene.id);
-  el('chapter').hidden = Boolean(scene.id);
+  el('chapter').hidden = Boolean(scene.id) && !scene.choices;
   el('counter').textContent = `${current + 1} / ${scenes.length}`;
   el('previous').disabled = current === 0;
-  el('next').disabled = current === scenes.length - 1;
+  el('next').disabled = current === scenes.length - 1 || Boolean(scene.choices);
   el('audio-status').textContent = speechSupported
     ? 'Pulsa Escuchar. Se prioriza una voz femenina en español si está instalada.'
     : 'Este navegador no permite leer en voz alta.';
   updateHeaderSelection();
   updateBookmarkMenu();
+}
+
+function renderChoices(scene) {
+  const panel = el('branch-choices');
+  const buttons = el('choice-buttons');
+  buttons.replaceChildren();
+  el('choice-status').textContent = '';
+  panel.hidden = !scene.choices;
+  if (!scene.choices) return;
+  for (const choice of scene.choices) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.textContent = choice.label;
+    button.addEventListener('click', () => {
+      if (choice.target) {
+        const target = scenes.findIndex(item => item.id === choice.target);
+        if (target >= 0) { current = target; render(); }
+        return;
+      }
+      el('choice-status').textContent = 'Esta aventura todavía está en preparación. Puedes elegir otro camino.';
+    });
+    buttons.append(button);
+  }
 }
 
 function preloadImage(index) {
@@ -118,6 +141,7 @@ function chooseSpanishVoice() {
 }
 
 function move(delta) {
+  if (delta > 0 && scenes[current]?.choices) return;
   const target = current + delta;
   if (target < 0 || target >= scenes.length) return;
   current = target;
