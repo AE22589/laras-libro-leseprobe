@@ -1189,7 +1189,7 @@
       "title": "S37-P05",
       "chapter": "Página 37 · Imagen 5 de 7",
       "text": "Lokum hizo su estiramiento más divertido. ¡Hasta el Maestro se rio!",
-      "image": "assets/s37-konzert-p05-v1.webp",
+      "image": "assets/s37-konzert-p05-korrektur-v2.webp",
       "alt": "Lokum se estira jugando al ritmo de la música mientras Lara baila y el público disfruta.",
       "status": "imagen_y_texto_aprobados_para_publicacion"
     },
@@ -1247,7 +1247,8 @@
       "text": "La estrella abrió un portal de regreso. Lara, Anne, Anne de Alemania y Lokum lo cruzaron y volvieron al salón. En el gran televisor de Anne volvió a sonar la música.\n\nLara: «¿De verdad pasó todo?»\nLokum: «¡Claro! ¿O crees que hablo por hablar?»\n\nLara se echó a reír.",
       "image": "assets/web-weg-d-01-heimkehr-v1.webp",
       "alt": "Lara, Anne, Anne de Alemania y Lokum regresan por el portal al salón de Lara. En el televisor vuelve a sonar música.",
-      "status": "imagen_aprobada_texto_espanol_borrador"
+      "status": "imagen_aprobada_texto_espanol_borrador",
+      "previousTarget": "WEB-ENTSCHEIDUNG-S37"
     },
     {
       "id": "WEB-WEG-D-02",
@@ -1265,7 +1266,9 @@
       "text": "Lokum: «¿Y a mí no me quiere nadie?»\n\nLara la abrazó con cariño. La música y el cariño nos mantienen cerca, estemos donde estemos.",
       "image": "assets/web-weg-d-03-lokum-abschluss-v1.webp",
       "alt": "Lara abraza a Lokum; Anne y Anne de Alemania sonríen a su lado.",
-      "status": "imagen_aprobada_texto_espanol_borrador"
+      "status": "imagen_aprobada_texto_espanol_borrador",
+      "endOfBranch": true,
+      "endMessage": "Fin de esta aventura."
     },
     {
       "id": "WEB-WEG-A-01",
@@ -1293,7 +1296,9 @@
       "text": "Anne: «Primero tenemos que averiguar qué necesitan los colores.»\nLara: «Escuchemos la melodía.»",
       "image": "assets/web-weg-a-03-regenbogen-v6.webp",
       "alt": "Lara escucha con atención mientras las seis bandas de color, largas y continuas, se separan suavemente en el cielo de Sonoria.",
-      "status": "imagen_y_texto_aprobados_para_publicacion"
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "endOfBranch": true,
+      "endMessage": "Este camino continúa en las próximas páginas."
     }
   ]
 }
