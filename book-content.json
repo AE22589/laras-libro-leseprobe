@@ -1216,9 +1216,9 @@
       "title": "Una nueva aventura",
       "chapter": "Después del concierto · Elige el camino de Lara",
       "text": "Bombo: «Lara, ¡habéis ayudado muchísimo a Sonoria! Habéis devuelto nuestra música y nos habéis dado valor. ¡Muchas gracias!»\n\nBombo: «¿Os gustaría quedaros un poquito más en Sonoria y vivir otra aventura? ¿O preferís volver a casa?»",
-      "image": "assets/web-entscheidung-s37-v1.webp",
-      "alt": "Después del concierto, Bombo da las gracias a Lara y a sus compañeras. Cuatro escenas anuncian los caminos que Lara puede elegir.",
-      "status": "imagen_aprobada_texto_espanol_borrador",
+      "image": "assets/web-decision-bombo-v1.png",
+      "alt": "Bombo, la pequeña criatura blanca con ojos de botón y un altavoz naranja, invita a Lara a elegir una aventura.",
+      "status": "borrador_bombo_y_botones_pendiente_de_revision",
       "choices": [
         {
           "label": "Devolverle su sonido al arcoíris",
@@ -1296,9 +1296,36 @@
       "text": "Anne: «Primero tenemos que averiguar qué necesitan los colores.»\nLara: «Escuchemos la melodía.»",
       "image": "assets/web-weg-a-03-regenbogen-v6.webp",
       "alt": "Lara escucha con atención mientras las seis bandas de color, largas y continuas, se separan suavemente en el cielo de Sonoria.",
-      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "WEB-WEG-A-04",
+      "title": "Anne de Alemania reconoce un gorjeo",
+      "chapter": "Camino A · La aventura del arcoíris · 4 de 20",
+      "text": "Anne de Alemania: «¡Esperad! ¡Conozco esos sonidos!»\nLara: «¿Son de tus periquitos?»",
+      "image": "assets/web-weg-a-04-gorjeo-v7.webp",
+      "alt": "En el mirador al aire libre de Sonoria, Anne de Alemania reconoce el canto de sus periquitos. Lara, Anne, Lokum y Bombo escuchan junto a ella.",
+      "status": "imagen_y_texto_publicados"
+    },
+    {
+      "id": "WEB-WEG-A-05",
+      "title": "Una mirada sonora a Hamburgo",
+      "chapter": "Camino A · La aventura del arcoíris · 5 de 20",
+      "text": "En una pequeña proyección rectangular justo encima de la brújula, vieron a los dos periquitos en su percha y oyeron sus trinos. Lara y sus compañeras seguían en Sonoria; no se veía la habitación y los pájaros estaban seguros en casa.",
+      "image": "assets/web-weg-a-05-proyeccion-v7.webp",
+      "alt": "En Sonoria, Anne de Alemania sostiene la brújula de estrellas. Una pequeña proyección rectangular muestra a sus dos periquitos en Hamburgo.",
+      "status": "imagen_y_texto_publicados"
+    },
+    {
+      "id": "WEB-WEG-A-06",
+      "title": "Dos voces diferentes",
+      "chapter": "Camino A · La aventura del arcoíris · 6 de 20",
+      "text": "Anne de Alemania: «Cada uno canta de una manera distinta. Juntos forman una melodía preciosa.»\nAnne: «Entonces necesitamos los dos sonidos.»",
+      "image": "assets/web-weg-a-06-dos-voces-v7.webp",
+      "alt": "En el mismo mirador de Sonoria, los dos periquitos aparecen en la pequeña proyección de la brújula y responden con notas distintas.",
+      "status": "imagen_y_texto_publicados",
       "endOfBranch": true,
-      "endMessage": "Este camino continúa en las próximas páginas."
+      "endMessage": "La aventura continúa en las próximas páginas."
     }
   ]
 }

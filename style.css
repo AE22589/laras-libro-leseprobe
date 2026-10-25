@@ -40,3 +40,16 @@
 #secret-game>.game-progress{background:rgba(255,253,250,.94);border-radius:12px;padding:0 12px;color:var(--ink)}#secret-game>.game-progress .game-back{color:var(--purple)}
 
 .branch-choices{padding:10px;border:1px solid #d9cee5;border-radius:14px;background:#f8f3fc}.branch-heading{margin:0;color:var(--ink);font-size:15px;line-height:1.2}.branch-instruction{margin:4px 0 8px;color:var(--muted);font-size:12px}.choice-buttons button{box-shadow:0 2px 7px #281e3c12}.choice-buttons button:focus-visible{outline-offset:2px}.choice-buttons button:active{transform:translateY(1px)}.branch-end{margin:10px 0 0;padding:9px 12px;border-radius:10px;background:#f3eff8;color:var(--purple);font-size:13px;font-weight:650}
+
+.reader.decision-scene{grid-template-rows:28px minmax(150px,.85fr) auto var(--controls-height)}
+.reader.decision-scene .art{background:radial-gradient(ellipse at center,#fff 0,#f8f2fc 60%,#eee6f6 100%)}
+.reader.decision-scene .art img{width:min(100%,460px);height:100%;object-fit:contain;padding:6px 20px}
+.reader.decision-scene .reading-text{padding:8px 14px 10px}
+.reader.decision-scene #story-text{font-size:clamp(16px,4vw,20px);line-height:1.22}
+.reader.decision-scene .branch-choices{margin-top:8px;padding:9px;background:#f8f3fc}
+.reader.decision-scene .branch-heading{font-size:15px}
+.reader.decision-scene .branch-instruction{margin:3px 0 7px}
+.reader.decision-scene .choice-buttons{gap:7px}
+.reader.decision-scene .choice-buttons button{min-height:52px;padding:7px 9px;text-align:center;font-size:clamp(12px,3.4vw,14px);line-height:1.18}
+.reader.decision-scene #choice-status{text-align:center}
+@media(max-height:680px){.reader.decision-scene{grid-template-rows:24px minmax(120px,.65fr) auto var(--controls-height)}.reader.decision-scene .reading-text{padding:6px 12px}.reader.decision-scene #story-text{font-size:16px}.reader.decision-scene .branch-choices{margin-top:5px;padding:7px}.reader.decision-scene .branch-instruction{display:none}.reader.decision-scene .choice-buttons button{min-height:44px}}

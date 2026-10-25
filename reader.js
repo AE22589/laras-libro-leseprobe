@@ -76,6 +76,7 @@ function render() {
   stopReading();
   const scene = scenes[current];
   readerPage.classList.toggle('cover-home', current === 0);
+  readerPage.classList.toggle('decision-scene', Boolean(scene.choices));
   el('cover').src = scene.image;
   preloadImage(current + 1);
   el('cover').alt = scene.alt;
