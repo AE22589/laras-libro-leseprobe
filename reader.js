@@ -82,8 +82,11 @@ function render() {
   el('scene-title').textContent = scene.title;
   el('scene-title').hidden = Boolean(scene.id);
   el('story-text').textContent = scene.text;
-  el('branch-end').hidden = !scene.endOfBranch;
-  el('branch-end').textContent = scene.endMessage || '';
+  const branchEnd = el('branch-end');
+  if (branchEnd) {
+    branchEnd.hidden = !scene.endOfBranch;
+    branchEnd.textContent = scene.endMessage || '';
+  }
   renderChoices(scene);
   el('chapter').textContent = scene.chapter;
   el('scene-title').hidden = Boolean(scene.id);
