@@ -87,7 +87,7 @@ function render() {
   el('scene-title').hidden = Boolean(scene.id);
   el('chapter').hidden = Boolean(scene.id) && !scene.choices;
   el('counter').textContent = `${current + 1} / ${scenes.length}`;
-  el('previous').disabled = current === 0;
+  el('previous').disabled = current === 0 && !scene.previousTarget;
   el('next').disabled = current === scenes.length - 1 || Boolean(scene.choices);
   el('audio-status').textContent = speechSupported
     ? 'Pulsa Escuchar. Se prioriza una voz femenina en español si está instalada.'
@@ -142,7 +142,10 @@ function chooseSpanishVoice() {
 
 function move(delta) {
   if (delta > 0 && scenes[current]?.choices) return;
-  const target = current + delta;
+  const scene = scenes[current];
+  const linkedTargetId = delta < 0 ? scene.previousTarget : scene.nextTarget;
+  const linkedTarget = linkedTargetId ? scenes.findIndex(item => item.id === linkedTargetId) : -1;
+  const target = linkedTarget >= 0 ? linkedTarget : current + delta;
   if (target < 0 || target >= scenes.length) return;
   current = target;
   render();

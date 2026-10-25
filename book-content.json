@@ -1222,7 +1222,8 @@
       "choices": [
         {
           "label": "Devolverle su sonido al arcoíris",
-          "path": "A"
+          "path": "A",
+          "target": "WEB-WEG-A-01"
         },
         {
           "label": "Un concierto en el que todos puedan participar",
@@ -1265,6 +1266,34 @@
       "image": "assets/web-weg-d-03-lokum-abschluss-v1.webp",
       "alt": "Lara abraza a Lokum; Anne y Anne de Alemania sonríen a su lado.",
       "status": "imagen_aprobada_texto_espanol_borrador"
+    },
+    {
+      "id": "WEB-WEG-A-01",
+      "title": "El camino hacia el arcoíris",
+      "chapter": "Camino A · La aventura del arcoíris · 1 de 20",
+      "text": "Bombo: «El arcoíris suena muy desordenado. Quizá podáis ayudarlo.»\nLara: «¡Vamos a escuchar con atención!»",
+      "image": "assets/web-weg-a-01-regenbogen-v6.webp",
+      "alt": "Lara, Anne, Anne de Alemania, Lokum y Bombo contemplan en Sonoria un arcoíris cuyos colores empiezan a desviarse suavemente.",
+      "status": "imagen_y_texto_aprobados_para_publicacion",
+      "previousTarget": "WEB-ENTSCHEIDUNG-S37"
+    },
+    {
+      "id": "WEB-WEG-A-02",
+      "title": "Un arcoíris sin melodía",
+      "chapter": "Camino A · La aventura del arcoíris · 2 de 20",
+      "text": "El arcoíris era precioso, pero sus colores no conseguían unirse. Una melodía se interrumpió de repente.",
+      "image": "assets/web-weg-a-02-regenbogen-v6.webp",
+      "alt": "El grupo escucha en Sonoria una melodía que se interrumpe mientras las bandas continuas del arcoíris se ondulan y pierden poco a poco su armonía.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
+    },
+    {
+      "id": "WEB-WEG-A-03",
+      "title": "Los colores pierden el camino",
+      "chapter": "Camino A · La aventura del arcoíris · 3 de 20",
+      "text": "Anne: «Primero tenemos que averiguar qué necesitan los colores.»\nLara: «Escuchemos la melodía.»",
+      "image": "assets/web-weg-a-03-regenbogen-v6.webp",
+      "alt": "Lara escucha con atención mientras las seis bandas de color, largas y continuas, se separan suavemente en el cielo de Sonoria.",
+      "status": "imagen_y_texto_aprobados_para_publicacion"
     }
   ]
 }
