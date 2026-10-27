@@ -1218,7 +1218,7 @@
       "text": "Bombo: «Lara, ¡habéis ayudado muchísimo a Sonoria! Habéis devuelto nuestra música y nos habéis dado valor. ¡Muchas gracias!»\n\nBombo: «¿Os gustaría quedaros un poquito más en Sonoria y vivir otra aventura? ¿O preferís volver a casa?»",
       "image": "assets/web-decision-bombo-v1.png",
       "alt": "Bombo, la pequeña criatura blanca con ojos de botón y un altavoz naranja, invita a Lara a elegir una aventura.",
-      "status": "borrador_bombo_y_botones_pendiente_de_revision",
+      "status": "publicada_revision_global_pendiente",
       "choices": [
         {
           "label": "Devolverle su sonido al arcoíris",
@@ -1227,7 +1227,8 @@
         },
         {
           "label": "Un concierto en el que todos puedan participar",
-          "path": "B"
+          "path": "B",
+          "target": "WEB-WEG-B-01"
         },
         {
           "label": "Encontrar la canción extra desaparecida",
@@ -1239,6 +1240,189 @@
           "target": "WEB-WEG-D-01"
         }
       ]
+    },
+    {
+      "id": "WEB-WEG-B-01",
+      "title": "Una idea para todos",
+      "chapter": "Camino B · El concierto participativo · 1 de 20",
+      "text": "Cuando terminó la gran fiesta, Lara oyó algunas notas sueltas. Frente al escenario, el espacio seguía vacío.",
+      "image": "assets/web-weg-b-01.webp",
+      "alt": "Lara escucha unas notas sueltas en la plaza vacía frente al escenario de Sonoria.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente",
+      "previousTarget": "WEB-ENTSCHEIDUNG-S37"
+    },
+    {
+      "id": "WEB-WEG-B-02",
+      "title": "Un deseo tímido",
+      "chapter": "Camino B · El concierto participativo · 2 de 20",
+      "text": "Algunos habitantes se acercaron a Lara.\nHabitante: «Nos gustaría cantar, pero no nos atrevemos.»",
+      "image": "assets/web-weg-b-02.webp",
+      "alt": "Tres habitantes se acercan con timidez a Lara en la plaza.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-B-03",
+      "title": "¿Y si sale mal?",
+      "chapter": "Camino B · El concierto participativo · 3 de 20",
+      "text": "Habitante: «¿Y si nuestras voces suenan mal?»\n\nLara los escuchó con atención.",
+      "image": "assets/web-weg-b-03.webp",
+      "alt": "Una habitante expresa su preocupación mientras Lara la escucha con atención.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-B-04",
+      "title": "Un concierto para todos",
+      "chapter": "Camino B · El concierto participativo · 4 de 20",
+      "text": "Lara sonrió a los habitantes.\nLara: «¡Hagamos un concierto donde todos podamos participar! No tenemos que hacerlo perfecto.»",
+      "image": "assets/web-weg-b-04.webp",
+      "alt": "Lara invita a los habitantes a preparar un concierto abierto para todos.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-B-05",
+      "title": "Un espacio para todos",
+      "chapter": "Camino B · El concierto participativo · 5 de 20",
+      "text": "Bombo ayudó a despejar un espacio frente al escenario. Todos podrían hacer música allí, sin subir a ninguna tarima.",
+      "image": "assets/web-weg-b-05.webp",
+      "alt": "Bombo ayuda a despejar una zona llana frente al escenario para que todos puedan reunirse.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-B-06",
+      "title": "¿Qué sonido te gustaría compartir?",
+      "chapter": "Camino B · El concierto participativo · 6 de 20",
+      "text": "Lara y Lokum recorrieron Sonoria para recoger ideas.\nLara: «¿Qué sonido te gustaría llevar al concierto?»",
+      "image": "assets/web-weg-b-06.webp",
+      "alt": "Lara y Lokum preguntan a una habitante qué sonido quiere compartir.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-B-07",
+      "title": "Un ritmo tranquilo",
+      "chapter": "Camino B · El concierto participativo · 7 de 20",
+      "text": "Unas palmadas marcaron un ritmo tranquilo.",
+      "image": "assets/web-weg-b-07.webp",
+      "alt": "Una habitante marca un ritmo tranquilo con palmadas mientras Lara escucha.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-B-08",
+      "title": "Un tarareo cálido",
+      "chapter": "Camino B · El concierto participativo · 8 de 20",
+      "text": "Después, otra vecina se animó a tararear. Su voz sonó cálida y suave.",
+      "image": "assets/web-weg-b-08.webp",
+      "alt": "Otra vecina se anima a tararear ante Lara y el grupo.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-B-09",
+      "title": "Sonidos de cada día",
+      "chapter": "Camino B · El concierto participativo · 9 de 20",
+      "text": "La plaza empezó a llenarse de instrumentos y de sonidos de cada día.",
+      "image": "assets/web-weg-b-09.webp",
+      "alt": "Los habitantes vuelven a la plaza con instrumentos y objetos que producen sonidos cotidianos.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-B-10",
+      "title": "Nadie canta a solas",
+      "chapter": "Camino B · El concierto participativo · 10 de 20",
+      "text": "Lara miró a los más tímidos.\nLara: «¿Queréis cantar con alguien?»",
+      "image": "assets/web-weg-b-10.webp",
+      "alt": "Lara invita a dos niños tímidos a cantar con alguien.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-B-11",
+      "title": "Juntos da menos miedo",
+      "chapter": "Camino B · El concierto participativo · 11 de 20",
+      "text": "Dos vecinos aceptaron cantar juntos. Al estar uno al lado del otro, se sintieron más tranquilos.",
+      "image": "assets/web-weg-b-11.webp",
+      "alt": "Una niña y un niño cantan juntos, uno al lado del otro, mientras Lara los anima.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-B-12",
+      "title": "Hay sitio para todos",
+      "chapter": "Camino B · El concierto participativo · 12 de 20",
+      "text": "Los demás se acercaron y formaron un círculo. Nadie tenía que ponerse solo en el centro.",
+      "image": "assets/web-weg-b-12.webp",
+      "alt": "Los habitantes forman un círculo abierto alrededor de Lara; nadie queda solo en el centro.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-B-13",
+      "title": "Empezar juntos",
+      "chapter": "Camino B · El concierto participativo · 13 de 20",
+      "text": "Unas voces comenzaron juntas, casi en un susurro. Aunque alguna nota salió torcida, nadie se detuvo a corregirla.",
+      "image": "assets/web-weg-b-13.webp",
+      "alt": "El grupo empieza a cantar en voz baja; todos continúan aunque una nota suene distinta.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-B-14",
+      "title": "El Maestro del Compás escucha",
+      "chapter": "Camino B · El concierto participativo · 14 de 20",
+      "text": "Desde el borde de la plaza, el Maestro del Compás observó al grupo. Recordó cuánto le asustaba equivocarse cuando era pequeño.",
+      "image": "assets/web-weg-b-14.webp",
+      "alt": "El Maestro del Compás observa desde el borde de la plaza mientras recuerda su infancia.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-B-15",
+      "title": "Una invitación sencilla",
+      "chapter": "Camino B · El concierto participativo · 15 de 20",
+      "text": "Lara se acercó al Maestro del Compás.\nLara: «¿Nos ayudas con un ritmo sencillo?»\n\nÉl alzó la batuta, pero enseguida volvió a bajarla.",
+      "image": "assets/web-weg-b-15.webp",
+      "alt": "Lara invita al Maestro del Compás a marcar un ritmo; él levanta y vuelve a bajar la batuta.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-B-16",
+      "title": "Un golpe inesperado",
+      "chapter": "Camino B · El concierto participativo · 16 de 20",
+      "text": "Lokum saltó hacia un tambor y lo tocó sin querer. ¡Pum! El sonido salió un poco torcido.",
+      "image": "assets/web-weg-b-16.webp",
+      "alt": "Lokum toca accidentalmente un pequeño tambor mientras el grupo la mira.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-B-17",
+      "title": "El silencio de un instante",
+      "chapter": "Camino B · El concierto participativo · 17 de 20",
+      "text": "Por un momento, nadie cantó. Todos miraron al Maestro del Compás.",
+      "image": "assets/web-weg-b-17.webp",
+      "alt": "Por un instante, la plaza queda en silencio y todos miran al Maestro del Compás.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-B-18",
+      "title": "Un nuevo comienzo",
+      "chapter": "Camino B · El concierto participativo · 18 de 20",
+      "text": "Una sonrisa asomó en el rostro del Maestro. Levantó la batuta y marcó el comienzo.",
+      "image": "assets/web-weg-b-18.webp",
+      "alt": "El Maestro del Compás sonríe, levanta la batuta y da comienzo al concierto.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-B-19",
+      "title": "Cada cual a su manera",
+      "chapter": "Camino B · El concierto participativo · 19 de 20",
+      "text": "Anne y Anne de Alemania se unieron a las voces. Lara cantó con los vecinos, el Maestro del Compás marcó el ritmo y Lokum aportó un maullido muy suyo.",
+      "image": "assets/web-weg-b-19.webp",
+      "alt": "Lara, Anne, Anne de Alemania, Lokum, el Maestro del Compás y los habitantes participan juntos en el concierto.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-B-20",
+      "title": "Una nota diferente",
+      "chapter": "Camino B · El concierto participativo · 20 de 20",
+      "text": "Una nota se le escapó al Maestro del Compás. Esta vez sonrió y siguió tocando. La plaza celebró aquel concierto lleno de sonidos diferentes.",
+      "image": "assets/web-weg-b-20.webp",
+      "alt": "El Maestro del Compás sonríe y sigue tocando después de una nota inesperada; la plaza celebra el concierto.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente",
+      "endOfBranch": true,
+      "endMessage": "Fin de esta aventura."
     },
     {
       "id": "WEB-WEG-D-01",
