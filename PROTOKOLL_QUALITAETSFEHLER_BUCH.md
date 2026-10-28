@@ -21,7 +21,7 @@
 - **Kein schrittweiser Figuren-Drift:** Jede Illustration direkt gegen die freigegebene Master-Referenz prüfen. Vorherige Bilder dürfen die Szene und Komposition, aber nicht unbemerkt Aussehen oder Proportionen bestimmen.
 - **Laras Haare:** braun und schulterlang wie in der Master-Referenz. Wind darf sie seitlich bewegen, aber nicht verlängern. Keine Spitzen bis zur Brust.
 - **Laras Hose:** genau drei pinke Sterne: einer auf jeder Cargotasche und ein größerer tief am Hosenbein. Sterne auf Shirt oder Jacke zählen nicht dazu. Zahl und Position nicht verändern.
-- **Frisuren, Alter und Größen:** Lara bleibt sechs und deutlich kindlich kleiner als die Erwachsenen. Annes dunkles Haar, Brille und Kleidung sowie Anne de Alemanias blondes Haar und Kleidung nach ihren jeweiligen Referenzen prüfen.
+- **Frisuren, Alter und Größen:** Lara bleibt sechs und deutlich kindlich kleiner als die Erwachsenen. Nicht nur ihre Größe im Verhältnis zu den Erwachsenen prüfen, sondern auch Kopf-Rumpf-Verhältnis sowie Länge von Rumpf, Armen und Beinen direkt mit der Master-Referenz vergleichen. Sie darf nicht wie ein Kleinkind oder Vorschulkind wirken. Annes dunkles Haar, Brille und Kleidung sowie Anne de Alemanias blondes Haar und Kleidung nach ihren jeweiligen Referenzen prüfen.
 - **Lokums individuelle Fellzeichnung:** asymmetrische dunkle Calico-Zeichnung, weiße Brust, Schnauze und Pfoten, goldene Augen, rosa Halsband mit goldenem Stern. Farbe allein genügt nicht; die Fleckenverteilung muss ebenfalls verglichen werden.
 - **Bombo:** rundes weißes flauschiges Lautsprecherwesen mit zwei Knopfaugen, einer orange-braunen Lautsprecheröffnung und kleinen Gliedmaßen; keine zusätzlichen Gesichtszüge oder Accessoires.
 - **Kleidung und Requisiten:** Sterne, Schuhe, Taschen, Vorhang, Schleife, Leine und Ankersicherung zählen und positionieren. Keine Detailänderung als bloße Dekoration behandeln.
@@ -42,6 +42,7 @@
 ## Aktuelle Beispiele aus Weg C
 
 - Beim Weitergenerieren über vorherige Bilder driftete Laras Haarlänge trotz Master-Referenz. Die v2-Bilder sind daher nicht automatisch als korrekt anzusehen.
+- C06–C08 ließen Lara trotz passender Kleidung und kindlicher Körpergröße zu kleinkindlich wirken: Kopf zu groß im Verhältnis zum Körper, Rumpf und Gliedmaßen wirkten zu kurz. Altersangabe und Größenvergleich mit Erwachsenen reichen als Prüfung nicht aus; die Proportionen müssen aktiv an der sechsjährigen Lara aus der Master-Referenz gemessen werden. Vor der Abgabe auf die Alterswirkung im Bild achten. In C06-v2 bis C08-v2 wurden die Proportionen nach Nutzerhinweis angepasst und anschließend erneut auf Frisur und genau drei Hosensterne geprüft.
 - Lokums Fellzeichnung wurde als „Calico“ wiedererkannt, aber nicht streng genug auf individuelle Fleckenverteilung geprüft.
 - C02 zeigte Lokum und die Ankersicherung, machte den Auslöser der gelösten Sicherung jedoch nicht eindeutig genug sichtbar.
 - In der Textfolge wurden die Steuerhebel erst spät eingeführt; ein für Kinder verständlicher Aufbau der Maschine muss vor ihrer Benutzung geprüft werden.
