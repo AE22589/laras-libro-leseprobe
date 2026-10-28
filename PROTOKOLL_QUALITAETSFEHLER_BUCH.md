@@ -5,6 +5,10 @@
 
 ## Text und Handlung
 
+- **Unerklärte Bewegung und unnötige Umwege (Weg C, 28.10.2026):** Ein nur als Richtungssteuerung erklärter Hebel sollte die Plattform vor Befreiung des blockierten Rückholhebels näherbringen. Die dafür nötige Bewegung war nicht erklärt. Korrektur: keine weitere Plattform/kein Ausweichmanöver, kein vorheriges Näherfahren zum Entspannen. Lara entdeckt die eingeklemmte Ecke, zieht sie mit Lokums Hilfe vorsichtig heraus; erst danach holt Blau über die Trommel die Plattform zurück. Rosa richtet währenddessen nur aus. Prüfung für alle Geschichten: Für jede Ortsveränderung Ursache benennen; keine neue Steuerfunktion oder Vorbedingung zur nachträglichen Rettung einer Szene erfinden. Ursache, Lösung und Rückkehr müssen auch ohne ergänzende Erklärung verständlich sein.
+- **Katzenanatomie und Körperumfang (Weg C, 28.10.2026):** Lokum wurde zu breit und mit zusätzlichem Puschel neben dem Schwanz gezeichnet. Prüfen: ein schlanker Körper gemäß Master, genau ein Schwanz mit erkennbarem Ansatz am Hinterkörper und korrekter heller Spitze; keine zusätzlichen Fellanhänge. C03/C04 wurden nach korrigiertem C05 angeglichen; beim Gesamtbuch alle früheren Bilder erneut darauf ansehen.
+- **Abgetrennte Körperteile durch Magieeffekte (C06):** Ein Schutzschild erschien aus einer schwebenden Lichthand statt Annes tatsächlicher Hand. Arm-Hand-Verbindung und Anzahl der Gliedmaßen unabhängig vom Leuchteffekt prüfen; verworfenen Erstentwurf nicht verwenden.
+
 - **Kontinuität von Gegenständen:** Vorhang, Schleife, Leine, Anker, Hebel und Bühnen müssen in jeder Szene denselben Zustand behalten. Nichts darf ohne sichtbaren oder erzählten Übergang verschwinden, auftauchen oder die Funktion wechseln.
 - **Ursache vor Wirkung:** Eine Sicherung muss gelöst sein, bevor Wind die Plattform bewegt; eine Blockade muss vor ihrer Entdeckung bestehen. Keine Szene darf eine bereits erklärte Ursache nachträglich neu erfinden.
 - **Bewegung braucht einen Auslöser und ein Ende:** Plattformen, Türen oder andere Dinge dürfen nicht von allein starten, zurückkehren oder stoppen. Der Text muss zeigen, wer oder was sie bewegt und wodurch die Bewegung endet.
