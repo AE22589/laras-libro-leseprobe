@@ -165,7 +165,7 @@ Am Ende jede Geschichte und anschließend das ganze Buch in drei getrennten Durc
 
 ## Neue unveröffentlichte C03–C14-Prüffassungen – 30.10.2026
 
-- Erzeugt: C03-v7, C04-v7, C05-v5, C06-v5, C07-v5, C08-v5, C09-v4, C10-v4, C11-v5, C12-v5, C13-v6 und C14-v5.
+- Erzeugt: C03-v7, C04-v8, C05-v5, C06-v5, C07-v5, C08-v5, C09-v4, C10-v4, C11-v5, C12-v5, C13-v6 und C14-v5. C04-v7 wurde verworfen: Es war C03 zu ähnlich und Laras Haare waren zu lang. C04-v8 zeigt die größere Distanz und schulterlange Haare.
 - Ziel: dieselbe goldgesäumte Vorhangecke liegt in C03–C14 am blauen Hebelfuß unter derselben geflochtenen kupfergoldenen Leine; in C14 ist sie teilweise herausgezogen, aber noch gefangen. Erst C15 zeigt sie frei.
 - Interne Sichtprüfung: In C03–C14 ist der Fangpunkt nun klarer und Laras Hosensterne bleiben überwiegend einzeln zählbar. C13 hat wärmeres Licht als die Nachbarbilder und benötigt einen Stilabgleich. Katzenfell, Figurenmodell und Anschluss an C15 müssen noch als durchgehende Folge gegen die Master geprüft werden.
 - Die Dateien liegen als getrennte Prüffassungen im lokalen Arbeitsordner; sie wurden nicht in `assets/` kopiert und nicht veröffentlicht. C03–C05 werden als erstes kleines Abnahmepaket gezeigt, danach folgen höchstens drei bis vier Seiten pro Paket.
