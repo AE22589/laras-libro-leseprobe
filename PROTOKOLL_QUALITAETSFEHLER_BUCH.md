@@ -14,7 +14,7 @@
 - **Bewegung braucht einen Auslöser und ein Ende:** Plattformen, Türen oder andere Dinge dürfen nicht von allein starten, zurückkehren oder stoppen. Der Text muss zeigen, wer oder was sie bewegt und wodurch die Bewegung endet.
 - **Keine neuen Handlungselemente ohne Einführung:** Bühne, Requisit, Mechanismus oder Fähigkeit nicht plötzlich einführen, wenn die Geschichte darauf angewiesen ist. Frühzeitig sichtbar oder verständlich machen.
 - **Räumliche Logik:** Vor jedem Vorschlag festhalten, wer wo steht, welche Wege offen sind und wie Figuren oder Gegenstände dorthin gelangen.
-- **Verständlichkeit für Sechsjährige:** Fachwörter und mehrstufige Mechanik vermeiden oder durch Handlung und Bild erklären. Prüfen, ob ein Kind versteht, was gerade passiert und warum.
+- **Verständlichkeit für Siebenjährige:** Fachwörter und mehrstufige Mechanik vermeiden oder durch Handlung und Bild erklären. Prüfen, ob ein Kind versteht, was gerade passiert und warum.
 - **Abwechslung im Satzbau:** Nicht jede Szene mit derselben Figur oder Konstruktion beginnen. Satzrhythmus und Perspektive variieren, ohne den einfachen Lesefluss zu verlieren.
 - **Buchstimme treffen:** Vor dem Schreiben bereits freigegebene Seiten vergleichen. Keine neue Erzählstimme oder unnötig blumige Formulierungen einführen.
 - **Sprachregel:** Der endgültige Buchtext ist Spanisch. Deutsch dient nur der sinngemäßen Prüfung und darf nicht versehentlich in die Ausarbeitung rutschen.
@@ -39,7 +39,7 @@
 2. Vor dem Bildprompt den Moment davor und danach prüfen: Ursache, Positionen und Objektzustände müssen zusammenpassen.
 3. Bei jeder Bildgenerierung die passenden freigegebenen Figurenreferenzen direkt beifügen. Frühere Szenen nur als zusätzliche Kompositionshilfe verwenden und ausdrücklich auf Design-Drift prüfen.
 4. Ergebnis in voller Größe gegen jede Figurenreferenz prüfen; bei wichtigen Details einzeln zählen und vergleichen. Danach alle Bilder der Szene als Folge betrachten.
-5. Text laut und ohne zusätzliche Erklärung aus Sicht eines sechsjährigen Kindes prüfen. Anschließend Spanisch, Buchstimme, Satzanfänge und Wiederholungen prüfen.
+5. Text laut und ohne zusätzliche Erklärung aus Sicht eines siebenjährigen Kindes prüfen. Anschließend Spanisch, Buchstimme, Satzanfänge und Wiederholungen prüfen.
 6. Dateiversion und Prüfstatus klar benennen. Ein erzeugtes oder korrigiertes Bild ist nicht automatisch geprüft oder freigegeben.
 7. Am Buchende diese Prüfpunkte systematisch auf alle Zweige, Seiten und Illustrationen anwenden und offene Fehler als Liste vorlegen.
 
@@ -138,3 +138,13 @@ Am Ende jede Geschichte und anschließend das ganze Buch in drei getrennten Durc
 - La secuencia conserva los estados clave: telón libre en C01–C02; mismo punto de enganche desde C03 hasta C14; telón liberado en C15; recogida de la cuerda desde C17; cruce después de acoplar las plataformas en C19; cierre en el podio principal en C20.
 - **Corrección del registro histórico:** las observaciones anteriores que decían que el enganche no se veía en C05–C10 o cambiaba en C11 describían versiones descartadas. Las versiones publicadas se deben evaluar por su estado actual; no reutilizar esas observaciones como si describieran las imágenes finales.
 - **Estado de revisión:** publicación de Camino C completada. La revisión consolidada de textos, ilustraciones, continuidad entre ramas y todos los finales posibles del libro sigue pendiente. El despliegue no equivale a la aprobación global del libro.
+
+## Gesamtaudit des aktuellen Buchstands, 29.10.2026
+
+- **Prüfziel ergänzt:** Die Texte werden für eine siebenjährige Leserin geprüft. Lara selbst bleibt gemäß Figurenmodell sechs Jahre alt; ihre Proportionen und ihr Alter im Bild sind davon getrennt zu bewerten.
+- **Auditumfang:** alle 199 Einträge der öffentlichen Leseprobe einschließlich Hauptgeschichte und Enden A–D gesichtet; alle referenzierten Bilddateien sind vorhanden. Der Gesamtstatus bleibt `boceto_de_prueba_no_aprobado`; 75 Einträge tragen den Status `imagen_y_texto_aprobados_para_publicacion`, zahlreiche andere sind Entwürfe oder global offen.
+- **Weg C wieder offen:** Der Abgleich der aktuell veröffentlichten C03–C15-Bilder bestätigt die frühere Protokollnotiz „angeglichen“ nicht. C03 behauptet im Text, die Vorhangecke sei an der Leine neben dem Hebel eingeklemmt; in C03–C10 ist dieser Fangpunkt visuell nicht klar zu sehen und C11–C14 bleibt er mehrdeutig. Erst C15 zeigt den Stoff frei. Die Folge muss als ein zusammenhängender Zustand neu geprüft werden.
+- **Fehlende Übergänge:** WEB-WEG-B-01 beginnt nach dem Palastkonzert am Platz; WEB-WEG-C-01 springt zurück auf die schwebende Plattform. Beide Ortswechsel sind nicht erzählt oder gezeigt und brauchen eine kurze Überleitung.
+- **Textkorrekturen gefunden:** S07-P02 unterscheidet Anne und Anne de Alemania nicht eindeutig; WEB-WEG-A-05 klingt mit „proyección rectangular“ und der Erklärung, was im Bild nicht zu sehen ist, wie Bildregie statt Kindergeschichte; S30-P02 verwendet „Devuélvanme“ und wechselt damit aus der sonstigen „vosotros“-Sprachform.
+- **Masterabgleich begrenzt:** Freigegebene v3-Ganzkörperreferenzen für Lara, Anne, Anne de Alemania und Lokum liegen unter `laras-libro/01_charaktere/referenzen/master_v3`. Für Bombo und den Taktmeister gibt es noch keine freigegebene Einzelreferenz; vorhandene Buchbilder sind nur Vorschläge. Die Seite-für-Seite-Prüfung gegen die vier vorhandenen Masters ist noch offen. Der später ausdrücklich akzeptierte buschige Schwanz Lokums wird nicht als Fehler gewertet; die ältere Protokollformulierung „dünner Schwanz“ ist nicht mehr maßgeblich. Fellzeichnung und Körperumfang bleiben gegen die akzeptierte Bildreferenz zu prüfen.
+- Die ausführliche Arbeitsfassung mit Wortschatz, Folgenbewertung und Korrekturreihenfolge liegt lokal im Projektordner als `PRUEFBERICHT_GESAMTBUCH_2026-10-29.md`; sie ist nicht Teil der öffentlichen Leseprobe. Die frühere Aussage im Arbeitsbericht, es gebe keine Masterbilder, war falsch: Der Ordner `master_v3` enthält vier aktuelle Referenzen. Dieser Auditbericht ist keine Buchfreigabe.
