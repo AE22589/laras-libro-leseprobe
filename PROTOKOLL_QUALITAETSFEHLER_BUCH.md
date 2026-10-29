@@ -130,3 +130,11 @@ Am Ende jede Geschichte und anschließend das ganze Buch in drei getrennten Durc
 - En C20-v1, Bombo pliega el telón en el escenario principal y Lokum se sienta encima para el momento cómico final. La plataforma ya está parada; no se repite el regreso.
 - Control recurrente: comparar las manchas de Lokum con el master y distinguir claramente pelaje de cuerpo, pecho, hocico, patas y cola. Si la usuaria pide corregir solo el pelaje, conservar la cola sin cambios.
 - Los borradores C13-v5 a C18-v4 se revisaron por separado y fueron aprobados en paquetes pequeños. La auditoría consolidada de todo el libro sigue pendiente.
+
+## Actualización 29.10.2026 – publicación de Camino C
+
+- Se añadieron a la versión pública las veinte escenas C01–C20, con el texto español y las ilustraciones aprobadas en las revisiones por paquetes. La elección de la página de decisión ahora conduce a `WEB-WEG-C-01`; C20 termina el camino sin continuar por otro final.
+- Versiones publicadas: C01-v3, C02-v3, C03-v6, C04-v6, C05-v4, C06-v4, C07-v4, C08-v4, C09-v3, C10-v3, C11-v4, C12-v4, C13-v5, C14-v4, C15-v4, C16-v3, C17-v3, C18-v4, C19-v3 y C20-v1. Las imágenes se optimizaron a WebP sin cambiar la composición aprobada.
+- La secuencia conserva los estados clave: telón libre en C01–C02; mismo punto de enganche desde C03 hasta C14; telón liberado en C15; recogida de la cuerda desde C17; cruce después de acoplar las plataformas en C19; cierre en el podio principal en C20.
+- **Corrección del registro histórico:** las observaciones anteriores que decían que el enganche no se veía en C05–C10 o cambiaba en C11 describían versiones descartadas. Las versiones publicadas se deben evaluar por su estado actual; no reutilizar esas observaciones como si describieran las imágenes finales.
+- **Estado de revisión:** publicación de Camino C completada. La revisión consolidada de textos, ilustraciones, continuidad entre ramas y todos los finales posibles del libro sigue pendiente. El despliegue no equivale a la aprobación global del libro.

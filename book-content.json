@@ -1231,8 +1231,9 @@
           "target": "WEB-WEG-B-01"
         },
         {
-          "label": "Encontrar la canción extra desaparecida",
-          "path": "C"
+          "label": "La plataforma fuera de control",
+          "path": "C",
+          "target": "WEB-WEG-C-01"
         },
         {
           "label": "Quiero volver a casa",
@@ -1420,6 +1421,189 @@
       "text": "Una nota se le escapó al Maestro del Compás. Esta vez sonrió y siguió tocando. La plaza celebró aquel concierto lleno de sonidos diferentes.",
       "image": "assets/web-weg-b-20.webp",
       "alt": "El Maestro del Compás sonríe y sigue tocando después de una nota inesperada; la plaza celebra el concierto.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente",
+      "endOfBranch": true,
+      "endMessage": "Fin de esta aventura."
+    },
+    {
+      "id": "WEB-WEG-C-01",
+      "title": "El telón se agita",
+      "chapter": "Camino C · La plataforma fuera de control · 1 de 20",
+      "text": "Lara ya conocía la plataforma flotante. Bombo puso un telón en una plataforma pequeña. Una cuerda la unía a la plataforma principal. El ancla la mantenía cerca, pese al viento.",
+      "image": "assets/web-weg-c-01.webp",
+      "alt": "Lara, Anne, Anne de Alemania, Lokum y Bombo están en la plataforma flotante. Bombo ha colocado un telón en una plataforma pequeña, unida al podio principal por una cuerda.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente",
+      "previousTarget": "WEB-ENTSCHEIDUNG-S37"
+    },
+    {
+      "id": "WEB-WEG-C-02",
+      "title": "Una cinta suelta",
+      "chapter": "Camino C · La plataforma fuera de control · 2 de 20",
+      "text": "Lara subió a sujetar el telón. Lokum quiso atrapar una cinta suelta y tiró sin querer del seguro del ancla. La plataforma aún no se movió.",
+      "image": "assets/web-weg-c-02.webp",
+      "alt": "Lara sujeta el telón en la plataforma pequeña. Lokum intenta atrapar una cinta suelta junto al seguro del ancla; la plataforma aún permanece cerca del podio principal.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-C-03",
+      "title": "Como una vela",
+      "chapter": "Camino C · La plataforma fuera de control · 3 de 20",
+      "text": "El seguro ya estaba suelto cuando el viento sopló más fuerte e infló el telón como una vela. La plataforma empezó a moverse. Una esquina del telón se enganchó en la cuerda, junto a la palanca del ancla.",
+      "image": "assets/web-weg-c-03.webp",
+      "alt": "Una ráfaga hincha el telón como una vela y la plataforma empieza a moverse. Una esquina del telón queda atrapada junto a la palanca azul del ancla.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-C-04",
+      "title": "La plataforma se aleja",
+      "chapter": "Camino C · La plataforma fuera de control · 4 de 20",
+      "text": "La plataforma pequeña se alejó de la plataforma principal. Lara y Lokum seguían allí. Sus amigos se quedaron en la plataforma principal.",
+      "image": "assets/web-weg-c-04.webp",
+      "alt": "Lara y Lokum siguen en la plataforma pequeña mientras se aleja; Anne, Anne de Alemania y Bombo permanecen en el podio principal.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-C-05",
+      "title": "El escudo de Anne",
+      "chapter": "Camino C · La plataforma fuera de control · 5 de 20",
+      "text": "«¡Estamos bien!», gritó Lara. La plataforma pequeña aún estaba cerca de la principal. Anne protegió a Lara con su escudo de luz.",
+      "image": "assets/web-weg-c-05.webp",
+      "alt": "Anne protege a Lara y Lokum con un escudo de luz desde la plataforma principal.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-C-06",
+      "title": "El camino de vuelta",
+      "chapter": "Camino C · La plataforma fuera de control · 6 de 20",
+      "text": "Desde la plataforma principal, Anne de Alemania señaló el camino de vuelta. Bombo esperó junto al borde. Cerca de Lara había una máquina con tres palancas y un tambor que enrollaba la cuerda.",
+      "image": "assets/web-weg-c-06.webp",
+      "alt": "Anne de Alemania señala el camino de vuelta. Junto a Lara se ve una máquina con tres palancas, una cuerda y un tambor.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-C-07",
+      "title": "La palanca azul",
+      "chapter": "Camino C · La plataforma fuera de control · 7 de 20",
+      "text": "—La palanca azul recoge la cuerda para traer la plataforma de vuelta —le explicó Anne de Alemania. Lara vio el dibujo de un ancla en esa palanca y la probó.",
+      "image": "assets/web-weg-c-07.webp",
+      "alt": "Lara prueba la palanca azul con el símbolo del ancla mientras Anne de Alemania le explica su función desde el podio principal.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-C-08",
+      "title": "La palanca bloqueada",
+      "chapter": "Camino C · La plataforma fuera de control · 8 de 20",
+      "text": "La palanca azul no se movía. ¡Estaba atascada! La cuerda no se recogía y la plataforma seguía alejándose. Lara aún no sabía qué pasaba.",
+      "image": "assets/web-weg-c-08.webp",
+      "alt": "Lara intenta mover la palanca azul, pero está atascada; la plataforma sigue alejándose y la cuerda no se recoge.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-C-09",
+      "title": "¿Qué la sujeta?",
+      "chapter": "Camino C · La plataforma fuera de control · 9 de 20",
+      "text": "Lara soltó la palanca azul. —Algo la está sujetando… —murmuró. Antes de probar otra, decidió mirar bien.",
+      "image": "assets/web-weg-c-09.webp",
+      "alt": "Lara suelta la palanca azul y observa la máquina para descubrir por qué está atascada.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-C-10",
+      "title": "Sigue la cuerda",
+      "chapter": "Camino C · La plataforma fuera de control · 10 de 20",
+      "text": "Desde el borde de la plataforma, siguió la cuerda con la mirada. Pasaba justo por el pie de la palanca azul.",
+      "image": "assets/web-weg-c-10.webp",
+      "alt": "Lara sigue con la mirada la cuerda trenzada desde el borde de la plataforma hasta el pie de la palanca azul.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-C-11",
+      "title": "La esquina escondida",
+      "chapter": "Camino C · La plataforma fuera de control · 11 de 20",
+      "text": "¡Allí estaba! Una esquina del telón había quedado atrapada bajo la cuerda, contra la palanca. —¡Por eso no se mueve!",
+      "image": "assets/web-weg-c-11.webp",
+      "alt": "Lara descubre que una esquina dorada del telón está atrapada bajo la cuerda junto al pie de la palanca azul.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-C-12",
+      "title": "Con mucho cuidado",
+      "chapter": "Camino C · La plataforma fuera de control · 12 de 20",
+      "text": "Se agachó junto a la palanca y agarró el borde dorado del telón. Tiró despacito, sin dar un tirón fuerte.",
+      "image": "assets/web-weg-c-12.webp",
+      "alt": "Lara se agacha y tira con cuidado del borde dorado del telón, pero la esquina sigue atrapada bajo la cuerda.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-C-13",
+      "title": "Una pata amiga",
+      "chapter": "Camino C · La plataforma fuera de control · 13 de 20",
+      "text": "Lokum se acercó a curiosear. —¿Me ayudas? Sujeta aquí —le pidió Lara, señalando el telón junto a sus pies.",
+      "image": "assets/web-weg-c-13.webp",
+      "alt": "Lokum se acerca mientras Lara le pide que sujete una parte del telón. La esquina continúa atrapada junto a la palanca azul.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-C-14",
+      "title": "Las dos juntas",
+      "chapter": "Camino C · La plataforma fuera de control · 14 de 20",
+      "text": "La gata puso una pata sobre la tela y la mantuvo quieta. Mientras tanto, Lara fue sacando la esquina, un poquito cada vez.",
+      "image": "assets/web-weg-c-14.webp",
+      "alt": "Lokum mantiene el telón sujeto con una pata mientras Lara sigue sacando despacio la esquina, que aún permanece parcialmente atrapada.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-C-15",
+      "title": "La esquina libre",
+      "chapter": "Camino C · La plataforma fuera de control · 15 de 20",
+      "text": "Por fin, la esquina salió de debajo de la cuerda. ¡Estaba libre! Lara la apartó de la palanca mientras Lokum seguía sujetando el telón.",
+      "image": "assets/web-weg-c-15.webp",
+      "alt": "Lara libera la esquina del telón y la aparta de la palanca; Lokum todavía sujeta el resto de la tela.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-C-16",
+      "title": "La palanca funciona",
+      "chapter": "Camino C · La plataforma fuera de control · 16 de 20",
+      "text": "Con el telón apartado, Lara volvió a probar la palanca azul. Esta vez bajó sin atascarse. —¡Funciona!",
+      "image": "assets/web-weg-c-16.webp",
+      "alt": "Con el telón apartado, Lara vuelve a probar la palanca azul y esta vez logra bajarla.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-C-17",
+      "title": "La plataforma vuelve",
+      "chapter": "Camino C · La plataforma fuera de control · 17 de 20",
+      "text": "Lara mantuvo la palanca azul hacia abajo. El tambor empezó a recoger la cuerda y la plataforma volvió despacio hacia sus amigos.",
+      "image": "assets/web-weg-c-17.webp",
+      "alt": "Lara mantiene bajada la palanca azul. El tambor empieza a recoger la cuerda y la plataforma se acerca al podio principal.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-C-18",
+      "title": "Señales desde la plataforma principal",
+      "chapter": "Camino C · La plataforma fuera de control · 18 de 20",
+      "text": "—¡La rosa sirve para girar! —le indicó Anne de Alemania. Sin soltar la azul, Lara movió un poco la rosa para girar hacia sus amigos.",
+      "image": "assets/web-weg-c-18.webp",
+      "alt": "Lara mantiene la palanca azul y mueve la rosa para orientar la plataforma hacia sus amigos; aún no han cruzado.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-C-19",
+      "title": "De vuelta con los demás",
+      "chapter": "Camino C · La plataforma fuera de control · 19 de 20",
+      "text": "Al llegar, Lara centró la palanca rosa y soltó la azul. La máquina dejó de recoger la cuerda y mantuvo la plataforma junto al borde. ¡Lara y Lokum pudieron pasar con sus amigos!",
+      "image": "assets/web-weg-c-19.webp",
+      "alt": "La plataforma pequeña queda unida y al mismo nivel que el podio. Lara y Lokum ya han cruzado; la palanca rosa está centrada y la azul suelta.",
+      "status": "imagen_y_texto_publicados_revision_global_pendiente"
+    },
+    {
+      "id": "WEB-WEG-C-20",
+      "title": "Lokum, la heroína",
+      "chapter": "Camino C · La plataforma fuera de control · 20 de 20",
+      "text": "Bombo quitó el telón y lo dobló. Lokum se sentó encima, muy orgullosa. Lara se rio: —¡Nuestra heroína del escenario!",
+      "image": "assets/web-weg-c-20.webp",
+      "alt": "En el podio principal, Bombo dobla el telón y Lokum se sienta orgullosa encima. Lara y sus amigos celebran el final.",
       "status": "imagen_y_texto_publicados_revision_global_pendiente",
       "endOfBranch": true,
       "endMessage": "Fin de esta aventura."
