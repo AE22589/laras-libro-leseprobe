@@ -160,13 +160,14 @@ Am Ende jede Geschichte und anschließend das ganze Buch in drei getrennten Durc
 
 - Der Eintrag vom 29.10.2026, der C03-v6 als veröffentlicht und den gleichen sichtbaren Fangpunkt bis C14 als gegeben beschreibt, war zu sicher formuliert. Die aktuell ausgelieferte Datei `assets/web-weg-c-03.webp` zeigt die Vorhangecke noch frei; C03-v6 behebt diesen sichtbaren Mangel ebenfalls nicht eindeutig.
 - Deshalb gilt die frühere Aussage „Die Sequenz konserviert den Fangpunkt“ nicht als bestätigter Befund. Für den konsolidierten Abschluss ist der tatsächliche Bildzustand von C03 bis C14 erneut in der Reihe zu prüfen. Derselbe konkrete Stoffpunkt muss neben dem blauen Hebelfuß sichtbar unter der kupfergoldenen geflochtenen Leine liegen; erst C15 zeigt ihn frei.
-- Neue C03/C04-Bildentwürfe werden erst übernommen, wenn zusätzlich zu diesem Fangpunkt Laras genau drei Hosensterne, ihre schulterlangen Haare und das bestätigte Lokum-Design unverändert stimmen. Entwürfe sind nicht automatisch freigegeben oder veröffentlicht.
+- Neue Bildfassungen werden erst übernommen, wenn neben dem Fangpunkt Laras genau drei Hosensterne, schulterlange Haare und das bestätigte Lokum-Design stimmen und die Nutzerin das jeweilige Paket bestätigt.
 - Die Textkorrekturen S07-P02, S30-P02, WEB-WEG-A-05, WEB-WEG-B-01 und WEB-WEG-C-01 wurden am 29.10.2026 in `book-content.json` eingetragen und mit Commit `47bdcb8` nach GitHub gepusht. Ein Eintrag oder eine Veröffentlichung dieser Sätze ersetzt weder die Bildprüfung noch die Gesamtfreigabe.
 
-## Neue unveröffentlichte C03–C14-Prüffassungen – 30.10.2026
+## C03–C05 bestätigt und veröffentlicht; C06–C14 weiter in Prüfung – 30.10.2026
 
 - Erzeugt: C03-v7, C04-v8, C05-v5, C06-v5, C07-v5, C08-v5, C09-v4, C10-v4, C11-v5, C12-v5, C13-v6 und C14-v5. C04-v7 wurde verworfen: Es war C03 zu ähnlich und Laras Haare waren zu lang. C04-v8 zeigt die größere Distanz und schulterlange Haare.
 - Ziel: dieselbe goldgesäumte Vorhangecke liegt in C03–C14 am blauen Hebelfuß unter derselben geflochtenen kupfergoldenen Leine; in C14 ist sie teilweise herausgezogen, aber noch gefangen. Erst C15 zeigt sie frei.
 - Interne Sichtprüfung: In C03–C14 ist der Fangpunkt nun klarer und Laras Hosensterne bleiben überwiegend einzeln zählbar. C13 hat wärmeres Licht als die Nachbarbilder und benötigt einen Stilabgleich. Katzenfell, Figurenmodell und Anschluss an C15 müssen noch als durchgehende Folge gegen die Master geprüft werden.
-- Die Dateien liegen als getrennte Prüffassungen im lokalen Arbeitsordner; sie wurden nicht in `assets/` kopiert und nicht veröffentlicht. C03–C05 werden als erstes kleines Abnahmepaket gezeigt, danach folgen höchstens drei bis vier Seiten pro Paket.
-- Status: **Prüfung offen; keine neue Bildfreigabe und keine Gesamtbuchfreigabe.**
+- Die Nutzerin hat C03-v7, C04-v8 und C05-v5 am 30.10.2026 im ersten Paket bestätigt. Diese drei Bilder wurden als `assets/web-weg-c-03-v7.webp`, `assets/web-weg-c-04-v8.webp` und `assets/web-weg-c-05-v5.webp` veröffentlicht und in `book-content.json` referenziert.
+- C06-v5 bis C14-v5/vN bleiben getrennte Prüffassungen im lokalen Arbeitsordner; sie sind weder in `assets/` kopiert noch veröffentlicht. C06–C08 werden als zweites kleines Abnahmepaket gezeigt, danach folgen höchstens drei bis vier Seiten pro Paket.
+- Status: **C03–C05 einzeln bestätigt; die Folge C06–C20 und die Gesamtprüfung aller Geschichten bleiben offen.**
