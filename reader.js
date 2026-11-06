@@ -8,7 +8,9 @@ let utterance = null;
 let speechRun = 0;
 const speechSupported = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
 const readerPage = document.querySelector('.reader[aria-label="Lector de cómic"]');
+const songsPage = el('songs-page');
 const gamesPage = el('games-page');
+let songPageOpen = false;
 let gamePageOpen = false;
 let activeGame = '';
 
@@ -26,7 +28,7 @@ function updateBookmarkMenu() {
   const hasBookmark = Boolean(bookmark && bookmark.key);
   el('go-bookmark').disabled = !hasBookmark;
   el('remove-bookmark').hidden = !hasBookmark;
-  el('save-bookmark').hidden = gamePageOpen;
+  el('save-bookmark').hidden = songPageOpen || gamePageOpen;
   el('bookmark-status').textContent = hasBookmark
     ? `Marcapáginas: ${bookmark.title || 'tu lectura'}.`
     : 'Aún no hay marcador.';
@@ -57,15 +59,17 @@ function stopReading() {
 }
 
 function updateHeaderSelection() {
-  const bookActive = !gamePageOpen;
+  const bookActive = !songPageOpen && !gamePageOpen;
   el('home').classList.toggle('is-active', bookActive);
   if (bookActive) el('home').setAttribute('aria-current', 'page');
   else el('home').removeAttribute('aria-current');
-  el('home').setAttribute('aria-label', gamePageOpen
+  el('home').setAttribute('aria-label', songPageOpen || gamePageOpen
     ? 'Volver al libro'
     : current === 0 ? 'Empezar a leer' : 'Volver a la portada');
   el('open-games').classList.toggle('is-active', gamePageOpen);
   el('open-games').setAttribute('aria-pressed', String(gamePageOpen));
+  el('open-songs').classList.toggle('is-active', songPageOpen);
+  el('open-songs').setAttribute('aria-pressed', String(songPageOpen));
 }
 
 function render() {
@@ -156,12 +160,36 @@ function move(delta) {
   render();
 }
 
-function showGames(show) {
+function showSongs(show) {
   closeSecretGame();
-  gamePageOpen = show;
-  gamesPage.hidden = !show;
+  songPageOpen = show;
+  gamePageOpen = false;
+  songsPage.hidden = !show;
+  gamesPage.hidden = true;
   readerPage.hidden = show;
   readerPage.style.display = show ? 'none' : 'grid';
+  songsPage.style.display = show ? 'grid' : 'none';
+  gamesPage.style.display = 'none';
+  el('notice').hidden = show;
+  updateHeaderSelection();
+  updateBookmarkMenu();
+  if (show) stopReading();
+  else {
+    songCards.forEach(card => { card.querySelector('audio').pause(); updateSongCard(card); });
+    render();
+  }
+}
+
+function showGames(show) {
+  closeSecretGame();
+  songCards.forEach(card => { card.querySelector('audio').pause(); updateSongCard(card); });
+  gamePageOpen = show;
+  songPageOpen = false;
+  gamesPage.hidden = !show;
+  songsPage.hidden = true;
+  readerPage.hidden = show;
+  readerPage.style.display = show ? 'none' : 'grid';
+  songsPage.style.display = 'none';
   gamesPage.style.display = show ? 'grid' : 'none';
   el('notice').hidden = show;
   updateHeaderSelection();
@@ -177,12 +205,14 @@ function showGames(show) {
   }
 }
 
+el('open-songs').addEventListener('click', () => showSongs(true));
 el('open-games').addEventListener('click', () => showGames(true));
+el('close-songs').addEventListener('click', () => showSongs(false));
 el('close-games').addEventListener('click', () => showGames(false));
 
 el('bookmark-toggle').addEventListener('click', toggleBookmarkMenu);
 el('save-bookmark').addEventListener('click', () => {
-  if (gamePageOpen || !scenes[current]) return;
+  if (songPageOpen || gamePageOpen || !scenes[current]) return;
   const scene = scenes[current];
   const key = scene.id || (current === 0 ? '__cover__' : `view:${current}`);
   try {
@@ -201,6 +231,7 @@ el('go-bookmark').addEventListener('click', () => {
     el('bookmark-status').textContent = 'Esta página no está disponible en la vista previa actual.';
     return;
   }
+  if (songPageOpen) showSongs(false);
   if (gamePageOpen) showGames(false);
   current = target;
   closeBookmarkMenu();
@@ -491,6 +522,47 @@ el('say-hidden-word').addEventListener('click', () => {
   window.speechSynthesis.speak(spoken);
 });
 
+function formatTime(seconds) {
+  if (!Number.isFinite(seconds)) return '0:00';
+  const minutes = Math.floor(seconds / 60);
+  return `${minutes}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
+}
+
+const songCards = [...document.querySelectorAll('.song-card[data-track]')];
+function updateSongCard(card) {
+  const audio = card.querySelector('audio');
+  const button = card.querySelector('.song-play');
+  const range = card.querySelector('.song-progress');
+  const time = card.querySelector('.song-time');
+  const active = !audio.paused && !audio.ended;
+  button.textContent = active ? 'Ⅱ' : '▶';
+  button.setAttribute('aria-label', `${active ? 'Pausar' : 'Reproducir'} ${card.querySelector('h2').textContent}`);
+  range.value = audio.duration ? String(Math.round(audio.currentTime / audio.duration * 1000)) : '0';
+  time.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+}
+
+songCards.forEach(card => {
+  const audio = card.querySelector('audio');
+  const button = card.querySelector('.song-play');
+  const range = card.querySelector('.song-progress');
+  button.addEventListener('click', async () => {
+    for (const other of songCards) {
+      const otherAudio = other.querySelector('audio');
+      if (otherAudio !== audio) { otherAudio.pause(); updateSongCard(other); }
+    }
+    if (audio.paused) {
+      try { await audio.play(); }
+      catch { el('audio-status').textContent = 'No se pudo reproducir esta canción. Inténtalo de nuevo.'; }
+    } else audio.pause();
+    updateSongCard(card);
+  });
+  range.addEventListener('input', () => {
+    if (audio.duration) audio.currentTime = Number(range.value) / 1000 * audio.duration;
+  });
+  ['timeupdate', 'loadedmetadata', 'play', 'pause', 'ended'].forEach(eventName => audio.addEventListener(eventName, () => updateSongCard(card)));
+  updateSongCard(card);
+});
+
 el('previous').addEventListener('click', () => move(-1));
 el('next').addEventListener('click', () => {
   if (scenes[current]?.endOfBranch) {
@@ -523,7 +595,8 @@ swipeArea.addEventListener('touchcancel', () => { touchStart = null; }, { passiv
 
 el('home').addEventListener('click', event => {
   event.preventDefault();
-  const wasCover = current === 0 && !gamePageOpen;
+  const wasCover = current === 0 && !songPageOpen && !gamePageOpen;
+  if (songPageOpen) showSongs(false);
   if (gamePageOpen) showGames(false);
   current = wasCover ? Math.min(1, scenes.length - 1) : 0;
   render();
