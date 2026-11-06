@@ -32,7 +32,7 @@ rojo|El color de una fresa madura.
 pera|Fruta verde con la parte de abajo más ancha.
 hoja|Crece en la rama de un árbol.
 beso|Te lo doy con los labios para mostrar cariño.
-niña|Lara es una de seis años.`,
+niña|Lara es una niña de Madrid.`,
 `amigo|Alguien con quien te gusta jugar.
 amiga|Una compañera a la que quieres mucho.
 perro|Mueve la cola y hace guau.

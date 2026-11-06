@@ -6,10 +6,10 @@
   <meta name="theme-color" content="#251a42">
   <title>Lara · El secreto de la melodía de las sombras</title>
   <link rel="stylesheet" href="style.css?v=20261025-decision-bombo-v1">
-  <script src="reader.js?v=20261025-decision-bombo-v1" defer></script>
+  <script src="reader.js?v=20261106-return-to-start-v1" defer></script>
 </head>
 <body>
-  <header class="masthead"><a href="#" id="home" class="masthead-link is-active" aria-current="page" aria-label="Volver al principio">✦ <span>Libro</span></a><div class="masthead-actions"><button id="open-games" class="masthead-link songs-link" type="button" aria-pressed="false">✧ <span>Juegos</span></button><button id="open-songs" class="masthead-link songs-link" type="button" aria-pressed="false">♫ <span>Canciones</span></button><button id="bookmark-toggle" class="masthead-link bookmark-toggle" type="button" aria-expanded="false" aria-controls="bookmark-menu" aria-label="Marcapáginas" title="Marcapáginas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.75h12a1 1 0 0 1 1 1v16l-7-4.5-7 4.5v-16a1 1 0 0 1 1-1Z"/></svg></button><span class="badge">Vista previa</span><div id="bookmark-menu" class="bookmark-menu" hidden role="region" aria-label="Marcapáginas"><p id="bookmark-status" role="status" aria-live="polite">Aún no hay marcador.</p><button id="save-bookmark" type="button" aria-label="Guardar esta página">Guardar</button><button id="go-bookmark" type="button" disabled aria-label="Ir al marcapáginas">Ir</button><button id="remove-bookmark" class="remove-bookmark" type="button" hidden>Quitar</button></div></div></header>
+  <header class="masthead"><a href="#" id="home" class="masthead-link is-active" aria-current="page" aria-label="Volver al principio">✦ <span>Libro</span></a><div class="masthead-actions"><button id="open-games" class="masthead-link songs-link" type="button" aria-pressed="false">✧ <span>Juegos</span></button><button id="bookmark-toggle" class="masthead-link bookmark-toggle" type="button" aria-expanded="false" aria-controls="bookmark-menu" aria-label="Marcapáginas" title="Marcapáginas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.75h12a1 1 0 0 1 1 1v16l-7-4.5-7 4.5v-16a1 1 0 0 1 1-1Z"/></svg></button><span class="badge">Vista previa</span><div id="bookmark-menu" class="bookmark-menu" hidden role="region" aria-label="Marcapáginas"><p id="bookmark-status" role="status" aria-live="polite">Aún no hay marcador.</p><button id="save-bookmark" type="button" aria-label="Guardar esta página">Guardar</button><button id="go-bookmark" type="button" disabled aria-label="Ir al marcapáginas">Ir</button><button id="remove-bookmark" class="remove-bookmark" type="button" hidden>Quitar</button></div></div></header>
   <main>
     <section class="reader" aria-label="Lector de cómic">
       <div class="reader-top"><span id="chapter">Una aventura musical</span><span id="counter" aria-live="polite">1 / 5</span></div>
@@ -20,17 +20,8 @@
         <button id="previous" type="button" aria-label="Página anterior" disabled><span aria-hidden="true">←</span></button>
         <button id="speak" class="speak" type="button" aria-label="Leer en voz alta" aria-pressed="false"><span aria-hidden="true">♪</span><span id="speak-label" class="visually-hidden">Escuchar</span></button>
         <button id="size" class="size" aria-pressed="false" type="button" aria-label="Aumentar el tamaño del texto">A<span>A</span></button>
-        <button id="next" type="button" aria-label="Página siguiente"><span aria-hidden="true">→</span></button>
+        <button id="next" type="button" aria-label="Página siguiente"><span id="next-label" aria-hidden="true">→</span></button>
       </nav>
-    </section>
-    <section id="songs-page" class="reader songs-page" aria-label="Canciones de Lara" hidden>
-      <div class="songs-heading"><button id="close-songs" class="back-link" type="button" aria-label="Volver al libro">←</button><div><p class="eyebrow">MÚSICA DE LARA</p><h1>Canciones de Lara</h1><p class="songs-intro">Sus canciones para escuchar cuando quiera</p></div></div>
-      <div class="song-list">
-        <article class="song-card" data-track="0"><div class="song-icon" aria-hidden="true">♫</div><div class="song-info"><h2>Lara lo lograste</h2><p>Una canción de Lara</p><input class="song-progress" type="range" min="0" max="1000" value="0" aria-label="Progreso de Lara lo lograste"><span class="song-time">0:00</span></div><button class="song-play" type="button" aria-label="Reproducir Lara lo lograste">▶</button><audio preload="none" src="assets/songs/lara-lo-lograste.mp3"></audio></article>
-        <article class="song-card" data-track="1"><div class="song-icon" aria-hidden="true">♫</div><div class="song-info"><h2>Lara tu luz brillará</h2><p>Una canción de Lara</p><input class="song-progress" type="range" min="0" max="1000" value="0" aria-label="Progreso de Lara tu luz brillará"><span class="song-time">0:00</span></div><button class="song-play" type="button" aria-label="Reproducir Lara tu luz brillará">▶</button><audio preload="none" src="assets/songs/lara-tu-luz-brillara.mp3"></audio></article>
-        <article class="song-card" data-track="2"><div class="song-icon" aria-hidden="true">♫</div><div class="song-info"><h2>Cinco Corazones Musicales</h2><p>Una canción de Lara</p><input class="song-progress" type="range" min="0" max="1000" value="0" aria-label="Progreso de Cinco Corazones Musicales"><span class="song-time">0:00</span></div><button class="song-play" type="button" aria-label="Reproducir Cinco Corazones Musicales">▶</button><audio preload="none" src="assets/songs/Cinco%20Corazones%20Musicales.mp3"></audio></article>
-      </div>
-      <p class="songs-footnote">Toca ▶ para escuchar · Puedes pausar y continuar cuando quieras</p>
     </section>
     <section id="games-page" class="reader songs-page games-page" aria-label="Juegos para aprender a leer" hidden>
       <div class="songs-heading"><button id="close-games" class="back-link" type="button" aria-label="Volver al libro">←</button><div><p class="eyebrow">JUEGOS DE LECTURA</p><h1>Juegos de Sonoria</h1><p class="songs-intro">Pequeños retos para leer jugando</p></div></div>
