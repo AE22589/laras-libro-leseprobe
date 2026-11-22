@@ -298,7 +298,7 @@
       "title": "S13-P01",
       "chapter": "Página 13 · Imagen 1 de 4",
       "text": "Bombo les mostró un mapa mágico con los corazones. Sobre él se alzaba la sombra del Maestro del Compás.",
-      "image": "assets/s13-p01-v1.webp",
+      "image": "assets/s13-p01-v2.png",
       "alt": "Lara, Anne, Anne de Alemania y Lokum escuchan a Bombo junto al mapa de Sonoria.",
       "status": "ilustraciones_aprobadas_texto_borrador"
     },
@@ -307,7 +307,7 @@
       "title": "S13-P02",
       "chapter": "Página 13 · Imagen 2 de 4",
       "text": "—¡Tu ritmo despertó la magia, Lara! —dijo Bombo.",
-      "image": "assets/s13-p02-v1.webp",
+      "image": "assets/s13-p02-v2.png",
       "alt": "Lara marca un ritmo con las manos mientras Bombo le explica la magia.",
       "status": "ilustraciones_aprobadas_texto_borrador"
     },
@@ -334,7 +334,7 @@
       "title": "S14-P01",
       "chapter": "Página 14 · Imagen 1 de 4",
       "text": "Lara levantó el micrófono mágico. Las notas giraron a su alrededor, y sintió que su poder musical despertaba.",
-      "image": "assets/s14-p01-v1.webp",
+      "image": "assets/s14-p01-v2.png",
       "alt": "Lara baila con el micrófono mágico mientras su traje K-pop resplandece.",
       "status": "ilustraciones_aprobadas_texto_borrador"
     },
@@ -343,7 +343,7 @@
       "title": "S14-P02",
       "chapter": "Página 14 · Imagen 2 de 4",
       "text": "—Con tu música puedes abrir las jaulas de los Corazones Musicales —explicó Bombo.",
-      "image": "assets/s14-p02-v2.png",
+      "image": "assets/s14-p02-v3.png",
       "alt": "Anne mira su brazalete protector mientras Lara y Bombo están a su lado.",
       "status": "ilustraciones_aprobadas_texto_borrador"
     },
@@ -351,9 +351,9 @@
       "id": "S14-P03",
       "title": "S14-P03",
       "chapter": "Página 14 · Imagen 3 de 4",
-      "text": "—Anne, este brazalete te protegerá —dijo Bombo. Anne de Alemania sacó su brújula estelar, que señaló el camino.",
-      "image": "assets/s14-p03-v2.png",
-      "alt": "Anne de Alemania consulta su brújula estelar mientras el camino se ilumina.",
+      "text": "—Tu brazalete te protegerá —dijo Bombo. Anne sostenía la brújula estelar de Anne de Alemania. Su luz les señaló el camino.",
+      "image": "assets/s14-p03-v3.png",
+      "alt": "Anne sostiene la brújula estelar de Anne de Alemania mientras Lara señala el camino.",
       "status": "ilustraciones_aprobadas_texto_borrador"
     },
     {
@@ -361,7 +361,7 @@
       "title": "S14-P04",
       "chapter": "Página 14 · Imagen 4 de 4",
       "text": "El camino hacia el primer Corazón Musical empezó a brillar.",
-      "image": "assets/s14-p04-v2.png",
+      "image": "assets/s14-p04-v3.png",
       "alt": "Lara, Anne, Anne de Alemania, Lokum y Bombo ven el camino hacia el primer Corazón Musical.",
       "status": "ilustraciones_aprobadas_texto_borrador"
     },
@@ -442,7 +442,7 @@
       "title": "S17-P03",
       "chapter": "Página 17 · Imagen 3 de 4",
       "text": "Lokum persiguió una nota sombría y, ¡plof!, cayó en una montaña de confeti.",
-      "image": "assets/s17-p03-v1.webp",
+      "image": "assets/s17-p03-v2.png",
       "alt": "Lokum emerge ilesa de un montón de confeti después de perseguir una pequeña nota sombría. Las tres la miran sorprendidas.",
       "status": "ilustraciones_aprobadas_texto_borrador"
     },
@@ -514,7 +514,7 @@
       "title": "S20-P01",
       "chapter": "Página 20 · Imagen 1 de 4",
       "text": "Lara llegó hasta la jaula del segundo Corazón Musical.",
-      "image": "assets/s20-p01-v1.webp",
+      "image": "assets/s20-p01-v2.png",
       "alt": "Lara llega a la jaula del segundo Corazón Musical.",
       "status": "imagen_aprobada_texto_borrador"
     },
@@ -523,8 +523,8 @@
       "title": "S20-P02",
       "chapter": "Página 20 · Imagen 2 de 4",
       "text": "Lara tocó la jaula del segundo Corazón Musical, y su música empezó a abrirla.",
-      "image": "assets/s20-p02-v1.webp",
-      "alt": "Lara abre la jaula y libera el segundo Corazón Musical.",
+      "image": "assets/s20-p02-v2.png",
+      "alt": "Lara toca la jaula del segundo Corazón Musical, que sigue dentro.",
       "status": "imagen_aprobada_texto_borrador"
     },
     {
@@ -540,9 +540,9 @@
       "id": "S20-P04",
       "title": "S20-P04",
       "chapter": "Página 20 · Imagen 4 de 4",
-      "text": "El Maestro del Compás vigilaba desde las nubes. Sus notas sombrías cuidaban los corazones, y dos de ellos ya flotaban libres junto a Lara.",
+      "text": "El Maestro del Compás vigilaba desde las nubes. Lara tendió la mano hacia los dos Corazones Musicales liberados.",
       "image": "assets/s20-p04-v1.webp",
-      "alt": "Lara y sus amigas se preparan mientras las notas sombrías surcan el cielo.",
+      "alt": "Lara tiende la mano hacia dos Corazones Musicales liberados. La sombra del Maestro se alza entre las nubes.",
       "status": "imagen_aprobada_texto_borrador"
     },
     {
@@ -837,7 +837,7 @@
       "id": "S30-P01",
       "title": "S30-P01",
       "chapter": "Página 30 · Imagen 1 de 5",
-      "text": "Las notas sombrías se apartaron y entraron en la gran sala de conciertos. Al fondo, el Maestro del Compás esperaba junto al quinto Corazón Musical.",
+      "text": "El escudo les abrió paso entre las notas sombrías. El grupo entró en la gran sala de conciertos, donde el Maestro esperaba junto al quinto Corazón Musical.",
       "image": "assets/s30-p01-v2.webp",
       "alt": "Lara, Anne, Anne de Alemania y Lokum entran en la gran sala; el Maestro y el quinto corazón esperan en el escenario.",
       "status": "imagen_y_texto_aprobados_para_publicacion"
@@ -999,9 +999,9 @@
       "id": "S33-P04",
       "title": "S33-P04",
       "chapter": "Página 33 · Imagen 4 de 5",
-      "text": "Anne de Alemania puso la melodía y Lara, el ritmo que recordaba. Anne marcó el compás con palmas.",
-      "image": "assets/s33-p04-v2.webp",
-      "alt": "Lara y Anne de Alemania cantan juntas mientras Anne las acompaña con palmas.",
+      "text": "Anne de Alemania puso la melodía y Lara, el ritmo que recordaba. Juntas siguieron el compás con palmas.",
+      "image": "assets/s33-p04-v3.png",
+      "alt": "Lara y Anne de Alemania siguen el ritmo con palmas. Lokum las mira.",
       "status": "imagen_y_texto_aprobados_para_publicacion"
     },
     {
@@ -1072,7 +1072,7 @@
       "title": "S35-P02",
       "chapter": "Página 35 · Imagen 2 de 5",
       "text": "La canción con errores hizo brillar el quinto Corazón Musical dentro de su jaula.",
-      "image": "assets/s35-p02-v3.webp",
+      "image": "assets/s35-p02-v4.png",
       "alt": "La canción imperfecta hizo brillar el quinto Corazón Musical dentro de su jaula.",
       "status": "imagen_y_texto_aprobados_para_publicacion"
     },
@@ -1189,7 +1189,7 @@
       "title": "S37-P05",
       "chapter": "Página 37 · Imagen 5 de 7",
       "text": "Lokum se estiró de la forma más graciosa. ¡Hasta el Maestro se rio!",
-      "image": "assets/s37-konzert-p05-korrektur-v2.webp",
+      "image": "assets/s37-konzert-p05-v3.png",
       "alt": "Lokum se estira jugando al ritmo de la música mientras Lara baila y el público disfruta.",
       "status": "imagen_y_texto_aprobados_para_publicacion"
     },
@@ -1198,7 +1198,7 @@
       "title": "S37-P06",
       "chapter": "Página 37 · Imagen 6 de 7",
       "text": "El Maestro marcó el ritmo con su batuta. Esta vez, tocaba para disfrutar.",
-      "image": "assets/s37-konzert-p06-v2.webp",
+      "image": "assets/s37-konzert-p06-v3.png",
       "alt": "El Maestro, joven y sonriente, marca el ritmo con su batuta mientras Lara baila y el público aplaude.",
       "status": "imagen_y_texto_aprobados_para_publicacion"
     },
@@ -1207,7 +1207,7 @@
       "title": "S37-P07",
       "chapter": "Página 37 · Imagen 7 de 7",
       "text": "El concierto terminó y toda Sonoria aplaudió. Lara sonrió. ¡Qué bonito era disfrutar juntas, sin tener que hacerlo perfecto!",
-      "image": "assets/s37-konzert-p07-v2.webp",
+      "image": "assets/s37-konzert-p07-v3.png",
       "alt": "El concierto termina con Lara, Anne, Anne de Alemania, Lokum, Bombo, el Maestro y los habitantes de Sonoria celebrando juntos.",
       "status": "imagen_y_texto_aprobados_para_publicacion"
     },
@@ -1449,7 +1449,7 @@
       "title": "Como una vela",
       "chapter": "Camino C · La plataforma fuera de control · 3 de 20",
       "text": "Cuando el viento infló el telón como una vela, la plataforma empezó a moverse. Una esquina se enganchó en la cuerda, junto a la palanca del ancla.",
-      "image": "assets/web-weg-c-03-v7.webp",
+      "image": "assets/web-weg-c-03-v8.png",
       "alt": "Una ráfaga hincha el telón como una vela y la plataforma empieza a moverse. La esquina queda atrapada bajo la cuerda, junto a la palanca azul.",
       "status": "imagen_y_texto_publicados_revision_global_pendiente"
     },
@@ -1458,7 +1458,7 @@
       "title": "La plataforma se aleja",
       "chapter": "Camino C · La plataforma fuera de control · 4 de 20",
       "text": "La plataforma pequeña se alejó de la principal. Lara y Lokum seguían en ella, y sus amigos se quedaron atrás.",
-      "image": "assets/web-weg-c-04-v8.webp",
+      "image": "assets/web-weg-c-04-v9.png",
       "alt": "La plataforma pequeña se aleja del podio principal. Lara y Lokum siguen allí; sus amigos observan desde el podio. La esquina del telón continúa atrapada bajo la cuerda, junto a la palanca azul.",
       "status": "imagen_y_texto_publicados_revision_global_pendiente"
     },
@@ -1467,7 +1467,7 @@
       "title": "El escudo de Anne",
       "chapter": "Camino C · La plataforma fuera de control · 5 de 20",
       "text": "—¡Estamos bien! —gritó Lara. Anne levantó su brazalete y creó un escudo de luz para protegerla del viento.",
-      "image": "assets/web-weg-c-05-v5.webp",
+      "image": "assets/web-weg-c-05-v6.png",
       "alt": "Anne protege a Lara y Lokum con un escudo de luz desde el podio principal. En la plataforma pequeña, la esquina del telón sigue atrapada bajo la cuerda.",
       "status": "imagen_y_texto_publicados_revision_global_pendiente"
     },
@@ -1475,8 +1475,8 @@
       "id": "WEB-WEG-C-06",
       "title": "El camino de vuelta",
       "chapter": "Camino C · La plataforma fuera de control · 6 de 20",
-      "text": "Anne de Alemania señaló desde la plataforma principal el camino de vuelta. Cerca de Lara había una máquina con tres palancas y un tambor que enrollaba la cuerda.",
-      "image": "assets/web-weg-c-06.webp",
+      "text": "Las dos Annes cambiaron de sitio para ver mejor la plataforma pequeña. Anne de Alemania señaló desde la plataforma principal el camino de vuelta. Cerca de Lara había una máquina con tres palancas y un tambor que enrollaba la cuerda.",
+      "image": "assets/web-weg-c-06-v2.png",
       "alt": "Anne de Alemania señala el camino de vuelta. Junto a Lara se ve una máquina con tres palancas, una cuerda y un tambor.",
       "status": "imagen_y_texto_publicados_revision_global_pendiente"
     },
@@ -1485,7 +1485,7 @@
       "title": "La palanca azul",
       "chapter": "Camino C · La plataforma fuera de control · 7 de 20",
       "text": "—La palanca azul recoge la cuerda y trae la plataforma de vuelta —explicó Anne de Alemania. Lara vio un ancla dibujada en esa palanca y la probó.",
-      "image": "assets/web-weg-c-07.webp",
+      "image": "assets/web-weg-c-07-v2.png",
       "alt": "Lara prueba la palanca azul con el símbolo del ancla mientras Anne de Alemania le explica su función desde el podio principal.",
       "status": "imagen_y_texto_publicados_revision_global_pendiente"
     },
@@ -1494,7 +1494,7 @@
       "title": "La palanca bloqueada",
       "chapter": "Camino C · La plataforma fuera de control · 8 de 20",
       "text": "La palanca azul no se movía. ¡Estaba atascada! La cuerda no se recogía, y la plataforma seguía alejándose.",
-      "image": "assets/web-weg-c-08.webp",
+      "image": "assets/web-weg-c-08-v2.png",
       "alt": "Lara intenta mover la palanca azul, pero está atascada; la plataforma sigue alejándose y la cuerda no se recoge.",
       "status": "imagen_y_texto_publicados_revision_global_pendiente"
     },
@@ -1503,7 +1503,7 @@
       "title": "¿Qué la sujeta?",
       "chapter": "Camino C · La plataforma fuera de control · 9 de 20",
       "text": "Lara soltó la palanca. —Algo la está sujetando… —murmuró. Antes de probar otra, decidió mirar bien.",
-      "image": "assets/web-weg-c-09.webp",
+      "image": "assets/web-weg-c-09-v2.png",
       "alt": "Lara suelta la palanca azul y observa la máquina para descubrir por qué está atascada.",
       "status": "imagen_y_texto_publicados_revision_global_pendiente"
     },
@@ -1512,7 +1512,7 @@
       "title": "Sigue la cuerda",
       "chapter": "Camino C · La plataforma fuera de control · 10 de 20",
       "text": "Desde el borde, siguió la cuerda con la mirada. Pasaba justo por el pie de la palanca azul.",
-      "image": "assets/web-weg-c-10.webp",
+      "image": "assets/web-weg-c-10-v2.png",
       "alt": "Lara sigue con la mirada la cuerda trenzada desde el borde de la plataforma hasta el pie de la palanca azul.",
       "status": "imagen_y_texto_publicados_revision_global_pendiente"
     },
@@ -1521,7 +1521,7 @@
       "title": "La esquina escondida",
       "chapter": "Camino C · La plataforma fuera de control · 11 de 20",
       "text": "¡Allí estaba! Una esquina del telón había quedado atrapada bajo la cuerda, contra la palanca. —¡Por eso no se mueve! —exclamó.",
-      "image": "assets/web-weg-c-11.webp",
+      "image": "assets/web-weg-c-11-v2.png",
       "alt": "Lara descubre que una esquina dorada del telón está atrapada bajo la cuerda junto al pie de la palanca azul.",
       "status": "imagen_y_texto_publicados_revision_global_pendiente"
     },
@@ -1530,7 +1530,7 @@
       "title": "Con mucho cuidado",
       "chapter": "Camino C · La plataforma fuera de control · 12 de 20",
       "text": "Se agachó junto a la palanca y agarró el borde dorado del telón. Tiró despacito, sin dar ningún tirón.",
-      "image": "assets/web-weg-c-12.webp",
+      "image": "assets/web-weg-c-12-v3.png",
       "alt": "Lara se agacha y tira con cuidado del borde dorado del telón, pero la esquina sigue atrapada bajo la cuerda.",
       "status": "imagen_y_texto_publicados_revision_global_pendiente"
     },
@@ -1538,8 +1538,8 @@
       "id": "WEB-WEG-C-13",
       "title": "Una pata amiga",
       "chapter": "Camino C · La plataforma fuera de control · 13 de 20",
-      "text": "—¿Me ayudas? Sujeta aquí —le pidió Lara, sin soltar el borde del telón.",
-      "image": "assets/web-weg-c-13.webp",
+      "text": "El viento amainó y el escudo de Anne se desvaneció poco a poco. —¿Me ayudas? Sujeta aquí —le pidió Lara, sin soltar el borde del telón.",
+      "image": "assets/web-weg-c-13-v3.png",
       "alt": "Lokum se acerca mientras Lara le pide que sujete una parte del telón. La esquina continúa atrapada junto a la palanca azul.",
       "status": "imagen_y_texto_publicados_revision_global_pendiente"
     },
@@ -1548,7 +1548,7 @@
       "title": "Las dos juntas",
       "chapter": "Camino C · La plataforma fuera de control · 14 de 20",
       "text": "La gata puso una pata sobre la tela y la mantuvo quieta. Mientras tanto, Lara fue sacando la esquina, un poquito cada vez.",
-      "image": "assets/web-weg-c-14.webp",
+      "image": "assets/web-weg-c-14-v7.png",
       "alt": "Lokum mantiene el telón sujeto con una pata mientras Lara sigue sacando despacio la esquina, que aún permanece parcialmente atrapada.",
       "status": "imagen_y_texto_publicados_revision_global_pendiente"
     },
@@ -1557,7 +1557,7 @@
       "title": "La esquina libre",
       "chapter": "Camino C · La plataforma fuera de control · 15 de 20",
       "text": "Por fin, la esquina salió de debajo de la cuerda. ¡Estaba libre! Lara la apartó de la palanca mientras Lokum sujetaba el telón.",
-      "image": "assets/web-weg-c-15.webp",
+      "image": "assets/web-weg-c-15-v7.png",
       "alt": "Lara libera la esquina del telón y la aparta de la palanca; Lokum todavía sujeta el resto de la tela.",
       "status": "imagen_y_texto_publicados_revision_global_pendiente"
     },
@@ -1566,7 +1566,7 @@
       "title": "La palanca funciona",
       "chapter": "Camino C · La plataforma fuera de control · 16 de 20",
       "text": "Con el telón apartado, Lara volvió a probar la palanca azul. Esta vez bajó sin atascarse. —¡Funciona!",
-      "image": "assets/web-weg-c-16.webp",
+      "image": "assets/web-weg-c-16-v6.png",
       "alt": "Con el telón apartado, Lara vuelve a probar la palanca azul y esta vez logra bajarla.",
       "status": "imagen_y_texto_publicados_revision_global_pendiente"
     },
@@ -1574,9 +1574,9 @@
       "id": "WEB-WEG-C-17",
       "title": "La plataforma vuelve",
       "chapter": "Camino C · La plataforma fuera de control · 17 de 20",
-      "text": "Lara mantuvo la palanca azul hacia abajo. El tambor empezó a recoger la cuerda, y la plataforma volvió despacio hacia sus amigos.",
-      "image": "assets/web-weg-c-17.webp",
-      "alt": "Lara mantiene bajada la palanca azul. El tambor empieza a recoger la cuerda y la plataforma se acerca al podio principal.",
+      "text": "Lokum soltó el telón y se apartó. Lara mantuvo bajada la palanca azul. El tambor recogió la cuerda y la plataforma se acercó a sus amigos.",
+      "image": "assets/web-weg-c-17-v6.png",
+      "alt": "Lokum está sentado en la plataforma, apartado del telón. Lara mantiene bajada la palanca azul mientras el tambor recoge la cuerda.",
       "status": "imagen_y_texto_publicados_revision_global_pendiente"
     },
     {
@@ -1584,7 +1584,7 @@
       "title": "Señales desde la plataforma principal",
       "chapter": "Camino C · La plataforma fuera de control · 18 de 20",
       "text": "—¡La rosa sirve para girar! —le indicó Anne de Alemania. Sin soltar la azul, Lara movió un poco la rosa para girar hacia sus amigos.",
-      "image": "assets/web-weg-c-18.webp",
+      "image": "assets/web-weg-c-18-v6.png",
       "alt": "Lara mantiene la palanca azul y mueve la rosa para orientar la plataforma hacia sus amigos; aún no han cruzado.",
       "status": "imagen_y_texto_publicados_revision_global_pendiente"
     },
@@ -1593,7 +1593,7 @@
       "title": "De vuelta con los demás",
       "chapter": "Camino C · La plataforma fuera de control · 19 de 20",
       "text": "Lara centró la rosa y soltó la azul. La máquina dejó de recoger la cuerda, y la plataforma quedó junto al borde. ¡Lara y Lokum pasaron con sus amigos!",
-      "image": "assets/web-weg-c-19.webp",
+      "image": "assets/web-weg-c-19-v5.png",
       "alt": "La plataforma pequeña queda unida y al mismo nivel que el podio. Lara y Lokum ya han cruzado; la palanca rosa está centrada y la azul suelta.",
       "status": "imagen_y_texto_publicados_revision_global_pendiente"
     },
@@ -1602,7 +1602,7 @@
       "title": "Lokum, la heroína",
       "chapter": "Camino C · La plataforma fuera de control · 20 de 20",
       "text": "Bombo quitó el telón y lo dobló. Lokum se sentó encima, muy orgullosa. —¡Nuestra heroína del escenario! —rio Lara.",
-      "image": "assets/web-weg-c-20.webp",
+      "image": "assets/web-weg-c-20-v3.png",
       "alt": "En el podio principal, Bombo dobla el telón y Lokum se sienta orgullosa encima. Lara y sus amigos celebran el final.",
       "status": "imagen_y_texto_publicados_revision_global_pendiente",
       "endOfBranch": true,
@@ -1612,7 +1612,7 @@
       "id": "WEB-WEG-D-01",
       "title": "De vuelta en casa",
       "chapter": "Camino D · La vuelta a casa · 1 de 3",
-      "text": "La estrella dorada abrió un portal y volvieron al salón. El televisor sonaba otra vez. —¿De verdad pasó todo? —preguntó Lara. —¡Claro! ¿O crees que hablo por hablar? —dijo Lokum.",
+      "text": "Un portal dorado se abrió y volvieron al salón. El televisor sonaba otra vez. —¿De verdad pasó todo? —preguntó Lara. —¡Claro! ¿O crees que hablo por hablar? —dijo Lokum.",
       "image": "assets/web-weg-d-01-heimkehr-v1.webp",
       "alt": "Lara, Anne, Anne de Alemania y Lokum regresan por el portal al salón de Lara. En el televisor vuelve a sonar música.",
       "status": "imagen_aprobada_texto_espanol_borrador",
