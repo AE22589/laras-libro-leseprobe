@@ -2,32 +2,20 @@ body.awaiting-book { overflow: hidden; }
 .awaiting-book > :not(#book-countdown):not(script) { display: none !important; }
 .book-countdown {
   position: fixed; inset: 0; z-index: 1000; overflow: auto;
-  color: #432052; text-align: center;
-  background: radial-gradient(ellipse at 50% 38%, #fff2db88, transparent 42%),
-    radial-gradient(ellipse at 10% 10%, #ae99ed, transparent 58%),
-    linear-gradient(160deg, #6253a6, #dfc5f2 54%, #f8deeb);
-  font-family: Georgia, 'Times New Roman', serif;
+  background: #7f5bb4; display: grid; place-items: center;
 }
-.countdown-inner { width: min(100%, 580px); min-height: 100%; margin: auto; padding: max(22px, env(safe-area-inset-top)) 20px max(24px, env(safe-area-inset-bottom)); box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; }
-#countdown-title { color: #fff1d7; font-size: clamp(30px, 7.5vw, 48px); line-height: 1.1; margin: 0; text-shadow: 0 2px 14px #69305d77; font-weight: 500; }
-.countdown-art { position: relative; height: clamp(220px, 36svh, 355px); margin-top: 12px; isolation: isolate; }
-.portal { position: absolute; inset: 9% 6%; border: 2px solid #fff3d7bb; border-radius: 50%; box-shadow: 0 0 18px #ffe0af, inset 0 0 38px #fff1dfaa, 0 0 65px #e5a0e3; transform: rotate(-18deg); }
-.portal::after { content: '✦　♪　✧　♫　✦'; color: #fff4ce; position: absolute; inset: 12% -5%; font-size: 26px; letter-spacing: 12px; text-shadow: 0 0 10px gold; }
-.countdown-lokum { position: absolute; z-index: 3; height: 92%; width: 49%; object-fit: contain; left: 0; bottom: 0; border-radius: 48% 48% 22% 22%; filter: drop-shadow(0 8px 12px #62365a33); }
-.magic-book { position: absolute; right: 4%; bottom: 8%; width: 42%; height: 70%; perspective: 900px; transform: rotate(9deg); filter: drop-shadow(0 10px 12px #3c155c55); }
-.book-pages { position: absolute; inset: 8px -8px -5px 6px; border-radius: 6px 13px 13px 6px; background: repeating-linear-gradient(#fff0c6 0 3px, #d6b88b 3px 4px); border: 3px solid #cda36d; box-shadow: 0 0 22px #ffe9b6; }
-.book-cover { position: absolute; inset: 0; border: 3px solid #efc883; border-radius: 7px 12px 12px 7px; background: radial-gradient(circle, #c06cbb, #703b8b 64%, #44246b); box-shadow: inset 0 0 0 7px #703e87, inset 0 0 0 9px #dbb47c; transform-origin: left; display: grid; place-content: center; transition: transform 1.1s ease-in; }
-.book-heart { color: #ffdf9f; font-size: clamp(75px, 20vw, 125px); line-height: 1; text-shadow: 0 0 15px #ffbbce; }
-.book-note { position: absolute; inset: 27% 0 0; color: #fff2c9; font-size: 65px; text-shadow: 0 0 12px #fbcfe0; }
-.book-stars { color: #ffe8b4; font-size: 21px; }
-.countdown-intro { font-size: clamp(22px, 5.4vw, 31px); font-style: italic; margin: 16px 0 18px; }
-.countdown-digits { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
-.countdown-digits > div { padding: 10px 2px; background: #fff2f17a; border: 1px solid #edc98f; border-radius: 20px; box-shadow: inset 0 0 0 3px #fff8ef88, 0 0 15px #ffebcb77; }
-.countdown-digits strong { display: block; font-size: clamp(32px, 9vw, 56px); font-weight: 500; font-variant-numeric: tabular-nums; line-height: 1.1; }
-.countdown-digits span { display: block; font: 12px/1.6 system-ui, sans-serif; letter-spacing: 1px; }
-.countdown-date { margin: 22px 0; font-size: clamp(18px, 4.6vw, 27px); }
-.countdown-status { margin: 0; padding: 17px 10px; background: linear-gradient(120deg, #8258a9, #ae78b8); color: #fff2d5; border: 2px solid #f5dca4; border-radius: 40px; font-size: clamp(18px, 4.5vw, 26px); box-shadow: 0 0 0 4px #ffffff77, 0 0 24px #ffedce88; }
-.is-opening .book-cover { transform: rotateY(-130deg); }
-.is-opening .portal { box-shadow: 0 0 100px 50px #fff1d7; transition: box-shadow 1s ease; }
-@media (max-height: 650px) { .countdown-inner { padding-top: 14px; } .countdown-art { height: 205px; margin-top: 4px; } .countdown-intro { margin: 8px 0 12px; } .countdown-date { margin: 14px 0; } }
-@media (prefers-reduced-motion: reduce) { .book-cover, .portal { transition: none; } }
+.countdown-poster { position: relative; width: min(100vw, 66.6667svh, 1024px); line-height: 0; }
+.countdown-poster img { display: block; width: 100%; height: auto; }
+.countdown-digits {
+  position: absolute; left: 6.6%; width: 86.8%; top: 66.2%; height: 5.6%;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 4.8%; align-items: center;
+  color: #4a1c57; text-align: center; line-height: 1;
+}
+.countdown-digits strong {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(18px, 7.3vw, min(5svh, 70px));
+  font-weight: 600; font-variant-numeric: tabular-nums;
+}
+.countdown-status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.book-countdown.is-opening .countdown-poster { opacity: 0; transition: opacity 1.1s ease-in; }
+@media (prefers-reduced-motion: reduce) { .book-countdown.is-opening .countdown-poster { transition: none; } }

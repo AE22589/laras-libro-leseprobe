@@ -13,6 +13,19 @@
   content.forEach(element => { element.inert = true; });
   let opened = false;
   let timer;
+  const unlockKey = 'larasLibroCountdownUnlocked';
+  let clickCount = 0;
+  gate.addEventListener('click', () => {
+    if (++clickCount < 5) return;
+    clickCount = 0;
+    const password = window.prompt('Contraseña de administrador:');
+    if (password === '13371337') {
+      try { localStorage.setItem(unlockKey, '1'); } catch (_) { /* Open for this visit. */ }
+      openBook(true);
+    } else if (password !== null) {
+      window.alert('Contraseña incorrecta.');
+    }
+  });
   function openBook(animate) {
     if (opened) return;
     opened = true;
@@ -51,7 +64,9 @@
     ];
     fields.forEach((field, i) => { field.textContent = String(values[i]).padStart(2, '0'); });
   }
-  if (Date.now() >= releaseAt) {
+  let unlocked = false;
+  try { unlocked = localStorage.getItem(unlockKey) === '1'; } catch (_) { /* Storage may be unavailable. */ }
+  if (unlocked || Date.now() >= releaseAt) {
     openBook(false);
   } else {
     update();
