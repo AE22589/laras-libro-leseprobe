@@ -6,9 +6,28 @@
   <meta name="theme-color" content="#251a42">
   <title>Lara · El secreto de la melodía de las sombras</title>
   <link rel="stylesheet" href="style.css?v=20261025-decision-bombo-v1">
-  <script src="reader.js?v=20261106-return-to-start-v1" defer></script>
+  <link rel="stylesheet" href="countdown.css?v=20261126"><script src="countdown.js?v=20261126" defer></script>
 </head>
-<body>
+<body class="awaiting-book"><section id="book-countdown" class="book-countdown" aria-labelledby="countdown-title">
+  <div class="countdown-inner">
+    <h1 id="countdown-title">Lara y sus amigas mágicas</h1>
+    <div class="countdown-art" aria-hidden="true">
+      <div class="portal"></div>
+      <img class="countdown-lokum" src="assets/lokum-juegos.webp" alt="">
+      <div class="magic-book"><div class="book-pages"></div><div class="book-cover"><span class="book-heart">♡</span><span class="book-note">𝄞</span><span class="book-stars">✧　✦　✧</span></div></div>
+    </div>
+    <p class="countdown-intro">Tu aventura comienza en…</p>
+    <div class="countdown-digits" role="timer" aria-label="Tiempo hasta el 7 de diciembre">
+      <div><strong id="countdown-days">--</strong><span>DÍAS</span></div>
+      <div><strong id="countdown-hours">--</strong><span>HORAS</span></div>
+      <div><strong id="countdown-minutes">--</strong><span>MIN</span></div>
+      <div><strong id="countdown-seconds">--</strong><span>SEG</span></div>
+    </div>
+    <p class="countdown-date">7 de diciembre · 00:00</p>
+    <p id="countdown-status" class="countdown-status" role="status">🔒 El libro se abrirá pronto</p>
+    <noscript>Activa JavaScript para ver la cuenta atrás y abrir el libro.</noscript>
+  </div>
+</section>
   <header class="masthead"><a href="#" id="home" class="masthead-link is-active" aria-current="page" aria-label="Volver al principio">✦ <span>Libro</span></a><div class="masthead-actions"><button id="open-games" class="masthead-link songs-link" type="button" aria-pressed="false">✧ <span>Juegos</span></button><button id="open-songs" class="masthead-link songs-link" type="button" aria-pressed="false">♫ <span>Canciones</span></button><button id="bookmark-toggle" class="masthead-link bookmark-toggle" type="button" aria-expanded="false" aria-controls="bookmark-menu" aria-label="Marcapáginas" title="Marcapáginas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.75h12a1 1 0 0 1 1 1v16l-7-4.5-7 4.5v-16a1 1 0 0 1 1-1Z"/></svg></button><span class="badge">Vista previa</span><div id="bookmark-menu" class="bookmark-menu" hidden role="region" aria-label="Marcapáginas"><p id="bookmark-status" role="status" aria-live="polite">Aún no hay marcador.</p><button id="save-bookmark" type="button" aria-label="Guardar esta página">Guardar</button><button id="go-bookmark" type="button" disabled aria-label="Ir al marcapáginas">Ir</button><button id="remove-bookmark" class="remove-bookmark" type="button" hidden>Quitar</button></div></div></header>
   <main>
     <section class="reader" aria-label="Lector de cómic">
